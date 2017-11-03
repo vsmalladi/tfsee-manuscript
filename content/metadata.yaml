@@ -1,24 +1,15 @@
 ---
-title: "Manubot Rootstock: Manuscript Title"
+title: "Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcription, Epigenomic Features, Sequence Motifs, and Transcription Factor Expression"
 keywords:
-  - markdown
-  - publishing
-  - manubot
+  - enhancers
+  - transcription
+  - transcription factor
+  - epigenome
 lang: en-US
 author_info:
   -
-    github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
-    affiliations: Department of Something, University of Whatever
-    funders: Grant XXXXXXXX
-  -
-    github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
-    affiliations: Department of Whatever, University of Something
+    github: vsmalladi
+    name: Venkat Malladi
+    orcid: 0000-0002-0144-0564
+    twitter: katatonikkat
+    email: Venkat.Malladi@UTSouthwestern.edu
