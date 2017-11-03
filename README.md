@@ -1,6 +1,6 @@
 # Output directory containing the formatted manuscript
 
-The [`gh-pages`](https://github.com/greenelab/manubot-rootstock/tree/gh-pages) branch hosts the contents of this directory at https://greenelab.github.io/manubot-rootstock/.
+The [`gh-pages`](https://github.com/vsmalladi/tfsee-manuscript/tree/gh-pages) branch hosts the contents of this directory at https://vsmalladi.github.io/tfsee-manuscript/.
 
 ## Files
 
@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`46824e6b5e3e84cdab22beb5ce2fd656124c96ef`](https://github.com/greenelab/manubot-rootstock/commit/46824e6b5e3e84cdab22beb5ce2fd656124c96ef).
+[`f7a3fd17305f43e7527a4c026c5760fb0890839b`](https://github.com/vsmalladi/tfsee-manuscript/commit/f7a3fd17305f43e7527a4c026c5760fb0890839b).
