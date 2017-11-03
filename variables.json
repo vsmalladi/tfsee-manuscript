@@ -1,5 +1,5 @@
 {
-  "date": "November  2, 2017",
+  "date": "November  3, 2017",
   "authors": [
     {
       "github": "johndoe",
@@ -21,8 +21,8 @@
     }
   ],
   "ci_source": {
-    "repo_slug": "greenelab/manubot-rootstock",
-    "commit": "46824e6b5e3e84cdab22beb5ce2fd656124c96ef"
+    "repo_slug": "vsmalladi/tfsee-manuscript",
+    "commit": "f7a3fd17305f43e7527a4c026c5760fb0890839b"
   },
   "manuscript_stats": {
     "reference_counts": {
