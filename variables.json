@@ -1,33 +1,22 @@
 {
-  "date": "November  3, 2017",
+  "date": "November  4, 2017",
   "authors": [
     {
-      "github": "johndoe",
-      "name": "John Doe",
-      "initials": "JD",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "twitter": "johndoe",
-      "email": "john.doe@something.com",
-      "affiliations": "Department of Something, University of Whatever",
-      "funders": "Grant XXXXXXXX"
-    },
-    {
-      "github": "janeroe",
-      "name": "Jane Roe",
-      "initials": "JR",
-      "orcid": "XXXX-XXXX-XXXX-XXXX",
-      "email": "jane.roe@whatever.edu",
-      "affiliations": "Department of Whatever, University of Something"
+      "github": "vsmalladi",
+      "name": "Venkat Malladi",
+      "orcid": "0000-0002-0144-0564",
+      "twitter": "katatonikkat",
+      "email": "Venkat.Malladi@UTSouthwestern.edu"
     }
   ],
   "ci_source": {
     "repo_slug": "vsmalladi/tfsee-manuscript",
-    "commit": "3a9831682ea1451fe82a7c7198f9598da7b7cb51"
+    "commit": "6e36eca810007439cb18a46161d820d4d347949c"
   },
   "manuscript_stats": {
     "reference_counts": {
       "total": 0
     },
-    "word_count": 203
+    "word_count": 413
   }
 }
