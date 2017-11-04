@@ -27,17 +27,83 @@
 <header>
 <h1 class="title">Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcription, Epigenomic Features, Sequence Motifs, and Transcription Factor Expression</h1>
 </header>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/6d00c42fa5b3efc383e6be72908225927317c919">vsmalladi/tfsee-manuscript@6d00c42</a> on November 4, 2017. </em></small></p>
+<p><small><em> This manuscript was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/9cddd2cf0bce60baa57161c50bc42c8973e81d43">vsmalladi/tfsee-manuscript@9cddd2c</a> on November 4, 2017. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Venkat Malladi</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0144-0564">0000-0002-0144-0564</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/vsmalladi">vsmalladi</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/katatonikkat">katatonikkat</a><br> <small> </small></li>
 </ul>
 <h2 id="abstract" class="page_break_before">Abstract</h2>
 <p>The identification of transcription factors (TF) driving the formation of active enhancers that regulate the expression of target genes remains an open problem. We have developed a computational framework that identifies cell type-specific enhancers and their cognate TFs by integrating multiple genomic assays that probe the transcriptomes (GRO-seq and RNA-seq) and epigenomes (ChIP-seq) of various samples. Our method, called Total Functional Score of Enhancer Elements (TFSEE), integrates the magnitude of enhancer transcription (GRO-seq), enrichment of marks associated with enhancers (H3K4me1 and H3K27ac ChIP-seq), TF mRNA expression levels (RNA-seq), and TF motif p-values (MEME). This method has allowed us to explore the enhancer landscape in different cell types that share common origins or are biologically related, including distinct molecular subtypes of breast cancer, and embryonic stem cells (ESCs) and their derived lineages. Using TFSEE, we have identified key breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes. To demonstrate the broader utility of our approach, we have used this algorithm to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells. Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers.</p>
+<h2 id="introduction">Introduction</h2>
+<h2 id="results">Results</h2>
+<h2 id="discussion">Discussion</h2>
+<h2 id="acknowledgments">Acknowledgments</h2>
+<h2 id="material-and-methods">Material and Methods</h2>
+<h3 id="genomic-data-curation">Genomic Data Curation</h3>
+<p>We used previously published GRO-seq, ChIP-seq and RNA-seq data from <span class="citation" data-cites="PnOUrg4k BqIYBC66">[<a href="#ref-PnOUrg4k">1</a>,<a href="#ref-BqIYBC66">2</a>]</span> of time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus repository <span class="citation" data-cites="Bc3QGVe7">[<a href="#ref-Bc3QGVe7">3</a>]</span> or EMBL-EBI’s ArrayExpress repository <span class="citation" data-cites="937jwJMM">[<a href="#ref-937jwJMM">4</a>]</span> using the accession numbers listed in Table <a href="#tbl:data-sets">1</a>.</p>
+<a name="tbl:data-sets"></a>
+<table style="width:24%;">
+<caption>Table 1: <strong>Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.</strong> </caption>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Assay</th>
+<th>Accessions</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GRO-seq</td>
+<td>GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334</td>
+</tr>
+<tr class="even">
+<td>H3K4me3 ChIP-seq</td>
+<td>ERR208008, ERR208014, ERR207998, ERR20798, ERR207999</td>
+</tr>
+<tr class="odd">
+<td>H3K4me1 ChIP-seq</td>
+<td>GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331</td>
+</tr>
+<tr class="even">
+<td>H3K27ac ChIP-seq</td>
+<td>GSM1316300, GSM1316301, GSM1316307, GSM1316308, GSM1316314, GSM1316315, GSM1316321, GSM1316322, GSM1316328, GSM1316329</td>
+</tr>
+<tr class="odd">
+<td>Input ChIP-seq</td>
+<td>ERR208001, ERR208012, ERR207984, ERR208011, ERR207986, GSM1316304, GSM1316305, GSM1316311, GSM1316312, GSM1316318, GSM1316319, GSM1316325, GSM1316326, GSM1316332, GSM1316333</td>
+</tr>
+<tr class="even">
+<td>RNA-seq</td>
+<td>ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351</td>
+</tr>
+</tbody>
+</table>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs">
-
+<div id="ref-PnOUrg4k">
+<p>1. <strong>Dynamic chromatin remodeling mediated by Polycomb proteins orchestrates pancreatic differentiation of human embryonic stem cells</strong><br />
+Ruiyu Xie, Logan J. Everett, Hee-Woong Lim, Nisha A. Patel, Jonathan Schug, Evert Kroon, Olivia G Kelly, Allen Wang, Kevin A. D’Amour, Allan J. Robins, … Maike Sander<br />
+<em>Cell stem cell</em> (2013-02-07) <a href="https://www.ncbi.nlm.nih.gov/pubmed/23318056" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/23318056</a></p>
+</div>
+<div id="ref-BqIYBC66">
+<p>2. <strong>Epigenetic priming of enhancers predicts developmental competence of hESC-derived endodermal lineage intermediates</strong><br />
+Allen Wang, Feng Yue, Yan Li, Ruiyu Xie, Thomas Harper, Nisha A. Patel, Kayla Muth, Jeffrey Palmer, Yunjiang Qiu, Jinzhao Wang, … Maike Sander<br />
+<em>Cell stem cell</em> (2015-04-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/25842977" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/25842977</a></p>
+</div>
+<div id="ref-Bc3QGVe7">
+<p>3. <strong>GEO</strong><br />
+Gene Expression Omnibus<br />
+<a href="https://www.ncbi.nlm.nih.gov/geo/" class="uri">https://www.ncbi.nlm.nih.gov/geo/</a></p>
+</div>
+<div id="ref-937jwJMM">
+<p>4. <strong>ArrayExpress</strong><br />
+ArrayExpress – functional genomics data<br />
+<a href="http://www.ebi.ac.uk/arrayexpress/" class="uri">http://www.ebi.ac.uk/arrayexpress/</a></p>
+</div>
 </div>
 <script>
 // AnchorJS minified version below.
