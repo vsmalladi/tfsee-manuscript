@@ -1,1 +1,215 @@
-[]
+[
+  {
+    "source": "PMC",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          4
+        ]
+      ]
+    },
+    "id": "PnOUrg4k",
+    "title": "Dynamic chromatin remodeling mediated by Polycomb proteins orchestrates pancreatic differentiation of human embryonic stem cells",
+    "author": [
+      {
+        "family": "Xie",
+        "given": "Ruiyu"
+      },
+      {
+        "family": "Everett",
+        "given": "Logan J."
+      },
+      {
+        "family": "Lim",
+        "given": "Hee-Woong"
+      },
+      {
+        "family": "Patel",
+        "given": "Nisha A."
+      },
+      {
+        "family": "Schug",
+        "given": "Jonathan"
+      },
+      {
+        "family": "Kroon",
+        "given": "Evert"
+      },
+      {
+        "family": "Kelly",
+        "given": "Olivia G"
+      },
+      {
+        "family": "Wang",
+        "given": "Allen"
+      },
+      {
+        "family": "D’Amour",
+        "given": "Kevin A."
+      },
+      {
+        "family": "Robins",
+        "given": "Allan J."
+      },
+      {
+        "family": "Won",
+        "given": "Kyoung-Jae"
+      },
+      {
+        "family": "Kaestner",
+        "given": "Klaus H."
+      },
+      {
+        "family": "Sander",
+        "given": "Maike"
+      }
+    ],
+    "container-title-short": "Cell Stem Cell",
+    "container-title": "Cell stem cell",
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          2,
+          7
+        ]
+      ]
+    },
+    "epub-date": {
+      "date-parts": [
+        [
+          2013,
+          1,
+          11
+        ]
+      ]
+    },
+    "page": "224-237",
+    "volume": "12",
+    "issue": "2",
+    "PMID": "23318056",
+    "PMCID": "PMC3619036",
+    "DOI": "10.1016/j.stem.2012.11.023",
+    "type": "article-journal",
+    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/23318056"
+  },
+  {
+    "source": "PMC",
+    "accessed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          4
+        ]
+      ]
+    },
+    "id": "BqIYBC66",
+    "title": "Epigenetic priming of enhancers predicts developmental competence of hESC-derived endodermal lineage intermediates",
+    "author": [
+      {
+        "family": "Wang",
+        "given": "Allen"
+      },
+      {
+        "family": "Yue",
+        "given": "Feng"
+      },
+      {
+        "family": "Li",
+        "given": "Yan"
+      },
+      {
+        "family": "Xie",
+        "given": "Ruiyu"
+      },
+      {
+        "family": "Harper",
+        "given": "Thomas"
+      },
+      {
+        "family": "Patel",
+        "given": "Nisha A."
+      },
+      {
+        "family": "Muth",
+        "given": "Kayla"
+      },
+      {
+        "family": "Palmer",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Qiu",
+        "given": "Yunjiang"
+      },
+      {
+        "family": "Wang",
+        "given": "Jinzhao"
+      },
+      {
+        "family": "Lam",
+        "given": "Dieter K."
+      },
+      {
+        "family": "Raum",
+        "given": "Jeffrey C."
+      },
+      {
+        "family": "Stoffers",
+        "given": "Doris A."
+      },
+      {
+        "family": "Ren",
+        "given": "Bing"
+      },
+      {
+        "family": "Sander",
+        "given": "Maike"
+      }
+    ],
+    "container-title-short": "Cell Stem Cell",
+    "container-title": "Cell stem cell",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          4,
+          2
+        ]
+      ]
+    },
+    "page": "386-399",
+    "volume": "16",
+    "issue": "4",
+    "PMID": "25842977",
+    "PMCID": "PMC4478079",
+    "DOI": "10.1016/j.stem.2015.02.013",
+    "type": "article-journal",
+    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/25842977"
+  },
+  {
+    "type": "webpage",
+    "URL": "http://www.ebi.ac.uk/arrayexpress/",
+    "title": "ArrayExpress",
+    "author": [
+      {
+        "family": "ArrayExpress – functional genomics data"
+      }
+    ],
+    "id": "937jwJMM"
+  },
+  {
+    "type": "webpage",
+    "URL": "https://www.ncbi.nlm.nih.gov/geo/",
+    "title": "GEO",
+    "author": [
+      {
+        "family": "Gene Expression Omnibus"
+      }
+    ],
+    "id": "Bc3QGVe7"
+  }
+]

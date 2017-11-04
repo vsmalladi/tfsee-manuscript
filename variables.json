@@ -11,12 +11,14 @@
   ],
   "ci_source": {
     "repo_slug": "vsmalladi/tfsee-manuscript",
-    "commit": "6d00c42fa5b3efc383e6be72908225927317c919"
+    "commit": "9cddd2cf0bce60baa57161c50bc42c8973e81d43"
   },
   "manuscript_stats": {
     "reference_counts": {
-      "total": 0
+      "pmid": 2,
+      "url": 2,
+      "total": 4
     },
-    "word_count": 413
+    "word_count": 581
   }
 }
