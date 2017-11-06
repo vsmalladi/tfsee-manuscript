@@ -20,5 +20,13 @@
         "family": "ArrayExpress – functional genomics data"
       }
     ]
+  },
+  {
+    "type": "webpage",
+    "standard_citation": "url:http://broadinstitute.github.io/picard/",
+    "URL": "http://broadinstitute.github.io/picard/",
+    "container-title": "GitHub",
+    "title": "Picard",
+    "type": "webpage"
   }
 ]
