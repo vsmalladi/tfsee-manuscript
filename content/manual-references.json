@@ -27,7 +27,12 @@
     "URL": "http://broadinstitute.github.io/picard/",
     "container-title": "GitHub",
     "title": "Picard",
-    "type": "webpage"
+    "type": "webpage",
+    "author": [
+      {
+        "family": "Broad Institute"
+      }
+    ]
   },
   {
     "type": "webpage",
@@ -37,6 +42,19 @@
     "author": [
       {
         "family": "Hannon Lab"
+      }
+    ]
+  },
+  {
+    "type": "webpage",
+    "standard_citation": "url:https://github.com/sdjebali/MakeGencodeTSS",
+    "URL": "https://github.com/sdjebali/MakeGencodeTSS",
+    "container-title": "GitHub",
+    "title": "MakeGenecodeTSS",
+    "type": "webpage",
+    "author": [
+      {
+        "family": "Sarah Djebali"
       }
     ]
   }
