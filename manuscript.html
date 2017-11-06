@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Venkat Malladi" />
-  <meta name="dcterms.date" content="2017-11-04" />
+  <meta name="dcterms.date" content="2017-11-06" />
   <meta name="keywords" content="enhancers, transcription, transcription factor, epigenome" />
   <title>Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcription, Epigenomic Features, Sequence Motifs, and Transcription Factor Expression</title>
   <style type="text/css">
@@ -15,6 +15,7 @@
       .column{display: inline-block;}
   </style>
   <link rel="stylesheet" href="github-pandoc.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -27,7 +28,7 @@
 <header>
 <h1 class="title">Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcription, Epigenomic Features, Sequence Motifs, and Transcription Factor Expression</h1>
 </header>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/9cddd2cf0bce60baa57161c50bc42c8973e81d43">vsmalladi/tfsee-manuscript@9cddd2c</a> on November 4, 2017. </em></small></p>
+<p><small><em> This manuscript was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/d64ea19cb5b15a37d86b452a1c084e590a07dc2b">vsmalladi/tfsee-manuscript@d64ea19</a> on November 6, 2017. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><strong>Venkat Malladi</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0144-0564">0000-0002-0144-0564</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/vsmalladi">vsmalladi</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/katatonikkat">katatonikkat</a><br> <small> </small></li>
@@ -40,59 +41,69 @@
 <h2 id="acknowledgments">Acknowledgments</h2>
 <h2 id="material-and-methods">Material and Methods</h2>
 <h3 id="genomic-data-curation">Genomic Data Curation</h3>
-<p>We used previously published GRO-seq, ChIP-seq and RNA-seq data from <span class="citation" data-cites="PnOUrg4k BqIYBC66">[<a href="#ref-PnOUrg4k">1</a>,<a href="#ref-BqIYBC66">2</a>]</span> of time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus repository <span class="citation" data-cites="Bc3QGVe7">[<a href="#ref-Bc3QGVe7">3</a>]</span> or EMBL-EBI’s ArrayExpress repository <span class="citation" data-cites="937jwJMM">[<a href="#ref-937jwJMM">4</a>]</span> using the accession numbers listed in Table <a href="#tbl:data-sets">1</a>.</p>
+<p>We used previously published GRO-seq, ChIP-seq and RNA-seq data from <span class="citation" data-cites="BTqz3DNL 18a6G1TE5">[<a href="#ref-BTqz3DNL">1</a>,<a href="#ref-18a6G1TE5">2</a>]</span> of time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus <span class="citation" data-cites="Bc3QGVe7">[<a href="#ref-Bc3QGVe7">3</a>]</span> or EMBL-EBI’s ArrayExpress <span class="citation" data-cites="937jwJMM">[<a href="#ref-937jwJMM">4</a>]</span> repositories using the accession numbers listed in Table <a href="#tbl:data-sets">1</a>.</p>
 <a name="tbl:data-sets"></a>
-<table style="width:24%;">
+<table style="width:21%;">
 <caption>Table 1: <strong>Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.</strong> </caption>
 <colgroup>
-<col style="width: 11%" />
-<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 13%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th>Assay</th>
-<th>Accessions</th>
+<th style="text-align: left;">Assay</th>
+<th style="text-align: left;">Accessions</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>GRO-seq</td>
-<td>GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334</td>
+<td style="text-align: left;">GRO-seq</td>
+<td style="text-align: left;">GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334</td>
 </tr>
 <tr class="even">
-<td>H3K4me3 ChIP-seq</td>
-<td>ERR208008, ERR208014, ERR207998, ERR20798, ERR207999</td>
+<td style="text-align: left;">H3K4me3 ChIP-seq</td>
+<td style="text-align: left;">ERR208008, ERR208014, ERR207998, ERR20798, ERR207999</td>
 </tr>
 <tr class="odd">
-<td>H3K4me1 ChIP-seq</td>
-<td>GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331</td>
+<td style="text-align: left;">H3K4me1 ChIP-seq</td>
+<td style="text-align: left;">GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331</td>
 </tr>
 <tr class="even">
-<td>H3K27ac ChIP-seq</td>
-<td>GSM1316300, GSM1316301, GSM1316307, GSM1316308, GSM1316314, GSM1316315, GSM1316321, GSM1316322, GSM1316328, GSM1316329</td>
+<td style="text-align: left;">H3K27ac ChIP-seq</td>
+<td style="text-align: left;">GSM1316300, GSM1316301, GSM1316307, GSM1316308, GSM1316314, GSM1316315, GSM1316321, GSM1316322, GSM1316328, GSM1316329</td>
 </tr>
 <tr class="odd">
-<td>Input ChIP-seq</td>
-<td>ERR208001, ERR208012, ERR207984, ERR208011, ERR207986, GSM1316304, GSM1316305, GSM1316311, GSM1316312, GSM1316318, GSM1316319, GSM1316325, GSM1316326, GSM1316332, GSM1316333</td>
+<td style="text-align: left;">Input ChIP-seq</td>
+<td style="text-align: left;">ERR208001, ERR208012, ERR207984, ERR208011, ERR207986, GSM1316304, GSM1316305, GSM1316311, GSM1316312, GSM1316318, GSM1316319, GSM1316325, GSM1316326, GSM1316332, GSM1316333</td>
 </tr>
 <tr class="even">
-<td>RNA-seq</td>
-<td>ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351</td>
+<td style="text-align: left;">RNA-seq</td>
+<td style="text-align: left;">ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351</td>
 </tr>
 </tbody>
 </table>
+<h3 id="analysis-of-chip-seq-data-sets">Analysis of ChIP-seq Data Sets</h3>
+<p>The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in Bowtie (ver. 1.0.0) <span class="citation" data-cites="RU8ikjzP">[<a href="#ref-RU8ikjzP">5</a>]</span>. The aligned reads are subsequently filtered for quality and uniquely mappable reads using Samtools (ver. 0.1.19) <span class="citation" data-cites="IPc8cy7s">[<a href="#ref-IPc8cy7s">6</a>]</span> and Picard (ver. 1.127) <span class="citation" data-cites="tfF98ztu">[<a href="#ref-tfF98ztu">7</a>]</span>. Library complexity is measured using BEDTools (v 2.17.0) <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw">8</a>]</span> and meet ENCODE data quality standards <span class="citation" data-cites="hvhWxir9">[<a href="#ref-hvhWxir9">9</a>]</span>. Relaxed peaks were called using MACS (v2.1.0) <span class="citation" data-cites="Bhecn2fS">[<a href="#ref-Bhecn2fS">10</a>]</span> with a p-value of <span class="math inline">\(1 \times 10^{-2}\)</span> for each replicate, pooled replicates’ reads and pseudoreplicates. Peak calls that are replicated from the pooled replicated that are either observed in both replicates, or in both pseudoreplicates are used for subsequent analysis.</p>
+<h3 id="analysis-of-rna-seq-data-sets">Analysis of RNA-seq Data Sets</h3>
+<p>The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in STAR (v2.4.2a) <span class="citation" data-cites="tTu8Ds9Z">[<a href="#ref-tTu8Ds9Z">11</a>]</span>. Quantification of genes against Gencode (v.19) <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">12</a>]</span> annotations was done using default parameters in RSEM (v 1.2.31) <span class="citation" data-cites="Dh2n1EV3">[<a href="#ref-Dh2n1EV3">13</a>]</span>.</p>
+<h3 id="analysis-of-gro-seq-data">Analysis of GRO-seq Data</h3>
+<p>The GRO-seq reads were trimmed to the first 36 bases, to trim adapter and low quality sequence, using default parameters of fastx_trimer in fastx-toolkit (v.0.0.13.2) <span class="citation" data-cites="jwUQ55cX">[<a href="#ref-jwUQ55cX">14</a>]</span>. The trimmed reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in BWA (v0.7.12) <span class="citation" data-cites="roi5bwXL">[<a href="#ref-roi5bwXL">15</a>]</span>.</p>
+<h3 id="kernel-density">Kernel Density</h3>
+<p>Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs. The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from seaborn libary <span class="citation" data-cites="qw6HPkVF">[<a href="#ref-qw6HPkVF">16</a>]</span> with default parameters.</p>
+<h3 id="defining-transcription-start-sites">Defining Transcription Start Sites</h3>
+<p>We made distinct transcription start sites (TSS) for protein-coding genes from Gencode (v.19) <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">12</a>]</span> annotations using MakeGencodeTSS <span class="citation" data-cites="tDy18Yol">[<a href="#ref-tDy18Yol">17</a>]</span>.</p>
 <h2 id="references" class="page_break_before">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs">
-<div id="ref-PnOUrg4k">
-<p>1. <strong>Dynamic chromatin remodeling mediated by Polycomb proteins orchestrates pancreatic differentiation of human embryonic stem cells</strong><br />
-Ruiyu Xie, Logan J. Everett, Hee-Woong Lim, Nisha A. Patel, Jonathan Schug, Evert Kroon, Olivia G Kelly, Allen Wang, Kevin A. D’Amour, Allan J. Robins, … Maike Sander<br />
-<em>Cell stem cell</em> (2013-02-07) <a href="https://www.ncbi.nlm.nih.gov/pubmed/23318056" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/23318056</a></p>
+<div id="ref-BTqz3DNL">
+<p>1. <strong>Dynamic Chromatin Remodeling Mediated by Polycomb Proteins Orchestrates Pancreatic Differentiation of Human Embryonic Stem Cells</strong><br />
+Ruiyu Xie, Logan J. Everett, Hee-Woong Lim, Nisha A. Patel, Jonathan Schug, Evert Kroon, Olivia G. Kelly, Allen Wang, Kevin A. D’Amour, Allan J. Robins, … Maike Sander<br />
+<em>Cell Stem Cell</em> (2013-02) <a href="https://doi.org/10.1016/j.stem.2012.11.023" class="uri">https://doi.org/10.1016/j.stem.2012.11.023</a></p>
 </div>
-<div id="ref-BqIYBC66">
-<p>2. <strong>Epigenetic priming of enhancers predicts developmental competence of hESC-derived endodermal lineage intermediates</strong><br />
-Allen Wang, Feng Yue, Yan Li, Ruiyu Xie, Thomas Harper, Nisha A. Patel, Kayla Muth, Jeffrey Palmer, Yunjiang Qiu, Jinzhao Wang, … Maike Sander<br />
-<em>Cell stem cell</em> (2015-04-02) <a href="https://www.ncbi.nlm.nih.gov/pubmed/25842977" class="uri">https://www.ncbi.nlm.nih.gov/pubmed/25842977</a></p>
+<div id="ref-18a6G1TE5">
+<p>2. <strong>Epigenetic Priming of Enhancers Predicts Developmental Competence of hESC-Derived Endodermal Lineage Intermediates</strong><br />
+Allen Wang, Feng Yue, Yan Li, Ruiyu Xie, Thomas Harper, Nisha A. Patel, Kayla Muth, Jeffrey Palmer, Yunjiang Qiu, Jinzhao Wang, … Maike Sander<br />
+<em>Cell Stem Cell</em> (2015-04) <a href="https://doi.org/10.1016/j.stem.2015.02.013" class="uri">https://doi.org/10.1016/j.stem.2015.02.013</a></p>
 </div>
 <div id="ref-Bc3QGVe7">
 <p>3. <strong>GEO</strong><br />
@@ -103,6 +114,69 @@ Gene Expression Omnibus<br />
 <p>4. <strong>ArrayExpress</strong><br />
 ArrayExpress – functional genomics data<br />
 <a href="http://www.ebi.ac.uk/arrayexpress/" class="uri">http://www.ebi.ac.uk/arrayexpress/</a></p>
+</div>
+<div id="ref-RU8ikjzP">
+<p>5. <strong>Ultrafast and memory-efficient alignment of short DNA sequences to the human genome</strong><br />
+Ben Langmead, Cole Trapnell, Mihai Pop, Steven L Salzberg<br />
+<em>Genome Biology</em> (2009) <a href="https://doi.org/10.1186/gb-2009-10-3-r25" class="uri">https://doi.org/10.1186/gb-2009-10-3-r25</a></p>
+</div>
+<div id="ref-IPc8cy7s">
+<p>6. <strong>The Sequence Alignment/Map format and SAMtools</strong><br />
+H. Li, B. Handsaker, A. Wysoker, T. Fennell, J. Ruan, N. Homer, G. Marth, G. Abecasis, R. Durbin, <br />
+<em>Bioinformatics</em> (2009-06-08) <a href="https://doi.org/10.1093/bioinformatics/btp352" class="uri">https://doi.org/10.1093/bioinformatics/btp352</a></p>
+</div>
+<div id="ref-tfF98ztu">
+<p>7. <strong>Picard</strong><br />
+Broad Institute<br />
+<em>GitHub</em> <a href="http://broadinstitute.github.io/picard/" class="uri">http://broadinstitute.github.io/picard/</a></p>
+</div>
+<div id="ref-1HWiAHnIw">
+<p>8. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
+Aaron R. Quinlan, Ira M. Hall<br />
+<em>Bioinformatics</em> (2010-01-28) <a href="https://doi.org/10.1093/bioinformatics/btq033" class="uri">https://doi.org/10.1093/bioinformatics/btq033</a></p>
+</div>
+<div id="ref-hvhWxir9">
+<p>9. <strong>ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia</strong><br />
+S. G. Landt, G. K. Marinov, A. Kundaje, P. Kheradpour, F. Pauli, S. Batzoglou, B. E. Bernstein, P. Bickel, J. B. Brown, P. Cayting, … M. Snyder<br />
+<em>Genome Research</em> (2012-09-01) <a href="https://doi.org/10.1101/gr.136184.111" class="uri">https://doi.org/10.1101/gr.136184.111</a></p>
+</div>
+<div id="ref-Bhecn2fS">
+<p>10. <strong>Identifying ChIP-seq enrichment using MACS</strong><br />
+Jianxing Feng, Tao Liu, Bo Qin, Yong Zhang, Xiaole Shirley Liu<br />
+<em>Nature Protocols</em> (2012-08-30) <a href="https://doi.org/10.1038/nprot.2012.101" class="uri">https://doi.org/10.1038/nprot.2012.101</a></p>
+</div>
+<div id="ref-tTu8Ds9Z">
+<p>11. <strong>STAR: ultrafast universal RNA-seq aligner</strong><br />
+Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras<br />
+<em>Bioinformatics</em> (2012-10-25) <a href="https://doi.org/10.1093/bioinformatics/bts635" class="uri">https://doi.org/10.1093/bioinformatics/bts635</a></p>
+</div>
+<div id="ref-15rkMH6SD">
+<p>12. <strong>GENCODE: The reference human genome annotation for The ENCODE Project</strong><br />
+J. Harrow, A. Frankish, J. M. Gonzalez, E. Tapanari, M. Diekhans, F. Kokocinski, B. L. Aken, D. Barrell, A. Zadissa, S. Searle, … T. J. Hubbard<br />
+<em>Genome Research</em> (2012-09-01) <a href="https://doi.org/10.1101/gr.135350.111" class="uri">https://doi.org/10.1101/gr.135350.111</a></p>
+</div>
+<div id="ref-Dh2n1EV3">
+<p>13. <strong>RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome</strong><br />
+Bo Li, Colin N Dewey<br />
+<em>BMC Bioinformatics</em> (2011) <a href="https://doi.org/10.1186/1471-2105-12-323" class="uri">https://doi.org/10.1186/1471-2105-12-323</a></p>
+</div>
+<div id="ref-jwUQ55cX">
+<p>14. <strong>FASTX-Toolkit</strong><br />
+Hannon Lab<br />
+<a href="http://hannonlab.cshl.edu/fastx_toolkit/" class="uri">http://hannonlab.cshl.edu/fastx_toolkit/</a></p>
+</div>
+<div id="ref-roi5bwXL">
+<p>15. <strong>Fast and accurate short read alignment with Burrows-Wheeler transform</strong><br />
+H. Li, R. Durbin<br />
+<em>Bioinformatics</em> (2009-05-18) <a href="https://doi.org/10.1093/bioinformatics/btp324" class="uri">https://doi.org/10.1093/bioinformatics/btp324</a></p>
+</div>
+<div id="ref-qw6HPkVF">
+<p>16. <strong>seaborn: statistical data visualization — seaborn 0.8.1 documentation</strong>(2017-09-03) <a href="http://seaborn.pydata.org/" class="uri">http://seaborn.pydata.org/</a></p>
+</div>
+<div id="ref-tDy18Yol">
+<p>17. <strong>MakeGenecodeTSS</strong><br />
+Sarah Djebali<br />
+<em>GitHub</em> <a href="https://github.com/sdjebali/MakeGencodeTSS" class="uri">https://github.com/sdjebali/MakeGencodeTSS</a></p>
 </div>
 </div>
 <script>

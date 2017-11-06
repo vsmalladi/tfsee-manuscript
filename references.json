@@ -1,194 +1,2036 @@
 [
   {
-    "source": "PMC",
-    "accessed": {
+    "indexed": {
       "date-parts": [
         [
           2017,
-          11,
-          4
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T02:58:11Z",
+      "timestamp": 1508986691422
+    },
+    "reference-count": 38,
+    "publisher": "Elsevier BV",
+    "issue": "2",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2013-02-01T00:00:00Z",
+          "timestamp": 1359676800000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              2,
+              7
+            ]
+          ],
+          "date-time": "2014-02-07T00:00:00Z",
+          "timestamp": 1391731200000
+        },
+        "delay-in-days": 371,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          2
         ]
       ]
     },
-    "id": "PnOUrg4k",
-    "title": "Dynamic chromatin remodeling mediated by Polycomb proteins orchestrates pancreatic differentiation of human embryonic stem cells",
-    "author": [
-      {
-        "family": "Xie",
-        "given": "Ruiyu"
-      },
-      {
-        "family": "Everett",
-        "given": "Logan J."
-      },
-      {
-        "family": "Lim",
-        "given": "Hee-Woong"
-      },
-      {
-        "family": "Patel",
-        "given": "Nisha A."
-      },
-      {
-        "family": "Schug",
-        "given": "Jonathan"
-      },
-      {
-        "family": "Kroon",
-        "given": "Evert"
-      },
-      {
-        "family": "Kelly",
-        "given": "Olivia G"
-      },
-      {
-        "family": "Wang",
-        "given": "Allen"
-      },
-      {
-        "family": "D’Amour",
-        "given": "Kevin A."
-      },
-      {
-        "family": "Robins",
-        "given": "Allan J."
-      },
-      {
-        "family": "Won",
-        "given": "Kyoung-Jae"
-      },
-      {
-        "family": "Kaestner",
-        "given": "Klaus H."
-      },
-      {
-        "family": "Sander",
-        "given": "Maike"
-      }
-    ],
-    "container-title-short": "Cell Stem Cell",
-    "container-title": "Cell stem cell",
-    "issued": {
+    "DOI": "10.1016/j.stem.2012.11.023",
+    "type": "article-journal",
+    "created": {
       "date-parts": [
         [
           2013,
           2,
           7
         ]
-      ]
+      ],
+      "date-time": "2013-02-07T16:46:45Z",
+      "timestamp": 1360255605000
     },
-    "epub-date": {
+    "page": "224-237",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 84,
+    "title": "Dynamic Chromatin Remodeling Mediated by Polycomb Proteins Orchestrates Pancreatic Differentiation of Human Embryonic Stem Cells",
+    "prefix": "10.1016",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Ruiyu",
+        "family": "Xie",
+        "affiliation": []
+      },
+      {
+        "given": "Logan J.",
+        "family": "Everett",
+        "affiliation": []
+      },
+      {
+        "given": "Hee-Woong",
+        "family": "Lim",
+        "affiliation": []
+      },
+      {
+        "given": "Nisha A.",
+        "family": "Patel",
+        "affiliation": []
+      },
+      {
+        "given": "Jonathan",
+        "family": "Schug",
+        "affiliation": []
+      },
+      {
+        "given": "Evert",
+        "family": "Kroon",
+        "affiliation": []
+      },
+      {
+        "given": "Olivia G.",
+        "family": "Kelly",
+        "affiliation": []
+      },
+      {
+        "given": "Allen",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Kevin A.",
+        "family": "D’Amour",
+        "affiliation": []
+      },
+      {
+        "given": "Allan J.",
+        "family": "Robins",
+        "affiliation": []
+      },
+      {
+        "given": "Kyoung-Jae",
+        "family": "Won",
+        "affiliation": []
+      },
+      {
+        "given": "Klaus H.",
+        "family": "Kaestner",
+        "affiliation": []
+      },
+      {
+        "given": "Maike",
+        "family": "Sander",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Cell Stem Cell",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1934590912007060?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1934590912007060?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          21
+        ]
+      ],
+      "date-time": "2017-06-21T07:08:20Z",
+      "timestamp": 1498028900000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
       "date-parts": [
         [
           2013,
-          1,
-          11
+          2
         ]
       ]
     },
-    "page": "224-237",
-    "volume": "12",
-    "issue": "2",
-    "PMID": "23318056",
-    "PMCID": "PMC3619036",
-    "DOI": "10.1016/j.stem.2012.11.023",
-    "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/23318056"
+    "references-count": 38,
+    "alternative-id": [
+      "S1934590912007060"
+    ],
+    "URL": "https://doi.org/10.1016/j.stem.2012.11.023",
+    "relation": {},
+    "subject": [
+      "Molecular Medicine",
+      "Genetics",
+      "Cell Biology"
+    ],
+    "container-title-short": "Cell Stem Cell",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Dynamic Chromatin Remodeling Mediated by Polycomb Proteins Orchestrates Pancreatic Differentiation of Human Embryonic Stem Cells",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Cell Stem Cell",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.stem.2012.11.023",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2013 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/f4k45w",
+    "id": "BTqz3DNL"
   },
   {
-    "source": "PMC",
-    "accessed": {
+    "indexed": {
       "date-parts": [
         [
           2017,
           11,
+          1
+        ]
+      ],
+      "date-time": "2017-11-01T09:22:10Z",
+      "timestamp": 1509528130393
+    },
+    "reference-count": 53,
+    "publisher": "Elsevier BV",
+    "issue": "4",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              4,
+              1
+            ]
+          ],
+          "date-time": "2015-04-01T00:00:00Z",
+          "timestamp": 1427846400000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              4,
+              2
+            ]
+          ],
+          "date-time": "2016-04-02T00:00:00Z",
+          "timestamp": 1459555200000
+        },
+        "delay-in-days": 367,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
           4
         ]
       ]
     },
-    "id": "BqIYBC66",
-    "title": "Epigenetic priming of enhancers predicts developmental competence of hESC-derived endodermal lineage intermediates",
-    "author": [
-      {
-        "family": "Wang",
-        "given": "Allen"
-      },
-      {
-        "family": "Yue",
-        "given": "Feng"
-      },
-      {
-        "family": "Li",
-        "given": "Yan"
-      },
-      {
-        "family": "Xie",
-        "given": "Ruiyu"
-      },
-      {
-        "family": "Harper",
-        "given": "Thomas"
-      },
-      {
-        "family": "Patel",
-        "given": "Nisha A."
-      },
-      {
-        "family": "Muth",
-        "given": "Kayla"
-      },
-      {
-        "family": "Palmer",
-        "given": "Jeffrey"
-      },
-      {
-        "family": "Qiu",
-        "given": "Yunjiang"
-      },
-      {
-        "family": "Wang",
-        "given": "Jinzhao"
-      },
-      {
-        "family": "Lam",
-        "given": "Dieter K."
-      },
-      {
-        "family": "Raum",
-        "given": "Jeffrey C."
-      },
-      {
-        "family": "Stoffers",
-        "given": "Doris A."
-      },
-      {
-        "family": "Ren",
-        "given": "Bing"
-      },
-      {
-        "family": "Sander",
-        "given": "Maike"
-      }
-    ],
-    "container-title-short": "Cell Stem Cell",
-    "container-title": "Cell stem cell",
-    "issued": {
+    "DOI": "10.1016/j.stem.2015.02.013",
+    "type": "article-journal",
+    "created": {
       "date-parts": [
         [
           2015,
           4,
           2
         ]
-      ]
+      ],
+      "date-time": "2015-04-02T15:47:31Z",
+      "timestamp": 1427989651000
     },
     "page": "386-399",
+    "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 41,
+    "title": "Epigenetic Priming of Enhancers Predicts Developmental Competence of hESC-Derived Endodermal Lineage Intermediates",
+    "prefix": "10.1016",
     "volume": "16",
-    "issue": "4",
-    "PMID": "25842977",
-    "PMCID": "PMC4478079",
-    "DOI": "10.1016/j.stem.2015.02.013",
+    "author": [
+      {
+        "given": "Allen",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Feng",
+        "family": "Yue",
+        "affiliation": []
+      },
+      {
+        "given": "Yan",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Ruiyu",
+        "family": "Xie",
+        "affiliation": []
+      },
+      {
+        "given": "Thomas",
+        "family": "Harper",
+        "affiliation": []
+      },
+      {
+        "given": "Nisha A.",
+        "family": "Patel",
+        "affiliation": []
+      },
+      {
+        "given": "Kayla",
+        "family": "Muth",
+        "affiliation": []
+      },
+      {
+        "given": "Jeffrey",
+        "family": "Palmer",
+        "affiliation": []
+      },
+      {
+        "given": "Yunjiang",
+        "family": "Qiu",
+        "affiliation": []
+      },
+      {
+        "given": "Jinzhao",
+        "family": "Wang",
+        "affiliation": []
+      },
+      {
+        "given": "Dieter K.",
+        "family": "Lam",
+        "affiliation": []
+      },
+      {
+        "given": "Jeffrey C.",
+        "family": "Raum",
+        "affiliation": []
+      },
+      {
+        "given": "Doris A.",
+        "family": "Stoffers",
+        "affiliation": []
+      },
+      {
+        "given": "Bing",
+        "family": "Ren",
+        "affiliation": []
+      },
+      {
+        "given": "Maike",
+        "family": "Sander",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Cell Stem Cell",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1934590915000697?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S1934590915000697?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          23
+        ]
+      ],
+      "date-time": "2017-06-23T08:26:32Z",
+      "timestamp": 1498206392000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "references-count": 53,
+    "alternative-id": [
+      "S1934590915000697"
+    ],
+    "URL": "https://doi.org/10.1016/j.stem.2015.02.013",
+    "relation": {},
+    "subject": [
+      "Molecular Medicine",
+      "Genetics",
+      "Cell Biology"
+    ],
+    "container-title-short": "Cell Stem Cell",
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Epigenetic Priming of Enhancers Predicts Developmental Competence of hESC-Derived Endodermal Lineage Intermediates",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Cell Stem Cell",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.stem.2015.02.013",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "http://dx.doi.org/10.1016/j.stem.2015.03.006",
+        "name": "associatedlink",
+        "label": "CrossRef DOI link to the associated document"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "Copyright © 2015 Elsevier Inc. All rights reserved.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ],
+    "short_url": "https://doi.org/f67nk6",
+    "id": "18a6G1TE5"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T02:53:03Z",
+      "timestamp": 1509072783017
+    },
+    "reference-count": 42,
+    "publisher": "Springer Nature",
+    "issue": "9",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "DOI": "10.1038/nprot.2012.101",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/25842977"
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          8,
+          30
+        ]
+      ],
+      "date-time": "2012-08-30T15:53:19Z",
+      "timestamp": 1346341999000
+    },
+    "page": "1728-1740",
+    "source": "Crossref",
+    "is-referenced-by-count": 196,
+    "title": "Identifying ChIP-seq enrichment using MACS",
+    "prefix": "10.1038",
+    "volume": "7",
+    "author": [
+      {
+        "given": "Jianxing",
+        "family": "Feng",
+        "affiliation": []
+      },
+      {
+        "given": "Tao",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "Bo",
+        "family": "Qin",
+        "affiliation": []
+      },
+      {
+        "given": "Yong",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "Xiaole Shirley",
+        "family": "Liu",
+        "affiliation": []
+      }
+    ],
+    "member": "339",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          8,
+          30
+        ]
+      ]
+    },
+    "container-title": "Nature Protocols",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2012,
+          8,
+          30
+        ]
+      ],
+      "date-time": "2012-08-30T15:54:10Z",
+      "timestamp": 1346342050000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          8,
+          30
+        ]
+      ]
+    },
+    "references-count": 42,
+    "alternative-id": [
+      "nprot.2012.101"
+    ],
+    "URL": "https://doi.org/10.1038/nprot.2012.101",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology"
+    ],
+    "container-title-short": "Nat Protoc",
+    "short_url": "https://doi.org/f38phc",
+    "id": "Bhecn2fS"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2017-11-06T13:02:33Z",
+      "timestamp": 1509973353908
+    },
+    "reference-count": 14,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "14",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btp324",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          19
+        ]
+      ],
+      "date-time": "2009-05-19T00:26:51Z",
+      "timestamp": 1242692811000
+    },
+    "page": "1754-1760",
+    "source": "Crossref",
+    "is-referenced-by-count": 8340,
+    "title": "Fast and accurate short read alignment with Burrows-Wheeler transform",
+    "prefix": "10.1093",
+    "volume": "25",
+    "author": [
+      {
+        "given": "H.",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "R.",
+        "family": "Durbin",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          18
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/25/14/1754/605544/btp324.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T14:29:35Z",
+      "timestamp": 1503412175000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          18
+        ]
+      ]
+    },
+    "references-count": 14,
+    "URL": "https://doi.org/10.1093/bioinformatics/btp324",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/dqt59j",
+    "id": "roi5bwXL"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T10:33:54Z",
+      "timestamp": 1509014034527
+    },
+    "reference-count": 4,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "16",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          8,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btp352",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          9
+        ]
+      ],
+      "date-time": "2009-06-09T00:27:15Z",
+      "timestamp": 1244507235000
+    },
+    "page": "2078-2079",
+    "source": "Crossref",
+    "is-referenced-by-count": 8843,
+    "title": "The Sequence Alignment/Map format and SAMtools",
+    "prefix": "10.1093",
+    "volume": "25",
+    "author": [
+      {
+        "given": "H.",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "B.",
+        "family": "Handsaker",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Wysoker",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Fennell",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Ruan",
+        "affiliation": []
+      },
+      {
+        "given": "N.",
+        "family": "Homer",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "Marth",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "Abecasis",
+        "affiliation": []
+      },
+      {
+        "given": "R.",
+        "family": "Durbin",
+        "affiliation": []
+      },
+      {
+        "name": "1000 Genome Project Data Processing Subgroup",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          8
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/25/16/2078/531810/btp352.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T15:21:25Z",
+      "timestamp": 1503415285000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          8
+        ]
+      ]
+    },
+    "references-count": 4,
+    "URL": "https://doi.org/10.1093/bioinformatics/btp352",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "Bioinformatics",
+    "short_url": "https://doi.org/ff6426",
+    "id": "IPc8cy7s"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2017-10-25T20:55:44Z",
+      "timestamp": 1508964944408
+    },
+    "reference-count": 5,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "6",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2010,
+          3,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btq033",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          29
+        ]
+      ],
+      "date-time": "2010-01-29T01:26:27Z",
+      "timestamp": 1264728387000
+    },
+    "page": "841-842",
+    "source": "Crossref",
+    "is-referenced-by-count": 2845,
+    "title": "BEDTools: a flexible suite of utilities for comparing genomic features",
+    "prefix": "10.1093",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Aaron R.",
+        "family": "Quinlan",
+        "affiliation": []
+      },
+      {
+        "given": "Ira M.",
+        "family": "Hall",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          28
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/26/6/841/16897802/btq033.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T15:23:03Z",
+      "timestamp": 1503415383000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2010,
+          1,
+          28
+        ]
+      ]
+    },
+    "references-count": 5,
+    "URL": "https://doi.org/10.1093/bioinformatics/btq033",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "short_url": "https://doi.org/cmrms3",
+    "id": "1HWiAHnIw"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2017-11-06T16:22:13Z",
+      "timestamp": 1509985333704
+    },
+    "reference-count": 22,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/bts635",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2012-10-27T00:18:50Z",
+      "timestamp": 1351297130000
+    },
+    "page": "15-21",
+    "source": "Crossref",
+    "is-referenced-by-count": 1824,
+    "title": "STAR: ultrafast universal RNA-seq aligner",
+    "prefix": "10.1093",
+    "volume": "29",
+    "author": [
+      {
+        "given": "Alexander",
+        "family": "Dobin",
+        "affiliation": []
+      },
+      {
+        "given": "Carrie A.",
+        "family": "Davis",
+        "affiliation": []
+      },
+      {
+        "given": "Felix",
+        "family": "Schlesinger",
+        "affiliation": []
+      },
+      {
+        "given": "Jorg",
+        "family": "Drenkow",
+        "affiliation": []
+      },
+      {
+        "given": "Chris",
+        "family": "Zaleski",
+        "affiliation": []
+      },
+      {
+        "given": "Sonali",
+        "family": "Jha",
+        "affiliation": []
+      },
+      {
+        "given": "Philippe",
+        "family": "Batut",
+        "affiliation": []
+      },
+      {
+        "given": "Mark",
+        "family": "Chaisson",
+        "affiliation": []
+      },
+      {
+        "given": "Thomas R.",
+        "family": "Gingeras",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          25
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/29/1/15/17101697/bts635.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T21:48:37Z",
+      "timestamp": 1503438517000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          25
+        ]
+      ]
+    },
+    "references-count": 22,
+    "URL": "https://doi.org/10.1093/bioinformatics/bts635",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "short_url": "https://doi.org/f4h523",
+    "id": "tTu8Ds9Z"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T03:10:00Z",
+      "timestamp": 1509073800232
+    },
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "issue": "9",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1101/gr.135350.111",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          5
+        ]
+      ],
+      "date-time": "2012-09-05T17:19:51Z",
+      "timestamp": 1346865591000
+    },
+    "page": "1760-1774",
+    "source": "Crossref",
+    "is-referenced-by-count": 1022,
+    "title": "GENCODE: The reference human genome annotation for The ENCODE Project",
+    "prefix": "10.1101",
+    "volume": "22",
+    "author": [
+      {
+        "given": "J.",
+        "family": "Harrow",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Frankish",
+        "affiliation": []
+      },
+      {
+        "given": "J. M.",
+        "family": "Gonzalez",
+        "affiliation": []
+      },
+      {
+        "given": "E.",
+        "family": "Tapanari",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Diekhans",
+        "affiliation": []
+      },
+      {
+        "given": "F.",
+        "family": "Kokocinski",
+        "affiliation": []
+      },
+      {
+        "given": "B. L.",
+        "family": "Aken",
+        "affiliation": []
+      },
+      {
+        "given": "D.",
+        "family": "Barrell",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Zadissa",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Searle",
+        "affiliation": []
+      },
+      {
+        "given": "I.",
+        "family": "Barnes",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Bignell",
+        "affiliation": []
+      },
+      {
+        "given": "V.",
+        "family": "Boychenko",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Hunt",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Kay",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "Mukherjee",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Rajan",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "Despacio-Reyes",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "Saunders",
+        "affiliation": []
+      },
+      {
+        "given": "C.",
+        "family": "Steward",
+        "affiliation": []
+      },
+      {
+        "given": "R.",
+        "family": "Harte",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Lin",
+        "affiliation": []
+      },
+      {
+        "given": "C.",
+        "family": "Howald",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Tanzer",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Derrien",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Chrast",
+        "affiliation": []
+      },
+      {
+        "given": "N.",
+        "family": "Walters",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Balasubramanian",
+        "affiliation": []
+      },
+      {
+        "given": "B.",
+        "family": "Pei",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Tress",
+        "affiliation": []
+      },
+      {
+        "given": "J. M.",
+        "family": "Rodriguez",
+        "affiliation": []
+      },
+      {
+        "given": "I.",
+        "family": "Ezkurdia",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "van Baren",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Brent",
+        "affiliation": []
+      },
+      {
+        "given": "D.",
+        "family": "Haussler",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Kellis",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Valencia",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Reymond",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Gerstein",
+        "affiliation": []
+      },
+      {
+        "given": "R.",
+        "family": "Guigo",
+        "affiliation": []
+      },
+      {
+        "given": "T. J.",
+        "family": "Hubbard",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          5
+        ]
+      ]
+    },
+    "container-title": "Genome Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/gr.135350.111",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2017-02-15T17:59:47Z",
+      "timestamp": 1487181587000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/gr.135350.111",
+    "relation": {},
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
+    "container-title-short": "Genome Research",
+    "short_url": "https://doi.org/f4w5m5",
+    "id": "15rkMH6SD"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          3
+        ]
+      ],
+      "date-time": "2017-11-03T15:22:23Z",
+      "timestamp": 1509722543978
+    },
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "issue": "9",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1101/gr.136184.111",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          5
+        ]
+      ],
+      "date-time": "2012-09-05T17:19:51Z",
+      "timestamp": 1346865591000
+    },
+    "page": "1813-1831",
+    "source": "Crossref",
+    "is-referenced-by-count": 461,
+    "title": "ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia",
+    "prefix": "10.1101",
+    "volume": "22",
+    "author": [
+      {
+        "given": "S. G.",
+        "family": "Landt",
+        "affiliation": []
+      },
+      {
+        "given": "G. K.",
+        "family": "Marinov",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Kundaje",
+        "affiliation": []
+      },
+      {
+        "given": "P.",
+        "family": "Kheradpour",
+        "affiliation": []
+      },
+      {
+        "given": "F.",
+        "family": "Pauli",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Batzoglou",
+        "affiliation": []
+      },
+      {
+        "given": "B. E.",
+        "family": "Bernstein",
+        "affiliation": []
+      },
+      {
+        "given": "P.",
+        "family": "Bickel",
+        "affiliation": []
+      },
+      {
+        "given": "J. B.",
+        "family": "Brown",
+        "affiliation": []
+      },
+      {
+        "given": "P.",
+        "family": "Cayting",
+        "affiliation": []
+      },
+      {
+        "given": "Y.",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "DeSalvo",
+        "affiliation": []
+      },
+      {
+        "given": "C.",
+        "family": "Epstein",
+        "affiliation": []
+      },
+      {
+        "given": "K. I.",
+        "family": "Fisher-Aylor",
+        "affiliation": []
+      },
+      {
+        "given": "G.",
+        "family": "Euskirchen",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Gerstein",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Gertz",
+        "affiliation": []
+      },
+      {
+        "given": "A. J.",
+        "family": "Hartemink",
+        "affiliation": []
+      },
+      {
+        "given": "M. M.",
+        "family": "Hoffman",
+        "affiliation": []
+      },
+      {
+        "given": "V. R.",
+        "family": "Iyer",
+        "affiliation": []
+      },
+      {
+        "given": "Y. L.",
+        "family": "Jung",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Karmakar",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Kellis",
+        "affiliation": []
+      },
+      {
+        "given": "P. V.",
+        "family": "Kharchenko",
+        "affiliation": []
+      },
+      {
+        "given": "Q.",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "T.",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "X. S.",
+        "family": "Liu",
+        "affiliation": []
+      },
+      {
+        "given": "L.",
+        "family": "Ma",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Milosavljevic",
+        "affiliation": []
+      },
+      {
+        "given": "R. M.",
+        "family": "Myers",
+        "affiliation": []
+      },
+      {
+        "given": "P. J.",
+        "family": "Park",
+        "affiliation": []
+      },
+      {
+        "given": "M. J.",
+        "family": "Pazin",
+        "affiliation": []
+      },
+      {
+        "given": "M. D.",
+        "family": "Perry",
+        "affiliation": []
+      },
+      {
+        "given": "D.",
+        "family": "Raha",
+        "affiliation": []
+      },
+      {
+        "given": "T. E.",
+        "family": "Reddy",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Rozowsky",
+        "affiliation": []
+      },
+      {
+        "given": "N.",
+        "family": "Shoresh",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Sidow",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Slattery",
+        "affiliation": []
+      },
+      {
+        "given": "J. A.",
+        "family": "Stamatoyannopoulos",
+        "affiliation": []
+      },
+      {
+        "given": "M. Y.",
+        "family": "Tolstorukov",
+        "affiliation": []
+      },
+      {
+        "given": "K. P.",
+        "family": "White",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Xi",
+        "affiliation": []
+      },
+      {
+        "given": "P. J.",
+        "family": "Farnham",
+        "affiliation": []
+      },
+      {
+        "given": "J. D.",
+        "family": "Lieb",
+        "affiliation": []
+      },
+      {
+        "given": "B. J.",
+        "family": "Wold",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Snyder",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          5
+        ]
+      ]
+    },
+    "container-title": "Genome Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/gr.136184.111",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2017-02-15T18:02:20Z",
+      "timestamp": 1487181740000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          9,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/gr.136184.111",
+    "relation": {},
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
+    "container-title-short": "Genome Research",
+    "short_url": "https://doi.org/gcgmfc",
+    "id": "hvhWxir9"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2017-11-06T11:42:14Z",
+      "timestamp": 1509968534295
+    },
+    "reference-count": 26,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "DOI": "10.1186/1471-2105-12-323",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          8,
+          5
+        ]
+      ],
+      "date-time": "2011-08-05T06:59:00Z",
+      "timestamp": 1312527540000
+    },
+    "page": "323",
+    "source": "Crossref",
+    "is-referenced-by-count": 1903,
+    "title": "RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome",
+    "prefix": "10.1186",
+    "volume": "12",
+    "author": [
+      {
+        "given": "Bo",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "Colin N",
+        "family": "Dewey",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T12:52:34Z",
+      "timestamp": 1463403154000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "references-count": 26,
+    "alternative-id": [
+      "1471-2105-12-323"
+    ],
+    "URL": "https://doi.org/10.1186/1471-2105-12-323",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Applied Mathematics",
+      "Molecular Biology",
+      "Structural Biology",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "BMC Bioinformatics",
+    "short_url": "https://doi.org/cwg8n5",
+    "id": "Dh2n1EV3"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2017-11-06T11:02:17Z",
+      "timestamp": 1509966137877
+    },
+    "reference-count": 0,
+    "publisher": "Springer Nature",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "DOI": "10.1186/gb-2009-10-3-r25",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          3,
+          4
+        ]
+      ],
+      "date-time": "2009-03-04T19:13:36Z",
+      "timestamp": 1236194016000
+    },
+    "page": "R25",
+    "source": "Crossref",
+    "is-referenced-by-count": 6692,
+    "title": "Ultrafast and memory-efficient alignment of short DNA sequences to the human genome",
+    "prefix": "10.1186",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Ben",
+        "family": "Langmead",
+        "affiliation": []
+      },
+      {
+        "given": "Cole",
+        "family": "Trapnell",
+        "affiliation": []
+      },
+      {
+        "given": "Mihai",
+        "family": "Pop",
+        "affiliation": []
+      },
+      {
+        "given": "Steven L",
+        "family": "Salzberg",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "container-title": "Genome Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T19:22:58Z",
+      "timestamp": 1463426578000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "references-count": 0,
+    "alternative-id": [
+      "gb-2009-10-3-r25"
+    ],
+    "URL": "https://doi.org/10.1186/gb-2009-10-3-r25",
+    "relation": {},
+    "container-title-short": "Genome Biol",
+    "short_url": "https://doi.org/c58wxm",
+    "id": "RU8ikjzP"
+  },
+  {
+    "type": "webpage",
+    "URL": "http://broadinstitute.github.io/picard/",
+    "container-title": "GitHub",
+    "title": "Picard",
+    "author": [
+      {
+        "family": "Broad Institute"
+      }
+    ],
+    "id": "tfF98ztu"
+  },
+  {
+    "type": "webpage",
+    "URL": "http://hannonlab.cshl.edu/fastx_toolkit/",
+    "title": "FASTX-Toolkit",
+    "author": [
+      {
+        "family": "Hannon Lab"
+      }
+    ],
+    "id": "jwUQ55cX"
+  },
+  {
+    "URL": "http://seaborn.pydata.org/",
+    "greycite-canonical-uri": null,
+    "title": "seaborn: statistical data visualization — seaborn 0.8.1 documentation",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          9,
+          3
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-11-06 15:01:07",
+    "type": "webpage",
+    "id": "qw6HPkVF"
   },
   {
     "type": "webpage",
@@ -200,6 +2042,18 @@
       }
     ],
     "id": "937jwJMM"
+  },
+  {
+    "type": "webpage",
+    "URL": "https://github.com/sdjebali/MakeGencodeTSS",
+    "container-title": "GitHub",
+    "title": "MakeGenecodeTSS",
+    "author": [
+      {
+        "family": "Sarah Djebali"
+      }
+    ],
+    "id": "tDy18Yol"
   },
   {
     "type": "webpage",

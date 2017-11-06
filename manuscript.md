@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Venkat Malladi
-date-meta: '2017-11-04'
+date-meta: '2017-11-06'
 keywords:
 - enhancers
 - transcription
@@ -19,8 +19,8 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@9cddd2c](https://github.com/vsmalladi/tfsee-manuscript/tree/9cddd2cf0bce60baa57161c50bc42c8973e81d43)
-on November  4, 2017.
+from [vsmalladi/tfsee-manuscript@d64ea19](https://github.com/vsmalladi/tfsee-manuscript/tree/d64ea19cb5b15a37d86b452a1c084e590a07dc2b)
+on November  6, 2017.
 </em></small>
 
 ## Authors
@@ -66,10 +66,10 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 
 ### Genomic Data Curation
 
-We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@PnOUrg4k; @BqIYBC66] of time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus repository [@Bc3QGVe7] or EMBL-EBI’s ArrayExpress repository [@937jwJMM] using the accession numbers listed in Table @tbl:data-sets.
+We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@BTqz3DNL; @18a6G1TE5] of time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus [@Bc3QGVe7] or EMBL-EBI’s ArrayExpress [@937jwJMM] repositories using the accession numbers listed in Table @tbl:data-sets.
 
 | Assay | Accessions |
-|-------|--------|
+| :--- | :-------- |
 | GRO-seq | GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334 |
 | H3K4me3 ChIP-seq | ERR208008, ERR208014, ERR207998, ERR20798, ERR207999 |
 | H3K4me1 ChIP-seq | GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331 |
@@ -79,6 +79,26 @@ We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@PnOUrg4k;
 
 Table: **Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.**
 {#tbl:data-sets}
+
+### Analysis of ChIP-seq Data Sets
+
+The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in Bowtie (ver. 1.0.0) [@RU8ikjzP]. The aligned reads are subsequently filtered for quality and uniquely mappable reads using Samtools (ver. 0.1.19) [@IPc8cy7s] and Picard (ver. 1.127) [@tfF98ztu]. Library complexity is measured using BEDTools (v 2.17.0) [@1HWiAHnIw] and meet ENCODE data quality standards [@hvhWxir9]. Relaxed peaks were called using MACS (v2.1.0) [@Bhecn2fS] with a p-value of $1 \times 10^{-2}$ for each replicate, pooled replicates’ reads and pseudoreplicates. Peak calls that are replicated from the pooled replicated that are either observed in both replicates, or in both pseudoreplicates are used for subsequent analysis.
+
+### Analysis of RNA-seq Data Sets
+
+The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in STAR (v2.4.2a) [@tTu8Ds9Z]. Quantification of genes against Gencode (v.19) [@15rkMH6SD] annotations was done using default parameters in RSEM (v 1.2.31) [@Dh2n1EV3].
+
+### Analysis of GRO-seq Data
+
+The GRO-seq reads were trimmed to the first 36 bases, to trim adapter and low quality sequence, using default parameters of fastx_trimer in fastx-toolkit (v.0.0.13.2) [@jwUQ55cX].  The trimmed reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in BWA (v0.7.12) [@roi5bwXL].
+
+### Kernel Density
+
+Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs.  The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from seaborn libary [@qw6HPkVF] with default parameters.
+
+### Defining Transcription Start Sites
+
+We made distinct transcription start sites (TSS) for protein-coding genes from Gencode (v.19) [@15rkMH6SD] annotations using MakeGencodeTSS [@tDy18Yol].  
 
 
 ## References {.page_break_before}
