@@ -28,5 +28,16 @@
     "container-title": "GitHub",
     "title": "Picard",
     "type": "webpage"
+  },
+  {
+    "type": "webpage",
+    "standard_citation": "url:http://hannonlab.cshl.edu/fastx_toolkit/",
+    "URL": "http://hannonlab.cshl.edu/fastx_toolkit/",
+    "title": "FASTX-Toolkit",
+    "author": [
+      {
+        "family": "Hannon Lab"
+      }
+    ]
   }
 ]
