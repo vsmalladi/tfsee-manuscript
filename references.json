@@ -1,5 +1,247 @@
 [
   {
+    "arxiv_id": "1201.0490v3",
+    "version": "3",
+    "URL": "https://arxiv.org/abs/1201.0490v3",
+    "title": "Scikit-learn: Machine Learning in Python",
+    "issued": {
+      "date-parts": [
+        [
+          "2012",
+          "01",
+          "02"
+        ]
+      ]
+    },
+    "author": [
+      {
+        "literal": "Fabian Pedregosa"
+      },
+      {
+        "literal": "Gaël Varoquaux"
+      },
+      {
+        "literal": "Alexandre Gramfort"
+      },
+      {
+        "literal": "Vincent Michel"
+      },
+      {
+        "literal": "Bertrand Thirion"
+      },
+      {
+        "literal": "Olivier Grisel"
+      },
+      {
+        "literal": "Mathieu Blondel"
+      },
+      {
+        "literal": "Gilles Louppe"
+      },
+      {
+        "literal": "Peter Prettenhofer"
+      },
+      {
+        "literal": "Ron Weiss"
+      },
+      {
+        "literal": "Vincent Dubourg"
+      },
+      {
+        "literal": "Jake Vanderplas"
+      },
+      {
+        "literal": "Alexandre Passos"
+      },
+      {
+        "literal": "David Cournapeau"
+      },
+      {
+        "literal": "Matthieu Brucher"
+      },
+      {
+        "literal": "Matthieu Perrot"
+      },
+      {
+        "literal": "Édouard Duchesnay"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "abstract": "Scikit-learn is a Python module integrating a wide range of state-of-the-art\nmachine learning algorithms for medium-scale supervised and unsupervised\nproblems. This package focuses on bringing machine learning to non-specialists\nusing a general-purpose high-level language. Emphasis is put on ease of use,\nperformance, documentation, and API consistency. It has minimal dependencies\nand is distributed under the simplified BSD license, encouraging its use in\nboth academic and commercial settings. Source code, binaries, and documentation\ncan be downloaded from http://scikit-learn.sourceforge.net.",
+    "type": "report",
+    "id": "vHIKEjNs"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T20:39:33Z",
+      "timestamp": 1509050373503
+    },
+    "reference-count": 79,
+    "publisher": "Elsevier BV",
+    "issue": "4",
+    "license": [
+      {
+        "URL": "http://www.elsevier.com/tdm/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2011,
+              5,
+              1
+            ]
+          ],
+          "date-time": "2011-05-01T00:00:00Z",
+          "timestamp": 1304208000000
+        },
+        "delay-in-days": 0,
+        "content-version": "tdm"
+      },
+      {
+        "URL": "http://www.elsevier.com/open-access/userlicense/1.0/",
+        "start": {
+          "date-parts": [
+            [
+              2013,
+              7,
+              17
+            ]
+          ],
+          "date-time": "2013-07-17T00:00:00Z",
+          "timestamp": 1374019200000
+        },
+        "delay-in-days": 808,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.cell.2011.03.042",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          5,
+          9
+        ]
+      ],
+      "date-time": "2011-05-09T14:03:06Z",
+      "timestamp": 1304949786000
+    },
+    "page": "622-634",
+    "source": "Crossref",
+    "is-referenced-by-count": 186,
+    "title": "A Rapid, Extensive, and Transient Transcriptional Response to Estrogen Signaling in Breast Cancer Cells",
+    "prefix": "10.1016",
+    "volume": "145",
+    "author": [
+      {
+        "given": "Nasun",
+        "family": "Hah",
+        "affiliation": []
+      },
+      {
+        "given": "Charles G.",
+        "family": "Danko",
+        "affiliation": []
+      },
+      {
+        "given": "Leighton",
+        "family": "Core",
+        "affiliation": []
+      },
+      {
+        "given": "Joshua J.",
+        "family": "Waterfall",
+        "affiliation": []
+      },
+      {
+        "given": "Adam",
+        "family": "Siepel",
+        "affiliation": []
+      },
+      {
+        "given": "John T.",
+        "family": "Lis",
+        "affiliation": []
+      },
+      {
+        "given": "W. Lee",
+        "family": "Kraus",
+        "affiliation": []
+      }
+    ],
+    "member": "78",
+    "container-title": "Cell",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S009286741100376X?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://api.elsevier.com/content/article/PII:S009286741100376X?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          19
+        ]
+      ],
+      "date-time": "2017-06-19T23:56:00Z",
+      "timestamp": 1497916560000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          5
+        ]
+      ]
+    },
+    "references-count": 79,
+    "alternative-id": [
+      "S009286741100376X"
+    ],
+    "URL": "https://doi.org/10.1016/j.cell.2011.03.042",
+    "relation": {},
+    "subject": [
+      "General Biochemistry, Genetics and Molecular Biology"
+    ],
+    "container-title-short": "Cell",
+    "short_url": "https://doi.org/fphc6m",
+    "id": "1BkIYUDLC"
+  },
+  {
     "indexed": {
       "date-parts": [
         [
@@ -1003,6 +1245,122 @@
           6
         ]
       ],
+      "date-time": "2017-11-06T07:02:18Z",
+      "timestamp": 1509951738099
+    },
+    "reference-count": 10,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "12",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2011,
+          6,
+          15
+        ]
+      ]
+    },
+    "DOI": "10.1093/bioinformatics/btr189",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          13
+        ]
+      ],
+      "date-time": "2011-04-13T02:00:03Z",
+      "timestamp": 1302660003000
+    },
+    "page": "1696-1697",
+    "source": "Crossref",
+    "is-referenced-by-count": 354,
+    "title": "MEME-ChIP: motif analysis of large DNA datasets",
+    "prefix": "10.1093",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Philip",
+        "family": "Machanick",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy L.",
+        "family": "Bailey",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          12
+        ]
+      ]
+    },
+    "container-title": "Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/article-pdf/27/12/1696/17123312/btr189.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          22
+        ]
+      ],
+      "date-time": "2017-08-22T19:29:25Z",
+      "timestamp": 1503430165000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          4,
+          12
+        ]
+      ]
+    },
+    "references-count": 10,
+    "URL": "https://doi.org/10.1093/bioinformatics/btr189",
+    "relation": {},
+    "subject": [
+      "Statistics and Probability",
+      "Computational Theory and Mathematics",
+      "Biochemistry",
+      "Molecular Biology",
+      "Computational Mathematics",
+      "Computer Science Applications"
+    ],
+    "short_url": "https://doi.org/b9j26x",
+    "id": "TfukIx2u"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          6
+        ]
+      ],
       "date-time": "2017-11-06T16:22:13Z",
       "timestamp": 1509985333704
     },
@@ -1143,6 +1501,333 @@
     ],
     "short_url": "https://doi.org/f4h523",
     "id": "tTu8Ds9Z"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          26
+        ]
+      ],
+      "date-time": "2017-10-26T11:56:52Z",
+      "timestamp": 1509019012252
+    },
+    "reference-count": 13,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "Web Server",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          7,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkp335",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          21
+        ]
+      ],
+      "date-time": "2009-05-21T01:26:40Z",
+      "timestamp": 1242869200000
+    },
+    "page": "W202-W208",
+    "source": "Crossref",
+    "is-referenced-by-count": 1602,
+    "title": "MEME SUITE: tools for motif discovery and searching",
+    "prefix": "10.1093",
+    "volume": "37",
+    "author": [
+      {
+        "given": "T. L.",
+        "family": "Bailey",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Boden",
+        "affiliation": []
+      },
+      {
+        "given": "F. A.",
+        "family": "Buske",
+        "affiliation": []
+      },
+      {
+        "given": "M.",
+        "family": "Frith",
+        "affiliation": []
+      },
+      {
+        "given": "C. E.",
+        "family": "Grant",
+        "affiliation": []
+      },
+      {
+        "given": "L.",
+        "family": "Clementi",
+        "affiliation": []
+      },
+      {
+        "given": "J.",
+        "family": "Ren",
+        "affiliation": []
+      },
+      {
+        "given": "W. W.",
+        "family": "Li",
+        "affiliation": []
+      },
+      {
+        "given": "W. S.",
+        "family": "Noble",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          20
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/37/suppl_2/W202/3929432/gkp335.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2017-08-23T20:20:51Z",
+      "timestamp": 1503519651000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          20
+        ]
+      ]
+    },
+    "references-count": 13,
+    "URL": "https://doi.org/10.1093/nar/gkp335",
+    "relation": {},
+    "subject": [
+      "Genetics"
+    ],
+    "container-title-short": "Nucleic Acids Research",
+    "short_url": "https://doi.org/bzkmbr",
+    "id": "dwj6qSn3"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          1
+        ]
+      ],
+      "date-time": "2017-11-01T22:02:22Z",
+      "timestamp": 1509573742589
+    },
+    "reference-count": 28,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "D1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016,
+          1,
+          4
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gkv1176",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          4
+        ]
+      ],
+      "date-time": "2015-11-04T01:44:30Z",
+      "timestamp": 1446601470000
+    },
+    "page": "D110-D115",
+    "source": "Crossref",
+    "is-referenced-by-count": 164,
+    "title": "JASPAR 2016: a major expansion and update of the open-access database of transcription factor binding profiles",
+    "prefix": "10.1093",
+    "volume": "44",
+    "author": [
+      {
+        "given": "Anthony",
+        "family": "Mathelier",
+        "affiliation": []
+      },
+      {
+        "given": "Oriol",
+        "family": "Fornes",
+        "affiliation": []
+      },
+      {
+        "given": "David J.",
+        "family": "Arenillas",
+        "affiliation": []
+      },
+      {
+        "given": "Chih-yu",
+        "family": "Chen",
+        "affiliation": []
+      },
+      {
+        "given": "Grégoire",
+        "family": "Denay",
+        "affiliation": []
+      },
+      {
+        "given": "Jessica",
+        "family": "Lee",
+        "affiliation": []
+      },
+      {
+        "given": "Wenqiang",
+        "family": "Shi",
+        "affiliation": []
+      },
+      {
+        "given": "Casper",
+        "family": "Shyr",
+        "affiliation": []
+      },
+      {
+        "given": "Ge",
+        "family": "Tan",
+        "affiliation": []
+      },
+      {
+        "given": "Rebecca",
+        "family": "Worsley-Hunt",
+        "affiliation": []
+      },
+      {
+        "given": "Allen W.",
+        "family": "Zhang",
+        "affiliation": []
+      },
+      {
+        "given": "François",
+        "family": "Parcy",
+        "affiliation": []
+      },
+      {
+        "given": "Boris",
+        "family": "Lenhard",
+        "affiliation": []
+      },
+      {
+        "given": "Albin",
+        "family": "Sandelin",
+        "affiliation": []
+      },
+      {
+        "given": "Wyeth W.",
+        "family": "Wasserman",
+        "affiliation": []
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          3
+        ]
+      ]
+    },
+    "container-title": "Nucleic Acids Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/44/D1/D110/16661586/gkv1176.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          8,
+          24
+        ]
+      ],
+      "date-time": "2017-08-24T13:31:52Z",
+      "timestamp": 1503581512000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          11,
+          3
+        ]
+      ]
+    },
+    "references-count": 28,
+    "alternative-id": [
+      "10.1093/nar/gkv1176"
+    ],
+    "URL": "https://doi.org/10.1093/nar/gkv1176",
+    "relation": {},
+    "subject": [
+      "Genetics"
+    ],
+    "container-title-short": "Nucleic Acids Res",
+    "short_url": "https://doi.org/f8cnht",
+    "id": "1DrZNoXOU"
   },
   {
     "indexed": {
@@ -1796,6 +2481,368 @@
         [
           2017,
           11,
+          3
+        ]
+      ],
+      "date-time": "2017-11-03T15:22:24Z",
+      "timestamp": 1509722544043
+    },
+    "reference-count": 0,
+    "publisher": "Cold Spring Harbor Laboratory",
+    "issue": "8",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2013,
+          8,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1101/gr.152306.112",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          2
+        ]
+      ],
+      "date-time": "2013-05-02T08:58:08Z",
+      "timestamp": 1367485088000
+    },
+    "page": "1210-1223",
+    "source": "Crossref",
+    "is-referenced-by-count": 150,
+    "title": "Enhancer transcripts mark active estrogen receptor binding sites",
+    "prefix": "10.1101",
+    "volume": "23",
+    "author": [
+      {
+        "given": "N.",
+        "family": "Hah",
+        "affiliation": []
+      },
+      {
+        "given": "S.",
+        "family": "Murakami",
+        "affiliation": []
+      },
+      {
+        "given": "A.",
+        "family": "Nagari",
+        "affiliation": []
+      },
+      {
+        "given": "C. G.",
+        "family": "Danko",
+        "affiliation": []
+      },
+      {
+        "given": "W. L.",
+        "family": "Kraus",
+        "affiliation": []
+      }
+    ],
+    "member": "246",
+    "published-online": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          1
+        ]
+      ]
+    },
+    "container-title": "Genome Research",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://syndication.highwire.org/content/doi/10.1101/gr.152306.112",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          2,
+          15
+        ]
+      ],
+      "date-time": "2017-02-15T17:41:52Z",
+      "timestamp": 1487180512000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2013,
+          5,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1101/gr.152306.112",
+    "relation": {},
+    "subject": [
+      "Genetics(clinical)",
+      "Genetics"
+    ],
+    "container-title-short": "Genome Research",
+    "short_url": "https://doi.org/f453nr",
+    "id": "1DE6cLccI"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          6
+        ]
+      ],
+      "date-time": "2017-11-06T15:42:18Z",
+      "timestamp": 1509982938516
+    },
+    "reference-count": 0,
+    "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+    "issue": "3",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "DOI": "10.1109/mcse.2007.55",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2008,
+          7,
+          18
+        ]
+      ],
+      "date-time": "2008-07-18T19:45:22Z",
+      "timestamp": 1216410322000
+    },
+    "page": "90-95",
+    "source": "Crossref",
+    "is-referenced-by-count": 1835,
+    "title": "Matplotlib: A 2D Graphics Environment",
+    "prefix": "10.1109",
+    "volume": "9",
+    "author": [
+      {
+        "given": "John D.",
+        "family": "Hunter",
+        "affiliation": []
+      }
+    ],
+    "member": "263",
+    "container-title": "Computing in Science & Engineering",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://xplorestaging.ieee.org/ielx5/5992/4160244/04160265.pdf?arnumber=4160265",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          3,
+          15
+        ]
+      ],
+      "date-time": "2017-03-15T19:55:33Z",
+      "timestamp": 1489607733000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "references-count": 0,
+    "URL": "https://doi.org/10.1109/mcse.2007.55",
+    "relation": {},
+    "subject": [
+      "General Engineering",
+      "General Computer Science"
+    ],
+    "container-title-short": "Comput. Sci. Eng.",
+    "short_url": "https://doi.org/drbjhg",
+    "id": "1026Gxdsi"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          20
+        ]
+      ],
+      "date-time": "2017-10-20T13:42:10Z",
+      "timestamp": 1508506930439
+    },
+    "publisher-location": "New York, New York, USA",
+    "reference-count": 28,
+    "publisher": "ACM Press",
+    "license": [
+      {
+        "URL": "http://www.acm.org/publications/policies/copyright_policy#Background",
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              4,
+              11
+            ]
+          ],
+          "date-time": "2016-04-11T00:00:00Z",
+          "timestamp": 1460332800000
+        },
+        "delay-in-days": 101,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "DOI": "10.1145/2872427.2883041",
+    "type": "paper-conference",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          1,
+          23
+        ]
+      ],
+      "date-time": "2017-01-23T20:35:52Z",
+      "timestamp": 1485203752000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "title": "Visualizing Large-scale and High-dimensional Data",
+    "prefix": "10.1145",
+    "author": [
+      {
+        "given": "Jian",
+        "family": "Tang",
+        "affiliation": [
+          {
+            "name": "Microsoft Research Asia, Beijing, China"
+          }
+        ]
+      },
+      {
+        "given": "Jingzhou",
+        "family": "Liu",
+        "affiliation": [
+          {
+            "name": "Peking University, Beijing, China"
+          }
+        ]
+      },
+      {
+        "given": "Ming",
+        "family": "Zhang",
+        "affiliation": [
+          {
+            "name": "Peking University, Beijing, China"
+          }
+        ]
+      },
+      {
+        "given": "Qiaozhu",
+        "family": "Mei",
+        "affiliation": [
+          {
+            "name": "University of Michigan, Ann Arbor, USA"
+          }
+        ]
+      }
+    ],
+    "member": "320",
+    "container-title": "Proceedings of the 25th International Conference on World Wide Web - WWW '16",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://dl.acm.org/ft_gateway.cfm?id=2883041&ftid=1707557&dwn=1",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          25
+        ]
+      ],
+      "date-time": "2017-06-25T08:53:44Z",
+      "timestamp": 1498380824000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "references-count": 28,
+    "URL": "https://doi.org/10.1145/2872427.2883041",
+    "relation": {
+      "cites": []
+    },
+    "short_url": "https://doi.org/gcgnh6",
+    "id": "GGWEfSeb"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          11,
           6
         ]
       ],
@@ -1889,6 +2936,107 @@
     "container-title-short": "BMC Bioinformatics",
     "short_url": "https://doi.org/cwg8n5",
     "id": "Dh2n1EV3"
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2017-10-25T08:08:46Z",
+      "timestamp": 1508918926770
+    },
+    "reference-count": 0,
+    "publisher": "Springer Nature",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "DOI": "10.1186/gb-2007-8-2-r24",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2007,
+          2,
+          27
+        ]
+      ],
+      "date-time": "2007-02-27T13:12:04Z",
+      "timestamp": 1172581924000
+    },
+    "page": "R24",
+    "source": "Crossref",
+    "is-referenced-by-count": 383,
+    "title": "Quantifying similarity between motifs",
+    "prefix": "10.1186",
+    "volume": "8",
+    "author": [
+      {
+        "given": "Shobhit",
+        "family": "Gupta",
+        "affiliation": []
+      },
+      {
+        "given": "John A",
+        "family": "Stamatoyannopoulos",
+        "affiliation": []
+      },
+      {
+        "given": "Timothy L",
+        "family": "Bailey",
+        "affiliation": []
+      },
+      {
+        "given": "William",
+        "family": "Noble",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "container-title": "Genome Biology",
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2016,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2016-05-16T19:19:12Z",
+      "timestamp": 1463426352000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "references-count": 0,
+    "alternative-id": [
+      "gb-2007-8-2-r24"
+    ],
+    "URL": "https://doi.org/10.1186/gb-2007-8-2-r24",
+    "relation": {},
+    "container-title-short": "Genome Biol",
+    "short_url": "https://doi.org/bqxc5f",
+    "id": "1C9AIanMe"
   },
   {
     "indexed": {
@@ -1992,6 +3140,607 @@
     "id": "RU8ikjzP"
   },
   {
+    "indexed": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2017-10-27T21:42:21Z",
+      "timestamp": 1509140541045
+    },
+    "reference-count": 57,
+    "publisher": "Springer Nature",
+    "issue": "1",
+    "license": [
+      {
+        "URL": "http://www.springer.com/tdm",
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              7,
+              16
+            ]
+          ],
+          "date-time": "2015-07-16T00:00:00Z",
+          "timestamp": 1437004800000
+        },
+        "delay-in-days": 0,
+        "content-version": "vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1186/s12859-015-0656-3",
+    "type": "article-journal",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          14
+        ]
+      ],
+      "date-time": "2015-07-14T23:42:25Z",
+      "timestamp": 1436917345000
+    },
+    "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 5,
+    "title": "groHMM: a computational tool for identifying unannotated and cell type-specific transcription units from global run-on sequencing data",
+    "prefix": "10.1186",
+    "volume": "16",
+    "author": [
+      {
+        "given": "Minho",
+        "family": "Chae",
+        "affiliation": []
+      },
+      {
+        "given": "Charles G.",
+        "family": "Danko",
+        "affiliation": []
+      },
+      {
+        "given": "W. Lee",
+        "family": "Kraus",
+        "affiliation": []
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          16
+        ]
+      ]
+    },
+    "container-title": "BMC Bioinformatics",
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-015-0656-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/article/10.1186/s12859-015-0656-3/fulltext.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://link.springer.com/content/pdf/10.1186/s12859-015-0656-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2017,
+          6,
+          23
+        ]
+      ],
+      "date-time": "2017-06-23T15:41:17Z",
+      "timestamp": 1498232477000
+    },
+    "score": 1.0,
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          7,
+          16
+        ]
+      ]
+    },
+    "references-count": 57,
+    "alternative-id": [
+      "656"
+    ],
+    "URL": "https://doi.org/10.1186/s12859-015-0656-3",
+    "relation": {
+      "cites": []
+    },
+    "subject": [
+      "Biochemistry",
+      "Applied Mathematics",
+      "Molecular Biology",
+      "Structural Biology",
+      "Computer Science Applications"
+    ],
+    "container-title-short": "BMC Bioinformatics",
+    "article-number": "222",
+    "short_url": "https://doi.org/f7vc6q",
+    "id": "lPKPHCBB"
+  },
+  {
+    "type": "article",
+    "id": "1HVy2rbI",
+    "author": [
+      {
+        "family": "Charles G. Danko",
+        "given": "Minho Chae"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "DOI": "10.18129/b9.bioc.grohmm",
+    "page": "-",
+    "publisher": "Bioconductor",
+    "title": "groHMM",
+    "URL": "https://doi.org/10.18129/b9.bioc.grohmm",
+    "short_url": "https://doi.org/gcgmfd"
+  },
+  {
+    "type": "article",
+    "id": "r8BJ7tJV",
+    "author": [
+      {
+        "family": "Grisel",
+        "given": "Olivier"
+      },
+      {
+        "family": "Mueller",
+        "given": "Andreas"
+      },
+      {
+        "family": "Pedregosa",
+        "given": "Fabian"
+      },
+      {
+        "given": "Lars",
+        "literal": "Lars "
+      },
+      {
+        "family": "Gramfort",
+        "given": "Alexandre"
+      },
+      {
+        "family": "Louppe",
+        "given": "Gilles"
+      },
+      {
+        "family": "Prettenhofer",
+        "given": "Peter"
+      },
+      {
+        "family": "Blondel",
+        "given": "Mathieu"
+      },
+      {
+        "family": "Niculae",
+        "given": "Vlad"
+      },
+      {
+        "family": "Joly",
+        "given": "Arnaud"
+      },
+      {
+        "family": "Nothman",
+        "given": "Joel"
+      },
+      {
+        "family": "Vanderplas",
+        "given": "Jake"
+      },
+      {
+        "family": "Kumar",
+        "given": "Manoj"
+      },
+      {
+        "family": "Layton",
+        "given": "Robert"
+      },
+      {
+        "family": "Varoquaux",
+        "given": "Nelle"
+      },
+      {
+        "family": "Dawe",
+        "given": "Noel"
+      },
+      {
+        "family": "Schönberger",
+        "given": "Johannes"
+      },
+      {
+        "family": "Engemann",
+        "given": "Denis A."
+      },
+      {
+        "family": "Li",
+        "given": "Wei"
+      },
+      {
+        "literal": "Raghav R V"
+      },
+      {
+        "family": "Woolam",
+        "given": "Clay"
+      },
+      {
+        "family": "Eren",
+        "given": "Kemal"
+      },
+      {
+        "given": "Eustache",
+        "literal": "Eustache "
+      },
+      {
+        "family": "Fabisch",
+        "given": "Alexander"
+      },
+      {
+        "family": "Passos",
+        "given": "Alexandre"
+      },
+      {
+        "literal": "Bthirion"
+      },
+      {
+        "family": "Fritsch",
+        "given": "Virgile"
+      },
+      {
+        "family": "Sullivan",
+        "given": "Danny"
+      },
+      {
+        "family": "Alsalhi",
+        "given": "Hamzeh"
+      },
+      {
+        "literal": "Maheshakya Wijewardena"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          4,
+          17
+        ]
+      ]
+    },
+    "abstract": "This should be the same as 0.17.1, only re-created so zenodo mints a DOI",
+    "DOI": "10.5281/zenodo.49911",
+    "page": "-",
+    "publisher": "Zenodo",
+    "title": "Scikit-Learn: 0.17.1 Release Tag For Doi",
+    "URL": "https://doi.org/10.5281/zenodo.49911",
+    "short_url": "https://doi.org/gcgnh8"
+  },
+  {
+    "type": "article",
+    "id": "qxfTM222",
+    "author": [
+      {
+        "family": "Waskom",
+        "given": "Michael"
+      },
+      {
+        "family": "Botvinnik",
+        "given": "Olga"
+      },
+      {
+        "literal": "Drewokane"
+      },
+      {
+        "family": "Hobson",
+        "given": "Paul"
+      },
+      {
+        "given": "David",
+        "literal": "David "
+      },
+      {
+        "family": "Halchenko",
+        "given": "Yaroslav"
+      },
+      {
+        "family": "Lukauskas",
+        "given": "Saulius"
+      },
+      {
+        "family": "Cole",
+        "given": "John B."
+      },
+      {
+        "family": "Warmenhoven",
+        "given": "Jordi"
+      },
+      {
+        "family": "Ruiter",
+        "given": "Julian De"
+      },
+      {
+        "family": "Hoyer",
+        "given": "Stephan"
+      },
+      {
+        "family": "Vanderplas",
+        "given": "Jake"
+      },
+      {
+        "family": "Villalba",
+        "given": "Santi"
+      },
+      {
+        "family": "Kunter",
+        "given": "Gero"
+      },
+      {
+        "family": "Quintero",
+        "given": "Eric"
+      },
+      {
+        "family": "Martin",
+        "given": "Marcel"
+      },
+      {
+        "family": "Miles",
+        "given": "Alistair"
+      },
+      {
+        "family": "Meyer",
+        "given": "Kyle"
+      },
+      {
+        "family": "Augspurger",
+        "given": "Tom"
+      },
+      {
+        "family": "Yarkoni",
+        "given": "Tal"
+      },
+      {
+        "family": "Bachant",
+        "given": "Pete"
+      },
+      {
+        "family": "Williams",
+        "given": "Mike"
+      },
+      {
+        "family": "Evans",
+        "given": "Constantine"
+      },
+      {
+        "family": "Fitzgerald",
+        "given": "Clark"
+      },
+      {
+        "given": "Brian",
+        "literal": "Brian "
+      },
+      {
+        "family": "Wehner",
+        "given": "Daniel"
+      },
+      {
+        "family": "Hitz",
+        "given": "Gregory"
+      },
+      {
+        "family": "Ziegler",
+        "given": "Erik"
+      },
+      {
+        "family": "Qalieh",
+        "given": "Adel"
+      },
+      {
+        "family": "Lee",
+        "given": "Antony"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          6,
+          5
+        ]
+      ]
+    },
+    "abstract": "v0.7.1 (June 2016)\n\n\nAdded the ability to put \"caps\" on the error bars that are drawn by barplot or pointplot (and, by extension, factorplot). Additionally, the line width of the error bars can now be controlled. These changes involve the new parameters capsize and errwidth. See the github pull request for examples of usage.\nImproved the row and column colors display in clustermap. It\nis now possible to pass Pandas objects for these elements and, when possible, the semantic information in the Pandas objects will be used to add labels to the plot. When Pandas objects are used, the color data is matched against the main heatmap based on the index, not on position. This is more accurate, but it may lead to different results if current code assumed positional matching.\nImproved the luminance calculation that determines the annotation color in heatmap.\nThe annot parameter of heatmap now accepts a rectangular dataset in addition to a boolean value. If a dataset is passed, its values will be used for the annotations, while the main dataset will be used for the heatmap cell colors.\nFixed a bug in FacetGrid that appeared when using col_wrap with missing col levels.\nMade it possible to pass a tick locator object to the heatmap colorbar.\nMade it possible to use different styles (e.g., step) for PairGrid histograms when there are multiple hue levels.\nFixed a bug in scipy-based univariate kernel density bandwidth calculation.\nThe reset_orig function (and, by extension, importing seaborn.apionly) resets matplotlib rcParams to their values at the time seaborn itself was imported, which should work better with rcParams changed by the jupyter notebook backend.\nRemoved some objects from the top-level seaborn namespace.\nImproved unicode compatibility in FacetGrid.",
+    "DOI": "10.5281/zenodo.54844",
+    "page": "-",
+    "publisher": "Zenodo",
+    "title": "Seaborn: V0.7.1 (June 2016)",
+    "URL": "https://doi.org/10.5281/zenodo.54844",
+    "short_url": "https://doi.org/gcgnh9"
+  },
+  {
+    "type": "article",
+    "id": "oaruRtzO",
+    "author": [
+      {
+        "family": "Droettboom",
+        "given": "Michael"
+      },
+      {
+        "family": "Caswell",
+        "given": "Thomas A"
+      },
+      {
+        "family": "Hunter",
+        "given": "John"
+      },
+      {
+        "family": "Firing",
+        "given": "Eric"
+      },
+      {
+        "family": "Nielsen",
+        "given": "Jens Hedegaard"
+      },
+      {
+        "family": "Varoquaux",
+        "given": "Nelle"
+      },
+      {
+        "family": "Root",
+        "given": "Benjamin"
+      },
+      {
+        "family": "Elson",
+        "given": "Phil"
+      },
+      {
+        "family": "Dale",
+        "given": "Darren"
+      },
+      {
+        "literal": "Jae-Joon Lee"
+      },
+      {
+        "family": "Andrade",
+        "given": "Elliott Sales De"
+      },
+      {
+        "family": "Seppänen",
+        "given": "Jouni K."
+      },
+      {
+        "family": "McDougall",
+        "given": "Damon"
+      },
+      {
+        "family": "May",
+        "given": "Ryan"
+      },
+      {
+        "family": "Lee",
+        "given": "Antony"
+      },
+      {
+        "family": "Straw",
+        "given": "Andrew"
+      },
+      {
+        "family": "Stansby",
+        "given": "David"
+      },
+      {
+        "family": "Hobson",
+        "given": "Paul"
+      },
+      {
+        "family": "Yu",
+        "given": "Tony S"
+      },
+      {
+        "family": "Ma",
+        "given": "Eric"
+      },
+      {
+        "family": "Gohlke",
+        "given": "Christoph"
+      },
+      {
+        "family": "Silvester",
+        "given": "Steven"
+      },
+      {
+        "family": "Moad",
+        "given": "Charlie"
+      },
+      {
+        "family": "Schulz",
+        "given": "Jan"
+      },
+      {
+        "family": "Vincent",
+        "given": "Adrien F."
+      },
+      {
+        "family": "Würtz",
+        "given": "Peter"
+      },
+      {
+        "family": "Ariza",
+        "given": "Federico"
+      },
+      {
+        "literal": "Cimarron"
+      },
+      {
+        "family": "Hisch",
+        "given": "Thomas"
+      },
+      {
+        "family": "Kniazev",
+        "given": "Nikita"
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          5,
+          10
+        ]
+      ]
+    },
+    "abstract": "matplotlib: plotting with Python",
+    "DOI": "10.5281/zenodo.573577",
+    "page": "-",
+    "publisher": "Zenodo",
+    "title": "Matplotlib/Matplotlib V2.0.2",
+    "URL": "https://doi.org/10.5281/zenodo.573577",
+    "short_url": "https://doi.org/gcgnh7"
+  },
+  {
     "type": "webpage",
     "URL": "http://broadinstitute.github.io/picard/",
     "container-title": "GitHub",
@@ -2013,6 +3762,50 @@
       }
     ],
     "id": "jwUQ55cX"
+  },
+  {
+    "type": "article-journal",
+    "title": "Visualizing data using t-SNE",
+    "volume": "9",
+    "page": "2579-2605",
+    "author": [
+      {
+        "family": "van der Maaten",
+        "given": "Laurens"
+      },
+      {
+        "family": "Hinton",
+        "given": "Geoffrey"
+      }
+    ],
+    "container-title": "Journal of Machine Learning Research 9",
+    "publisher": "Elsevier BV",
+    "issued": {
+      "date-parts": [
+        [
+          2008,
+          11
+        ]
+      ]
+    },
+    "id": "N7ngUHQX"
+  },
+  {
+    "URL": "http://scikit-learn.org/stable/index.html",
+    "title": "scikit-learn: machine learning in Python — scikit-learn 0.19.1 documentation",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          11,
+          5
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-11-07 02:12:18",
+    "type": "webpage",
+    "id": "RxPfRJxs"
   },
   {
     "URL": "http://seaborn.pydata.org/",
@@ -2050,10 +3843,29 @@
     "title": "MakeGenecodeTSS",
     "author": [
       {
-        "family": "Sarah Djebali"
+        "family": "Djebali",
+        "given": "Sarah"
       }
     ],
     "id": "tDy18Yol"
+  },
+  {
+    "URL": "https://matplotlib.org/",
+    "greycite-canonical-uri": null,
+    "title": "Matplotlib: Python plotting — Matplotlib 2.1.0 documentation",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          10,
+          13
+        ]
+      ]
+    },
+    "greycite-status": "Scanned",
+    "greycite-scanned": "2017-11-07 02:12:19",
+    "type": "webpage",
+    "id": "Up1uar0R"
   },
   {
     "type": "webpage",
