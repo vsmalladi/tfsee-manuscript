@@ -19,7 +19,7 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@a98bec5](https://github.com/vsmalladi/tfsee-manuscript/tree/a98bec5a28634499bb31217734c4ec413dc90b94)
+from [vsmalladi/tfsee-manuscript@d873572](https://github.com/vsmalladi/tfsee-manuscript/tree/d873572a766c88335c1973f4d67d3edd7493ce1f)
 on November  7, 2017.
 </em></small>
 
@@ -62,7 +62,7 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 ## Acknowledgments
 
 
-## Material and Methods
+## Material and Methods {.page_break_before}
 
 ### Genomic Data Curation
 
@@ -94,7 +94,7 @@ The GRO-seq reads were trimmed to the first 36 bases, to trim adapter and low qu
 
 ### Kernel Density
 
-Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs.  The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from seaborn libary version 0.7.1 [@qw6HPkVF; @qxfTM222] with default parameters.
+Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs.  The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from [seaborn](http://seaborn.pydata.org/) version 0.7.1 [@qxfTM222] with default parameters.
 
 ### Defining Transcription Start Sites
 
@@ -104,7 +104,7 @@ We made distinct transcription start sites (TSS) for protein-coding genes from G
 
 #### *Transcript calling*.  
 
-Transcript calling was performed using a two-state hidden Markov model using the groHMM data analysis package [@1BkIYUDLC; @1HVy2rbI; @lPKPHCBB] on each individual cell lines. The negative log transition probability of the switch between transcribed state to non-transcribed state and the variance in read counts in the non-transcribed state that are used to predict the transcription units for the cell lines are listed Table @tbl:groseq-tune.
+Transcript calling was performed using a two-state hidden Markov model using the groHMM data analysis package version 3.4 [@1BkIYUDLC; @1HVy2rbI; @lPKPHCBB] on each individual cell lines. The negative log transition probability of the switch between transcribed state to non-transcribed state and the variance in read counts in the non-transcribed state that are used to predict the transcription units for the cell lines are listed Table @tbl:groseq-tune.
 
 | Cell Line | -Log Transition Probability | Variance in read counts
 | :--- | :--------: | :--------: |
@@ -139,10 +139,10 @@ De novo motif analyses were performed on a 1 kb region ($\pm$ 500 bp) surroundin
 
 ### Generating Heatmaps and Clusters
 
-For each cell line, the functional scores were Z-score normalized.  To identify cognate transcription factors by cell type, we performed hierarchical clustering by calculating the Euclidean distance using clustermap from seaborn version 0.7.1 [@qw6HPkVF; @qxfTM222]. For visualization of the multidimensional TFSEE scores, we performed t-distributed stochastic neighbor embedding analysis (t-SNE) [@N7ngUHQX] using the TSNE function and labeled the clusters by calculating K-means clustering using the KMeans function with the expectation-maximization algorithm in scikit-learn version 0.17.1 [@RxPfRJxs; @vHIKEjNs; @GGWEfSeb; @r8BJ7tJV].
+For each cell line, the functional scores were Z-score normalized.  To identify cognate transcription factors by cell type, we performed hierarchical clustering by calculating the Euclidean distance using clustermap from [seaborn](http://seaborn.pydata.org/) version 0.7.1 [@qxfTM222]. For visualization of the multidimensional TFSEE scores, we performed t-distributed stochastic neighbor embedding analysis (t-SNE) [@N7ngUHQX] using the TSNE function and labeled the clusters by calculating K-means clustering using the KMeans function with the expectation-maximization algorithm in [scikit-learn](http://scikit-learn.org/) version 0.17.1 [@vHIKEjNs; @GGWEfSeb; @r8BJ7tJV].
 
 ### Nearest Neighboring Gene Analyses and Box Plots
-The universe of expressed genes in each cell line was determined from the RNA-seq data using an FPKM cutoff $>$ 0.4.  The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line.  Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from matplotlib version 2.0.2 [@Up1uar0R; @1026Gxdsi; @oaruRtzO].  Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.
+The universe of expressed genes in each cell line was determined from the RNA-seq data using an FPKM cutoff $>$ 0.4.  The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line.  Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from [matplotlib](https://matplotlib.org/) version 2.0.2 [@1026Gxdsi; @oaruRtzO].  Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.
 
 
 ## References {.page_break_before}
