@@ -54,8 +54,36 @@
     "type": "webpage",
     "author": [
       {
-        "family": "Sarah Djebali"
+        "family": "Djebali",
+        "given": "Sarah"
       }
     ]
+  },
+  {
+    "type": "article-journal",
+    "standard_citation": "url:http://jmlr.org/papers/v9/vandermaaten08a.html",
+    "title": "Visualizing data using t-SNE",
+    "volume": "9",
+    "page": "2579-2605",
+    "author": [
+       {
+         "family": "van der Maaten",
+         "given": "Laurens"
+       },
+       {
+         "family": "Hinton",
+         "given": "Geoffrey"
+       }
+     ],
+     "container-title": "Journal of Machine Learning Research 9",
+     "publisher": "Elsevier BV",
+     "issued": {
+       "date-parts": [
+         [
+           2008,
+           11
+         ]
+       ]
+     }
   }
 ]
