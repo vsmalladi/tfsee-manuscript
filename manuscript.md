@@ -1,7 +1,7 @@
 ---
 author-meta:
 - Venkat Malladi
-date-meta: '2017-11-07'
+date-meta: '2017-11-08'
 keywords:
 - enhancers
 - transcription
@@ -19,8 +19,8 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@d873572](https://github.com/vsmalladi/tfsee-manuscript/tree/d873572a766c88335c1973f4d67d3edd7493ce1f)
-on November  7, 2017.
+from [vsmalladi/tfsee-manuscript@fde1a6b](https://github.com/vsmalladi/tfsee-manuscript/tree/fde1a6b3e8729dd1c90cd6eacab31941777663f9)
+on November  8, 2017.
 </em></small>
 
 ## Authors
@@ -55,6 +55,39 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 
 ## Results
 
+### Overview of TFSEE model
+
+
+![**Overview of Total Functional Score of Enhancer Elements (TFSEE) Method.**
+The TFSEE method has five steps, followed by an integration stage. TFSEE combines diverse data sets to identify cell type-specific enhancers and their cognate transcription factors (TFs).
+**(A)**	 In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify enriched TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type.
+**(B)**	 An illustration of TFSEE data integration stage, taking the outputs generated in panel A, to identify the location, activity level, and predicted TFs at each enhancer across all cell types. (Top) All matrices represent scaled enhancer activity for each cell type in each enhancer prediction method (G, H, and M). All matrices are linearly combined into a resulting matrix A, to provide a total enhancer activity score. (Bottom) Enhancer activity matrix A, is combined with motif prediction matrix T, represent scaled motif prediction p-values for each enhancer, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R (scaled TF expression for each cell type), into a resulting matrix Z, on which TFSEE clustering is performed.
+](images/overview_tfsee.png){#fig:overview_tfsee}
+
+
+
+![**Comparison of genome-wide prediction of enhancers in pancreatic differentiation.**
+**(A)**	*(Top)* Schematic depiction of pancreatic differentiation starting from Human embryonic stem cells (hESCs) to pancreatic endoderm (PE). *(Bottom)* Depiction of epigenomic (ChIP-seq) and transcriptional (GRO-seq and RNA-seq) profiles for each cell line used for analysis.
+**(B)**	Stacked bar chart comparing expression of candidate enhancers categorized by *(Top)* H3K4me1 and H3K27ac enrichment, or *(Bottom)* enhancer transcription (GRO-seq).
+**(C)**	Stacked bar chart comparing enhancer prediction methods in pancreatic differentiation. Enhancers were called using enhancer transcription (GRO-seq) or by using H3K4me1 enrichment, or H3K27ac enrichment. The percentage of called enhancers from one prediction method that overlap with enhancers called using other methods is shown.
+**(D)**	UpSet plot showing the set intersection of enhancer identification methods shown in panel C.](images/enhancer_predictions.png){#fig:enhancer_predictions}
+
+
+
+![**TFSEE identifies cell type-specific enhancers and their cognate TFs that drive gene expression in pancreatic differentiation.**
+**(A)**	Unsupervised hierarchical clustering of cell type-normalized TFSEE scores shown in a heatmap representation. hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(B)**	Biaxial t-SNE clustering plot of cell type-normalized TFSEE scores showing evidence of four distinct clusters, each point represents an individual TF.
+**(C)**	Box plots of normalized TFSEE score for clusters identified in pancreatic differentiation (panel B), number of TFs are indicated in each cluster. Bars marked with different letters are significantly different (Wilcoxon rank sum test, p $< 1 \times 10^{-4}$). Cluster 1, TFs associated with early (hESC, DE) and late pancreatic differentiation (FG and PE). Cluster 2, TFs associated with GT pluripotency. Cluster 3, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 4, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_groseq.png){#fig:tfsee_groseq}
+
+
+
+![**TFSEE-Predicted TFs are enriched in pre- and late- pancreatic differentiation.**
+**(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 3) and late-pancreatic (cluster 4) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(A)**	TFs identified in cluster 3 by TFSEE show equal expression across differentiation. While, cluster 4 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$)
+**(B)**	Enhancer transcription as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. p $< 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05)
+**(D and E)** Rank order of TFs enriched in the Cluster 3 and the Cluster 4 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_diff.png){#fig:late_pre_diff}  
+
 
 ## Discussion
 
@@ -69,7 +102,7 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@BTqz3DNL; @18a6G1TE5] of time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus [@Bc3QGVe7] or EMBL-EBI’s ArrayExpress [@937jwJMM] repositories using the accession numbers listed in Table @tbl:data-sets.
 
 | Assay | Accessions |
-| :--- | :-------- |
+| :-------------------- | :------------------------------------------------------------ |
 | GRO-seq | GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334 |
 | H3K4me3 ChIP-seq | ERR208008, ERR208014, ERR207998, ERR20798, ERR207999 |
 | H3K4me1 ChIP-seq | GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331 |
@@ -78,7 +111,7 @@ We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@BTqz3DNL;
 | RNA-seq | ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351 |
 
 Table: **Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.**
-{#tbl:data-sets}
+{#tbl:data-sets tag="S1"}
 
 ### Analysis of ChIP-seq Data Sets
 
@@ -115,7 +148,7 @@ Transcript calling was performed using a two-state hidden Markov model using the
 | PE | 50 | 35 |
 
 Table: **groHMM tunning parameters.**
-{#tbl:groseq-tune}
+{#tbl:groseq-tune tag="S2"}
 
 We then built a universe of transcripts by merging the groHMM-called transcripts from individual cell lines and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all transcripts.
 
