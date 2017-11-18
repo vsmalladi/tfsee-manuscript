@@ -1,7 +1,10 @@
 ---
 author-meta:
 - Venkat Malladi
-date-meta: '2017-11-09'
+- Anusha Nagari
+- Hector L. Franco
+- W. Lee Kraus
+date-meta: '2017-11-18'
 keywords:
 - enhancers
 - transcription
@@ -19,8 +22,8 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@979f603](https://github.com/vsmalladi/tfsee-manuscript/tree/979f603c04d7083c9b460ef1ba07a9d9fafcec65)
-on November  9, 2017.
+from [vsmalladi/tfsee-manuscript@5fbb772](https://github.com/vsmalladi/tfsee-manuscript/tree/5fbb772e4fb0aefee400fb1e176112bc019cbd8f)
+on November 18, 2017.
 </em></small>
 
 ## Authors
@@ -35,6 +38,22 @@ on November  9, 2017.
     · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
     [katatonikkat](https://twitter.com/katatonikkat)<br>
   <small>
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center
+  </small>
+
++ **Anusha Nagari**<br><br>
+  <small>
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center
+  </small>
+
++ **Hector L. Franco**<br><br>
+  <small>
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center
+  </small>
+
++ **W. Lee Kraus**<br><br>
+  <small>
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center
   </small>
 
 
@@ -42,15 +61,23 @@ on November  9, 2017.
 ## Abstract {.page_break_before}
 
 The identification of transcription factors (TF) driving the formation of active enhancers that regulate the expression of target genes remains an open problem.
-We have developed a computational framework that identifies cell type-specific enhancers and their cognate TFs by integrating multiple genomic assays that probe the transcriptomes (GRO-seq and RNA-seq) and epigenomes (ChIP-seq) of various samples.
-Our method, called Total Functional Score of Enhancer Elements (TFSEE), integrates the magnitude of enhancer transcription (GRO-seq), enrichment of marks associated with enhancers (H3K4me1 and H3K27ac ChIP-seq), TF mRNA expression levels (RNA-seq), and TF motif p-values (MEME).
-This method has allowed us to explore the enhancer landscape in different cell types that share common origins or are biologically related, including distinct molecular subtypes of breast cancer, and embryonic stem cells (ESCs) and their derived lineages.
-Using TFSEE, we have identified key breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes.
-To demonstrate the broader utility of our approach, we have used this algorithm to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
+We have developed a computational framework that identifies cell type-specific enhancers and their cognate TFs by integrating multiple genomic assays that probe the transcriptomes (GRO-seq and RNA-seq) and epigenomes (ChIP-seq) of various samples. Our method, called Total Functional Score of Enhancer Elements (TFSEE), integrates the magnitude of enhancer transcription (GRO-seq), enrichment of marks associated with enhancers (H3K4me1 and H3K27ac ChIP-seq), TF mRNA expression levels (RNA-seq), and TF motif p-values (MEME).
+This method has allowed us to explore the enhancer landscape in different cell types that share common origins or are biologically related, including distinct molecular subtypes of breast cancer, and embryonic stem cells (ESCs) and their derived lineages. Using TFSEE, we have identified key breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes. To demonstrate the broader utility of our approach, we have used this algorithm to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
 Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers.
 
 
-## Introduction
+## Background
+
+Enhancers and the transcription factors (TFs) regulating their formation have been shown to play an important role in cell type-specific activation of gene expression [@sJDRq7sP; @d09ELIR1].
+Although thousands of potential enhancers have been identified in cell lines and tissues, identification of TFs driving active enhancer formation in each cell type remains a major challenge [@15J98V2qM; @sLkFMFZj].
+
+Active enhancers have been shown to share several common features; such as open and accessible regions of chromatin (as measured by DNase-seq or ATAC-seq) [@NqDGzVRS; @x2PdIgDj; @6xCXy2Jy] and post-translational modification of histone tails (as assessed by ChIP-seq), including H3K4me1 and H3K27ac [@vCijBy88; @O5G8lPNO; @LkrR69b9]. While these features successfully define many enhancers, recent genomic assays have shown enhancers tend to be bound by RNA polymerase II (Pol II) and are actively transcribed, producing enhancer RNAs (‘eRNAs’) [@3ZN37fOe; @5i6RU9Zx; @1BkIYUDLC]. Enhancer transcription (as measured by GRO-seq or PRO-seq) has
+been shown to be used for enhancer prediction and track enhancer activity [@1BkIYUDLC; @14GXIWfT0; @1DE6cLccI; @18olkFjWD; @lPKPHCBB; @d09ELIR1; @GvDoUOfC; @2eAh2YIr; @5i6RU9Zx].
+
+In recent years, advances in technology have facilitated the large scale functional characterization of enhancer activity [@sKU362wY; @jjAPfyKA; @5zmE7Qkb], annotation of genome-wide binding sites of TFs [@15J98V2qM; @ZnmOeYfS] and identification of binding motifs for hundreds of TFs [@1AqKyPkB5]. However,
+
+
+Here, we propose TFSEE to identify cell type-specific TFs the promote lineage-specific enhancers. TFSEE integrates the magnitude of enhancer transcription (GRO-seq), enrichment of marks associated with enhancers (H3K4me1 and H3K27ac ChIP-seq), TF mRNA expression levels (RNA-seq), and TF motif p-values (MEME).
 
 
 ## Results
