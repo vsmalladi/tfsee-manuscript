@@ -22,7 +22,7 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@d66f57d](https://github.com/vsmalladi/tfsee-manuscript/tree/d66f57dbd7c02fd1112fbb4dc3e2f52287a97389)
+from [vsmalladi/tfsee-manuscript@8277191](https://github.com/vsmalladi/tfsee-manuscript/tree/8277191249d8ce810e4b81c7b43286a31d2e31b8)
 on November 19, 2017.
 </em></small>
 
@@ -66,7 +66,7 @@ This method has allowed us to explore the enhancer landscape in different cell t
 Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers.
 
 
-## Background
+## Background {.page_break_before}
 
 Enhancers and the transcription factors (TFs) regulating their formation have been shown to play an important role in cell type-specific activation of gene expression [@sJDRq7sP; @d09ELIR1].
 Although thousands of potential enhancers have been identified in cell lines and tissues, identification of TFs driving active enhancer formation in each cell type remains a major challenge [@15J98V2qM; @sLkFMFZj].
