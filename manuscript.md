@@ -22,7 +22,7 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@8277191](https://github.com/vsmalladi/tfsee-manuscript/tree/8277191249d8ce810e4b81c7b43286a31d2e31b8)
+from [vsmalladi/tfsee-manuscript@4d63a06](https://github.com/vsmalladi/tfsee-manuscript/tree/4d63a0655c80b0bb90e6c768e3ddf87fee24dba6)
 on November 19, 2017.
 </em></small>
 
@@ -201,15 +201,15 @@ The TFSEE method has five steps, followed by an integration stage. TFSEE combine
 ![**TFSEE identifies cell type-specific enhancers and their cognate TFs that drive gene expression in pancreatic differentiation.**
 **(A)**	Unsupervised hierarchical clustering of cell type-normalized TFSEE scores shown in a heatmap representation. hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
 **(B)**	Biaxial t-SNE clustering plot of cell type-normalized TFSEE scores showing evidence of four distinct clusters, each point represents an individual TF.
-**(C)**	Box plots of normalized TFSEE score for clusters identified in pancreatic differentiation (panel B), number of TFs are indicated in each cluster. Bars marked with different letters are significantly different (Wilcoxon rank sum test, p $< 1 \times 10^{-4}$). Cluster 1, TFs associated with early (hESC, DE) and late pancreatic differentiation (FG and PE). Cluster 2, TFs associated with GT pluripotency. Cluster 3, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 4, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_groseq.png){#fig:tfsee_groseq}
+**(C)**	Box plots of normalized TFSEE score for clusters identified in pancreatic differentiation (panel B), number of TFs are indicated in each cluster. Bars marked with different letters are significantly different (Wilcoxon rank sum test, $p \lt 1 \times 10^{-4}$). Cluster 1, TFs associated with early (hESC, DE) and late pancreatic differentiation (FG and PE). Cluster 2, TFs associated with GT pluripotency. Cluster 3, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 4, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_groseq.png){#fig:tfsee_groseq}
 
 
 
 ![**TFSEE-Predicted TFs are enriched in pre- and late- pancreatic differentiation.**
 **(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 3) and late-pancreatic (cluster 4) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
-**(A)**	TFs identified in cluster 3 by TFSEE show equal expression across differentiation. While, cluster 4 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$)
-**(B)**	Enhancer transcription as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. p $< 1 \times 10^{-4}$).
-**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05)
+**(A)**	TFs identified in cluster 3 by TFSEE show equal expression across differentiation. While, cluster 4 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$)
+**(B)**	Enhancer transcription as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. $p \lt 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. ($p \lt 0.05$)
 **(D and E)** Rank order of TFs enriched in the Cluster 3 and the Cluster 4 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_diff.png){#fig:late_pre_diff}  
 
 
@@ -224,12 +224,12 @@ The TFSEE method has five steps, followed by an integration stage. TFSEE combine
 
 ![**Density plots of enhancer and gene expression levels across all cell types.**
 Kernel density plots of log-transformed RPKM and FPKM values for determining active enhancers and genes. The dashed grey line represents the minimum expression cutoff.
-**(A)**	Density plot of H3K4me3 (promoter mark) cutoff RPKM $\geq$ 1.
-**(B)**	Density plot of H3K4me1 (enhancer mark) cutoff RPKM $\geq$ 1.
-**(C)**	Density plot of H3K27ac (enhancer mark) cutoff RPKM $\geq$ 1.
-**(D)**	Density plot of short-short paired GRO-seq transcription (SSP) (enhancer mark) cutoff RPKM $\geq$ 1.
-**(E)**	Density plot of short-unpaired GRO-seq transcription (SUNP) ( enhancer mark)  cutoff RPKM $\geq$ 0.5.
-**(F)**	Density plot of RNA-seq (gene expression) cutoff FPKM $\geq$ 0.4](images/density_plot.png){#fig:density_plot tag='S2'}
+**(A)**	Density plot of H3K4me3 (promoter mark) cutoff RPKM $\geq 1$.
+**(B)**	Density plot of H3K4me1 (enhancer mark) cutoff RPKM $\geq 1$.
+**(C)**	Density plot of H3K27ac (enhancer mark) cutoff RPKM $\geq 1$.
+**(D)**	Density plot of short-short paired GRO-seq transcription (SSP) (enhancer mark) cutoff RPKM $\geq 1$.
+**(E)**	Density plot of short-unpaired GRO-seq transcription (SUNP) ( enhancer mark)  cutoff RPKM $\geq 0.5$.
+**(F)**	Density plot of RNA-seq (gene expression) cutoff FPKM $\geq 0.4$](images/density_plot.png){#fig:density_plot tag='S2'}
 
 
 
@@ -247,16 +247,16 @@ Kernel density plots of log-transformed RPKM and FPKM values for determining act
 ![**TFSEE defined by histone modifications identifies cell type-specific enhancers and their cognate TFs that drive gene expression in pancreatic differentiation.**
 **(A)**	Unsupervised hierarchical clustering of cell line normalized TFSEE scores shown in a heatmap representation.  
 **(B)**	Biaxial t-SNE clustering plot of cell type-normalized TFSEE scores showing evidence of three distinct clusters, each point represents an individual TF.
-**(C)**	Boxplots of normalized TFSEE score for clusters identified in pancreatic differentiation. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test, p $< 1 \times 10^{-2}$). Number of TFs in each cluster are in parenthesis. Cluster 1, TFs associated across pancreatic lineage Cluster 2, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 3, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_histone.png){#fig:tfsee_histone tag='S4'}
+**(C)**	Boxplots of normalized TFSEE score for clusters identified in pancreatic differentiation. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test, $p \lt 1 \times 10^{-2}$). Number of TFs in each cluster are in parenthesis. Cluster 1, TFs associated across pancreatic lineage Cluster 2, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 3, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_histone.png){#fig:tfsee_histone tag='S4'}
 
 
 
 
 ![**TFSEE-Predicted TFs, by histone modifications, are enriched in pre- and late- pancreatic differentiation.**
 **(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 2) and late-pancreatic (cluster 3) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
-**(A)**	TFs identified in cluster 2 by TFSEE show equal expression across differentiation. While, cluster 3 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$)
-**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$).
-**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05).
+**(A)**	TFs identified in cluster 2 by TFSEE show equal expression across differentiation. While, cluster 3 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$)
+**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. ($p \lt 0.05$).
 **(D and E)** Rank order of TFs enriched in the Cluster 2 and the Cluster 3 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_histone.png){#fig:late_pre_histone tag='S5'}
 
 
@@ -264,9 +264,9 @@ Kernel density plots of log-transformed RPKM and FPKM values for determining act
 
 ![**TFSEE-Predicted TFs are enriched and depleted in Primitive Gut Tube during pancreatic differentiation.**
 **(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in depleted (cluster 1) and enriched (cluster 2) in primitive gut tube during pancreatic differentiation across different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
-**(A)**	TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-2}$)
-**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. (p$< 1 \times 10^{-4}$).
-**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05).
+**(A)**	TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. ($p \lt 1 \times 10^{-2}$)
+**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. ($p \lt  0.05$).
 **(D and E)** Rank order of TFs enriched in the Cluster 1 and the Cluster 2 identified using TFSEE.  The top five TFs in each Cluster are noted.](images/primitive_gut.png){#fig:primitive_gut tag='S6'}
 
 
