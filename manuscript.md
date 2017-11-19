@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2017-11-18'
+date-meta: '2017-11-19'
 keywords:
 - enhancers
 - transcription
@@ -22,8 +22,8 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@5fbb772](https://github.com/vsmalladi/tfsee-manuscript/tree/5fbb772e4fb0aefee400fb1e176112bc019cbd8f)
-on November 18, 2017.
+from [vsmalladi/tfsee-manuscript@d66f57d](https://github.com/vsmalladi/tfsee-manuscript/tree/d66f57dbd7c02fd1112fbb4dc3e2f52287a97389)
+on November 19, 2017.
 </em></small>
 
 ## Authors
@@ -38,7 +38,7 @@ on November 18, 2017.
     · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
     [katatonikkat](https://twitter.com/katatonikkat)<br>
   <small>
-     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Bioinformatics, University of Texas Southwestern Medical Center
   </small>
 
 + **Anusha Nagari**<br><br>
@@ -48,7 +48,7 @@ on November 18, 2017.
 
 + **Hector L. Franco**<br><br>
   <small>
-     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Genetics and Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill
   </small>
 
 + **W. Lee Kraus**<br><br>
@@ -74,46 +74,21 @@ Although thousands of potential enhancers have been identified in cell lines and
 Active enhancers have been shown to share several common features; such as open and accessible regions of chromatin (as measured by DNase-seq or ATAC-seq) [@NqDGzVRS; @x2PdIgDj; @6xCXy2Jy] and post-translational modification of histone tails (as assessed by ChIP-seq), including H3K4me1 and H3K27ac [@vCijBy88; @O5G8lPNO; @LkrR69b9]. While these features successfully define many enhancers, recent genomic assays have shown enhancers tend to be bound by RNA polymerase II (Pol II) and are actively transcribed, producing enhancer RNAs (‘eRNAs’) [@3ZN37fOe; @5i6RU9Zx; @1BkIYUDLC]. Enhancer transcription (as measured by GRO-seq or PRO-seq) has
 been shown to be used for enhancer prediction and track enhancer activity [@1BkIYUDLC; @14GXIWfT0; @1DE6cLccI; @18olkFjWD; @lPKPHCBB; @d09ELIR1; @GvDoUOfC; @2eAh2YIr; @5i6RU9Zx].
 
-In recent years, advances in technology have facilitated the large scale functional characterization of enhancer activity [@sKU362wY; @jjAPfyKA; @5zmE7Qkb], annotation of genome-wide binding sites of TFs [@15J98V2qM; @ZnmOeYfS] and identification of binding motifs for hundreds of TFs [@1AqKyPkB5]. However,
+In recent years, advances in technology have facilitated the large scale functional characterization of enhancer activity [@14L6kLUE3; @sKU362wY; @jjAPfyKA; @5zmE7Qkb] and annotation of genome-wide binding sites of TFs in various cell types and tissues [@15J98V2qM; @ZnmOeYfS]. However, due to countless cell types, experimental conditions and the large number of TFs [@EkABaVh5], an integration of these independent methods
+to study gene expression may not be achievable. Furthermore, analyses predicting TF binding sites (TFBSs), 4-12 nucleotides [@uOXPLhWz], utilizing databases of binding motifs [@1AqKyPkB5; @1DrZNoXOU; @1C9AIanMe] to predict the most likely bound TFs fail to consider that such sequences frequently occur by chance in the genome and that TF occupation is cell type specific [@uuBDz4a3]. To overcome these limitations, we have in this work established a novel method, Total Functional Score of Enhancer Elements (TFSEE), which can identify cell type-specific enhancers and their cognate TFs.
 
+In TFSEE, we integrate enhancer location and activity, TF motif prediction for each enhancer and the level of TF expression (Figure @fig:overview_tfsee). We have previously demonstrated TFSEE in the identification of
+key breast cancer subtype-specific transcription factors determining growth outcomes [TODO:LONESTAR Reference]. In the studies presented herein, we demonstrate the broader use of TFSEE to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
 
-Here, we propose TFSEE to identify cell type-specific TFs the promote lineage-specific enhancers. TFSEE integrates the magnitude of enhancer transcription (GRO-seq), enrichment of marks associated with enhancers (H3K4me1 and H3K27ac ChIP-seq), TF mRNA expression levels (RNA-seq), and TF motif p-values (MEME).
+Using TFSEE, we have previously identifedkey breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes In the studies presented herein, we describe the use of TFSEE to to analyze those data with the goal of identifying subtype-specific TFs that drive the subtype-specific biology of breast cancers
+
+Using TFSEE, we have identified key breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes. To demonstrate the broader utility of our approach, we have used this algorithm to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
+Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers (Figure {@fig:enhancer_predictions}A).
 
 
 ## Results
 
 ### Overview of TFSEE model
-
-
-![**Overview of Total Functional Score of Enhancer Elements (TFSEE) Method.**
-The TFSEE method has five steps, followed by an integration stage. TFSEE combines diverse data sets to identify cell type-specific enhancers and their cognate transcription factors (TFs).
-**(A)**	 In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify enriched TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type.
-**(B)**	 An illustration of TFSEE data integration stage, taking the outputs generated in panel A, to identify the location, activity level, and predicted TFs at each enhancer across all cell types. (Top) All matrices represent scaled enhancer activity for each cell type in each enhancer prediction method (G, H, and M). All matrices are linearly combined into a resulting matrix A, to provide a total enhancer activity score. (Bottom) Enhancer activity matrix A, is combined with motif prediction matrix T, represent scaled motif prediction p-values for each enhancer, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R (scaled TF expression for each cell type), into a resulting matrix Z, on which TFSEE clustering is performed.
-](images/overview_tfsee.png){#fig:overview_tfsee}
-
-
-
-![**Comparison of genome-wide prediction of enhancers in pancreatic differentiation.**
-**(A)**	*(Top)* Schematic depiction of pancreatic differentiation starting from Human embryonic stem cells (hESCs) to pancreatic endoderm (PE). *(Bottom)* Depiction of epigenomic (ChIP-seq) and transcriptional (GRO-seq and RNA-seq) profiles for each cell line used for analysis.
-**(B)**	Stacked bar chart comparing expression of candidate enhancers categorized by *(Top)* H3K4me1 and H3K27ac enrichment, or *(Bottom)* enhancer transcription (GRO-seq).
-**(C)**	Stacked bar chart comparing enhancer prediction methods in pancreatic differentiation. Enhancers were called using enhancer transcription (GRO-seq) or by using H3K4me1 enrichment, or H3K27ac enrichment. The percentage of called enhancers from one prediction method that overlap with enhancers called using other methods is shown.
-**(D)**	UpSet plot showing the set intersection of enhancer identification methods shown in panel C.](images/enhancer_predictions.png){#fig:enhancer_predictions}
-
-
-
-![**TFSEE identifies cell type-specific enhancers and their cognate TFs that drive gene expression in pancreatic differentiation.**
-**(A)**	Unsupervised hierarchical clustering of cell type-normalized TFSEE scores shown in a heatmap representation. hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
-**(B)**	Biaxial t-SNE clustering plot of cell type-normalized TFSEE scores showing evidence of four distinct clusters, each point represents an individual TF.
-**(C)**	Box plots of normalized TFSEE score for clusters identified in pancreatic differentiation (panel B), number of TFs are indicated in each cluster. Bars marked with different letters are significantly different (Wilcoxon rank sum test, p $< 1 \times 10^{-4}$). Cluster 1, TFs associated with early (hESC, DE) and late pancreatic differentiation (FG and PE). Cluster 2, TFs associated with GT pluripotency. Cluster 3, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 4, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_groseq.png){#fig:tfsee_groseq}
-
-
-
-![**TFSEE-Predicted TFs are enriched in pre- and late- pancreatic differentiation.**
-**(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 3) and late-pancreatic (cluster 4) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
-**(A)**	TFs identified in cluster 3 by TFSEE show equal expression across differentiation. While, cluster 4 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$)
-**(B)**	Enhancer transcription as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. p $< 1 \times 10^{-4}$).
-**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05)
-**(D and E)** Rank order of TFs enriched in the Cluster 3 and the Cluster 4 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_diff.png){#fig:late_pre_diff}  
 
 
 ## Discussion
@@ -203,6 +178,96 @@ For each cell line, the functional scores were Z-score normalized.  To identify 
 
 ### Nearest Neighboring Gene Analyses and Box Plots
 The universe of expressed genes in each cell line was determined from the RNA-seq data using an FPKM cutoff $>$ 0.4.  The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line.  Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from [matplotlib](https://matplotlib.org/) version 2.0.2 [@1026Gxdsi; @oaruRtzO].  Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.
+
+
+## Figures and Figure Legends {.page_break_before}
+
+![**Overview of Total Functional Score of Enhancer Elements (TFSEE) Method.**
+The TFSEE method has five steps, followed by an integration stage. TFSEE combines diverse data sets to identify cell type-specific enhancers and their cognate transcription factors (TFs).
+**(A)**	 In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify enriched TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type.
+**(B)**	 An illustration of TFSEE data integration stage, taking the outputs generated in panel A, to identify the location, activity level, and predicted TFs at each enhancer across all cell types. (Top) All matrices represent scaled enhancer activity for each cell type in each enhancer prediction method (G, H, and M). All matrices are linearly combined into a resulting matrix A, to provide a total enhancer activity score. (Bottom) Enhancer activity matrix A, is combined with motif prediction matrix T, represent scaled motif prediction p-values for each enhancer, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R (scaled TF expression for each cell type), into a resulting matrix Z, on which TFSEE clustering is performed.
+](images/overview_tfsee.png){#fig:overview_tfsee}
+
+
+
+![**Comparison of genome-wide prediction of enhancers in pancreatic differentiation.**
+**(A)**	*(Top)* Schematic depiction of pancreatic differentiation starting from Human embryonic stem cells (hESCs) to pancreatic endoderm (PE). *(Bottom)* Depiction of epigenomic (ChIP-seq) and transcriptional (GRO-seq and RNA-seq) profiles for each cell line used for analysis.
+**(B)**	Stacked bar chart comparing expression of candidate enhancers categorized by *(Top)* H3K4me1 and H3K27ac enrichment, or *(Bottom)* enhancer transcription (GRO-seq).
+**(C)**	Stacked bar chart comparing enhancer prediction methods in pancreatic differentiation. Enhancers were called using enhancer transcription (GRO-seq) or by using H3K4me1 enrichment, or H3K27ac enrichment. The percentage of called enhancers from one prediction method that overlap with enhancers called using other methods is shown.
+**(D)**	UpSet plot showing the set intersection of enhancer identification methods shown in panel C.](images/enhancer_predictions.png){#fig:enhancer_predictions}
+
+
+
+![**TFSEE identifies cell type-specific enhancers and their cognate TFs that drive gene expression in pancreatic differentiation.**
+**(A)**	Unsupervised hierarchical clustering of cell type-normalized TFSEE scores shown in a heatmap representation. hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(B)**	Biaxial t-SNE clustering plot of cell type-normalized TFSEE scores showing evidence of four distinct clusters, each point represents an individual TF.
+**(C)**	Box plots of normalized TFSEE score for clusters identified in pancreatic differentiation (panel B), number of TFs are indicated in each cluster. Bars marked with different letters are significantly different (Wilcoxon rank sum test, p $< 1 \times 10^{-4}$). Cluster 1, TFs associated with early (hESC, DE) and late pancreatic differentiation (FG and PE). Cluster 2, TFs associated with GT pluripotency. Cluster 3, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 4, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_groseq.png){#fig:tfsee_groseq}
+
+
+
+![**TFSEE-Predicted TFs are enriched in pre- and late- pancreatic differentiation.**
+**(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 3) and late-pancreatic (cluster 4) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(A)**	TFs identified in cluster 3 by TFSEE show equal expression across differentiation. While, cluster 4 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$)
+**(B)**	Enhancer transcription as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. p $< 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05)
+**(D and E)** Rank order of TFs enriched in the Cluster 3 and the Cluster 4 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_diff.png){#fig:late_pre_diff}  
+
+
+
+
+![**Unbiased, genome-wide prediction of active enhancers.**
+**(A)** Overview of the computational pipeline used for the genome-wide annotation of enhancer transcripts (eRNAs) and prediction of active enhancers using GRO-seq data.
+**(B)** Overview of the computational pipeline used for the genome-wide annotation of and prediction of active enhancers using ChIP-seq (H3K4me1 and H3K27ac) data.](images/enhancer_pipeline.png){#fig:enhancer_pipeline tag='S1'}
+
+
+
+
+![**Density plots of enhancer and gene expression levels across all cell types.**
+Kernel density plots of log-transformed RPKM and FPKM values for determining active enhancers and genes. The dashed grey line represents the minimum expression cutoff.
+**(A)**	Density plot of H3K4me3 (promoter mark) cutoff RPKM $\geq$ 1.
+**(B)**	Density plot of H3K4me1 (enhancer mark) cutoff RPKM $\geq$ 1.
+**(C)**	Density plot of H3K27ac (enhancer mark) cutoff RPKM $\geq$ 1.
+**(D)**	Density plot of short-short paired GRO-seq transcription (SSP) (enhancer mark) cutoff RPKM $\geq$ 1.
+**(E)**	Density plot of short-unpaired GRO-seq transcription (SUNP) ( enhancer mark)  cutoff RPKM $\geq$ 0.5.
+**(F)**	Density plot of RNA-seq (gene expression) cutoff FPKM $\geq$ 0.4](images/density_plot.png){#fig:density_plot tag='S2'}
+
+
+
+
+![**Enhancer transcription is a better predictor of enhancer activity and target gene expression than other features of active chromatin.**
+**(A-D)** UCSC Genome browser views of GRO-seq, histone modification ChIP-seq and RNA-seq data showing a transcribed enhancer *(black box with dashed line)* and its nearest neighboring gene. hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(A)**	Browser view showing a transcribed enhancer and its nearest neighboring gene (SMAD7). The data highlights histone modifications typically enriched at enhancers *(green)*, however the increased transcription determined by GRO-seq *(red/blue)* for DE correlates to expression of nearest genes determined by RNA-seq *(orange/light green)*.
+**(B)**	Browser view showing a transcribed enhancer and its nearest neighboring gene (ATG5. The data highlights an enhancer identified by GRO-seq *(red/blue)*, however lacks typical histone modifications enriched at enhancers *(green*). The increased transcription determined by GRO-seq for hESC correlates to expression of nearest genes determined by RNA-seq *(orange/light green)*.
+**(C)**	Browser view showing a transcribed enhancer and its nearest neighboring gene (PDX1). The data highlights an enhancer identified by histone modifications enriched at enhancers *(green)*, however increased transcription determined by GRO-seq *(red/blue)* correlates with antisense gene (AS-PDX1).
+**(D)**	Browser view showing a transcribed enhancer and its nearest neighboring gene (RGS4). The data highlights an enhancer identified by histone modifications enriched at enhancers *(green)*, however lacks enhancer transcription identified by GRO-seq *(red/blue)*. The increased enhancer signal determined by histone modifications for PE shows correlates to expression of nearest genes determined by RNA-seq *(orange/light green)* and GRO-seq *(red/blue)*.](images/genome_browser.png){#fig:genome_browser tag='S3'}
+
+
+
+
+![**TFSEE defined by histone modifications identifies cell type-specific enhancers and their cognate TFs that drive gene expression in pancreatic differentiation.**
+**(A)**	Unsupervised hierarchical clustering of cell line normalized TFSEE scores shown in a heatmap representation.  
+**(B)**	Biaxial t-SNE clustering plot of cell type-normalized TFSEE scores showing evidence of three distinct clusters, each point represents an individual TF.
+**(C)**	Boxplots of normalized TFSEE score for clusters identified in pancreatic differentiation. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test, p $< 1 \times 10^{-2}$). Number of TFs in each cluster are in parenthesis. Cluster 1, TFs associated across pancreatic lineage Cluster 2, TFs associated with pre-pancreatic lineage induction (hESC, DE and GT). Cluster 3, TFs associated with late-pancreatic differentiation (FG and PE).](images/tfsee_histone.png){#fig:tfsee_histone tag='S4'}
+
+
+
+
+![**TFSEE-Predicted TFs, by histone modifications, are enriched in pre- and late- pancreatic differentiation.**
+**(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 2) and late-pancreatic (cluster 3) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(A)**	TFs identified in cluster 2 by TFSEE show equal expression across differentiation. While, cluster 3 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$)
+**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. (p $< 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05).
+**(D and E)** Rank order of TFs enriched in the Cluster 2 and the Cluster 3 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_histone.png){#fig:late_pre_histone tag='S5'}
+
+
+
+
+![**TFSEE-Predicted TFs are enriched and depleted in Primitive Gut Tube during pancreatic differentiation.**
+**(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in depleted (cluster 1) and enriched (cluster 2) in primitive gut tube during pancreatic differentiation across different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
+**(A)**	TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. (p $< 1 \times 10^{-2}$)
+**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. (p$< 1 \times 10^{-4}$).
+**(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. (p $<$ 0.05).
+**(D and E)** Rank order of TFs enriched in the Cluster 1 and the Cluster 2 identified using TFSEE.  The top five TFs in each Cluster are noted.](images/primitive_gut.png){#fig:primitive_gut tag='S6'}
 
 
 ## References {.page_break_before}
