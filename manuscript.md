@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2017-11-19'
+date-meta: '2017-11-24'
 keywords:
 - enhancers
 - transcription
@@ -22,8 +22,8 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@4d63a06](https://github.com/vsmalladi/tfsee-manuscript/tree/4d63a0655c80b0bb90e6c768e3ddf87fee24dba6)
-on November 19, 2017.
+from [vsmalladi/tfsee-manuscript@537b602](https://github.com/vsmalladi/tfsee-manuscript/tree/537b602ff25e3851e3dfa201ef6434950e19928b)
+on November 24, 2017.
 </em></small>
 
 ## Authors
@@ -80,7 +80,6 @@ to study gene expression may not be achievable. Furthermore, analyses predicting
 In TFSEE, we integrate enhancer location and activity, TF motif prediction for each enhancer and the level of TF expression (Figure @fig:overview_tfsee). We have previously demonstrated TFSEE in the identification of
 key breast cancer subtype-specific transcription factors determining growth outcomes [TODO:LONESTAR Reference]. In the studies presented herein, we demonstrate the broader use of TFSEE to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
 
-Using TFSEE, we have previously identifedkey breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes In the studies presented herein, we describe the use of TFSEE to to analyze those data with the goal of identifying subtype-specific TFs that drive the subtype-specific biology of breast cancers
 
 Using TFSEE, we have identified key breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes. To demonstrate the broader utility of our approach, we have used this algorithm to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
 Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers (Figure {@fig:enhancer_predictions}A).
