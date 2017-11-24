@@ -15,4 +15,4 @@ This directory contains the following files, which are mostly ignored on the `ma
 ## Source
 
 The manuscripts in this directory were built from
-[`4d63a0655c80b0bb90e6c768e3ddf87fee24dba6`](https://github.com/vsmalladi/tfsee-manuscript/commit/4d63a0655c80b0bb90e6c768e3ddf87fee24dba6).
+[`537b602ff25e3851e3dfa201ef6434950e19928b`](https://github.com/vsmalladi/tfsee-manuscript/commit/537b602ff25e3851e3dfa201ef6434950e19928b).
