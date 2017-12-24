@@ -3,7 +3,7 @@
   "authors": [
     {
       "github": "vsmalladi",
-      "name": "Venkat Malladi",
+      "name": "Venkat S. Malladi",
       "orcid": "0000-0002-0144-0564",
       "twitter": "katatonikkat",
       "email": "Venkat.Malladi@UTSouthwestern.edu",
@@ -24,7 +24,7 @@
   ],
   "ci_source": {
     "repo_slug": "vsmalladi/tfsee-manuscript",
-    "commit": "40fe1c46a6c36d367c0e896be79f23fc49743133"
+    "commit": "0b24f6d4fc25376e6a37dd13903b657438b4ca1b"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -33,6 +33,6 @@
       "url": 6,
       "total": 56
     },
-    "word_count": 3891
+    "word_count": 3943
   }
 }
