@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2017-11-24'
+date-meta: '2017-12-24'
 keywords:
 - enhancers
 - transcription
@@ -22,8 +22,8 @@ title: Exploring Lineage-Specific Enhancers by Integrating Enhancer Transcriptio
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@537b602](https://github.com/vsmalladi/tfsee-manuscript/tree/537b602ff25e3851e3dfa201ef6434950e19928b)
-on November 24, 2017.
+from [vsmalladi/tfsee-manuscript@40fe1c4](https://github.com/vsmalladi/tfsee-manuscript/tree/40fe1c46a6c36d367c0e896be79f23fc49743133)
+on December 24, 2017.
 </em></small>
 
 ## Authors

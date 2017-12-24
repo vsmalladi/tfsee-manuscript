@@ -77,12 +77,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          6
         ]
       ],
-      "date-time": "2017-10-26T20:39:33Z",
-      "timestamp": 1509050373503
+      "date-time": "2017-12-06T15:02:33Z",
+      "timestamp": 1512572553613
     },
     "reference-count": 79,
     "publisher": "Elsevier BV",
@@ -148,7 +148,7 @@
     },
     "page": "622-634",
     "source": "Crossref",
-    "is-referenced-by-count": 186,
+    "is-referenced-by-count": 194,
     "title": "A Rapid, Extensive, and Transient Transcriptional Response to Estrogen Signaling in Breast Cancer Cells",
     "prefix": "10.1016",
     "volume": "145",
@@ -246,12 +246,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          6
         ]
       ],
-      "date-time": "2017-10-27T09:19:30Z",
-      "timestamp": 1509095970156
+      "date-time": "2017-12-06T12:42:18Z",
+      "timestamp": 1512564138958
     },
     "reference-count": 64,
     "publisher": "Elsevier BV",
@@ -322,7 +322,7 @@
     "page": "327-339",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 331,
+    "is-referenced-by-count": 342,
     "title": "DNA-Binding Specificities of Human Transcription Factors",
     "prefix": "10.1016",
     "volume": "152",
@@ -512,12 +512,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          15
         ]
       ],
-      "date-time": "2017-10-27T14:35:33Z",
-      "timestamp": 1509114933143
+      "date-time": "2017-12-15T15:03:03Z",
+      "timestamp": 1513350183717
     },
     "reference-count": 125,
     "publisher": "Elsevier BV",
@@ -588,7 +588,7 @@
     "page": "948-959",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 62,
+    "is-referenced-by-count": 66,
     "title": "Architectural and Functional Commonalities between Enhancers and Promoters",
     "prefix": "10.1016",
     "volume": "162",
@@ -693,12 +693,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          11,
+          20
         ]
       ],
-      "date-time": "2017-10-27T05:21:34Z",
-      "timestamp": 1509081694852
+      "date-time": "2017-11-20T07:02:12Z",
+      "timestamp": 1511161332395
     },
     "reference-count": 44,
     "publisher": "Elsevier BV",
@@ -769,7 +769,7 @@
     "page": "21-34",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 21,
+    "is-referenced-by-count": 23,
     "title": "TNFα Signaling Exposes Latent Estrogen Receptor Binding Sites to Alter the Breast Cancer Cell Transcriptome",
     "prefix": "10.1016",
     "volume": "58",
@@ -880,12 +880,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          12
         ]
       ],
-      "date-time": "2017-10-26T02:58:11Z",
-      "timestamp": 1508986691422
+      "date-time": "2017-12-12T12:02:23Z",
+      "timestamp": 1513080143238
     },
     "reference-count": 38,
     "publisher": "Elsevier BV",
@@ -956,7 +956,7 @@
     "page": "224-237",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 84,
+    "is-referenced-by-count": 87,
     "title": "Dynamic Chromatin Remodeling Mediated by Polycomb Proteins Orchestrates Pancreatic Differentiation of Human Embryonic Stem Cells",
     "prefix": "10.1016",
     "volume": "12",
@@ -1118,12 +1118,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          1
+          12,
+          20
         ]
       ],
-      "date-time": "2017-11-01T09:22:10Z",
-      "timestamp": 1509528130393
+      "date-time": "2017-12-20T19:22:33Z",
+      "timestamp": 1513797753791
     },
     "reference-count": 53,
     "publisher": "Elsevier BV",
@@ -1194,7 +1194,7 @@
     "page": "386-399",
     "update-policy": "http://dx.doi.org/10.1016/elsevier_cm_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 41,
+    "is-referenced-by-count": 46,
     "title": "Epigenetic Priming of Enhancers Predicts Developmental Competence of hESC-Derived Endodermal Lineage Intermediates",
     "prefix": "10.1016",
     "volume": "16",
@@ -1371,12 +1371,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          16
+          12,
+          21
         ]
       ],
-      "date-time": "2017-11-16T20:02:18Z",
-      "timestamp": 1510862538149
+      "date-time": "2017-12-21T19:02:34Z",
+      "timestamp": 1513882954734
     },
     "reference-count": 25,
     "publisher": "Springer Nature",
@@ -1409,7 +1409,7 @@
     },
     "page": "108-112",
     "source": "Crossref",
-    "is-referenced-by-count": 1011,
+    "is-referenced-by-count": 1025,
     "title": "Histone modifications at human enhancers reflect global cell-type-specific gene expression",
     "prefix": "10.1038",
     "volume": "459",
@@ -1575,12 +1575,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          17
+          12,
+          23
         ]
       ],
-      "date-time": "2017-11-17T08:22:12Z",
-      "timestamp": 1510906932602
+      "date-time": "2017-12-23T13:02:47Z",
+      "timestamp": 1514034167397
     },
     "reference-count": 40,
     "publisher": "Springer Nature",
@@ -1604,7 +1604,7 @@
     },
     "page": "390-394",
     "source": "Crossref",
-    "is-referenced-by-count": 341,
+    "is-referenced-by-count": 347,
     "title": "Reprogramming transcription by distinct classes of enhancers functionally defined by eRNA",
     "prefix": "10.1038",
     "volume": "474",
@@ -1730,12 +1730,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          23
         ]
       ],
-      "date-time": "2017-10-27T03:03:49Z",
-      "timestamp": 1509073429779
+      "date-time": "2017-12-23T17:42:46Z",
+      "timestamp": 1514050966230
     },
     "reference-count": 48,
     "publisher": "Springer Nature",
@@ -1759,7 +1759,7 @@
     },
     "page": "91-100",
     "source": "Crossref",
-    "is-referenced-by-count": 602,
+    "is-referenced-by-count": 621,
     "title": "Architecture of the human regulatory network derived from ENCODE data",
     "prefix": "10.1038",
     "volume": "489",
@@ -2100,12 +2100,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          17
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-17T20:42:15Z",
-      "timestamp": 1510951335268
+      "date-time": "2017-12-24T11:42:24Z",
+      "timestamp": 1514115744458
     },
     "reference-count": 80,
     "publisher": "Springer Nature",
@@ -2129,7 +2129,7 @@
     },
     "page": "57-74",
     "source": "Crossref",
-    "is-referenced-by-count": 4596,
+    "is-referenced-by-count": 4700,
     "title": "An integrated encyclopedia of DNA elements in the human genome",
     "prefix": "10.1038",
     "volume": "489",
@@ -5195,12 +5195,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          14
+          12,
+          23
         ]
       ],
-      "date-time": "2017-11-14T17:22:18Z",
-      "timestamp": 1510680138272
+      "date-time": "2017-12-23T13:02:52Z",
+      "timestamp": 1514034172458
     },
     "reference-count": 40,
     "publisher": "Springer Nature",
@@ -5224,7 +5224,7 @@
     },
     "page": "516-520",
     "source": "Crossref",
-    "is-referenced-by-count": 312,
+    "is-referenced-by-count": 321,
     "title": "Functional roles of enhancer RNAs for oestrogen-dependent transcriptional activation",
     "prefix": "10.1038",
     "volume": "498",
@@ -5355,12 +5355,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          17
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-17T12:22:13Z",
-      "timestamp": 1510921333513
+      "date-time": "2017-12-24T09:02:24Z",
+      "timestamp": 1514106144773
     },
     "reference-count": 119,
     "publisher": "Springer Nature",
@@ -5384,7 +5384,7 @@
     },
     "page": "317-330",
     "source": "Crossref",
-    "is-referenced-by-count": 1000,
+    "is-referenced-by-count": 1041,
     "title": "Integrative analysis of 111 reference human epigenomes",
     "prefix": "10.1038",
     "volume": "518",
@@ -7155,12 +7155,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          20
         ]
       ],
-      "date-time": "2017-10-27T20:09:58Z",
-      "timestamp": 1509134998070
+      "date-time": "2017-12-20T16:22:41Z",
+      "timestamp": 1513786961563
     },
     "reference-count": 74,
     "publisher": "Springer Nature",
@@ -7184,7 +7184,7 @@
     },
     "page": "384-388",
     "source": "Crossref",
-    "is-referenced-by-count": 74,
+    "is-referenced-by-count": 77,
     "title": "DNA-dependent formation of transcription factor pairs alters their binding specificity",
     "prefix": "10.1038",
     "volume": "527",
@@ -7295,12 +7295,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          15
         ]
       ],
-      "date-time": "2017-10-27T03:28:32Z",
-      "timestamp": 1509074912065
+      "date-time": "2017-12-15T15:03:03Z",
+      "timestamp": 1513350183721
     },
     "reference-count": 66,
     "publisher": "Springer Nature",
@@ -7324,7 +7324,7 @@
     },
     "page": "1311-1320",
     "source": "Crossref",
-    "is-referenced-by-count": 114,
+    "is-referenced-by-count": 120,
     "title": "Analysis of nascent RNA identifies a unified architecture of initiation regions at mammalian promoters and enhancers",
     "prefix": "10.1038",
     "volume": "46",
@@ -7417,12 +7417,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          13
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-13T20:02:20Z",
-      "timestamp": 1510603340003
+      "date-time": "2017-12-24T10:42:46Z",
+      "timestamp": 1514112166279
     },
     "reference-count": 35,
     "publisher": "Springer Nature",
@@ -7454,7 +7454,7 @@
     },
     "page": "311-318",
     "source": "Crossref",
-    "is-referenced-by-count": 1277,
+    "is-referenced-by-count": 1301,
     "title": "Distinct and predictive chromatin signatures of transcriptional promoters and enhancers in the human genome",
     "prefix": "10.1038",
     "volume": "39",
@@ -7590,12 +7590,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          13
         ]
       ],
-      "date-time": "2017-10-27T02:53:03Z",
-      "timestamp": 1509072783017
+      "date-time": "2017-12-13T19:22:15Z",
+      "timestamp": 1513192935384
     },
     "reference-count": 42,
     "publisher": "Springer Nature",
@@ -7619,7 +7619,7 @@
     },
     "page": "1728-1740",
     "source": "Crossref",
-    "is-referenced-by-count": 196,
+    "is-referenced-by-count": 209,
     "title": "Identifying ChIP-seq enrichment using MACS",
     "prefix": "10.1038",
     "volume": "7",
@@ -7705,12 +7705,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          24
         ]
       ],
-      "date-time": "2017-10-26T08:15:55Z",
-      "timestamp": 1509005755383
+      "date-time": "2017-12-24T05:02:50Z",
+      "timestamp": 1514091770963
     },
     "reference-count": 117,
     "publisher": "Springer Nature",
@@ -7742,7 +7742,7 @@
     },
     "page": "252-263",
     "source": "Crossref",
-    "is-referenced-by-count": 534,
+    "is-referenced-by-count": 552,
     "title": "A census of human transcription factors: function, expression and evolution",
     "prefix": "10.1038",
     "volume": "10",
@@ -7815,12 +7815,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          17
+          12,
+          14
         ]
       ],
-      "date-time": "2017-11-17T10:02:14Z",
-      "timestamp": 1510912934496
+      "date-time": "2017-12-14T17:02:54Z",
+      "timestamp": 1513270974892
     },
     "reference-count": 165,
     "publisher": "Springer Nature",
@@ -7844,7 +7844,7 @@
     },
     "page": "272-286",
     "source": "Crossref",
-    "is-referenced-by-count": 279,
+    "is-referenced-by-count": 285,
     "title": "Transcriptional enhancers: from properties to genome-wide predictions",
     "prefix": "10.1038",
     "volume": "15",
@@ -7922,12 +7922,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          16
+          12,
+          23
         ]
       ],
-      "date-time": "2017-11-16T20:02:18Z",
-      "timestamp": 1510862538079
+      "date-time": "2017-12-23T13:02:52Z",
+      "timestamp": 1514034172408
     },
     "reference-count": 128,
     "publisher": "Springer Nature",
@@ -7951,7 +7951,7 @@
     },
     "page": "144-154",
     "source": "Crossref",
-    "is-referenced-by-count": 135,
+    "is-referenced-by-count": 144,
     "title": "The selection and function of cell type-specific enhancers",
     "prefix": "10.1038",
     "volume": "16",
@@ -8033,12 +8033,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          6
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-06T13:02:33Z",
-      "timestamp": 1509973353908
+      "date-time": "2017-12-24T13:02:28Z",
+      "timestamp": 1514120548715
     },
     "reference-count": 14,
     "publisher": "Oxford University Press (OUP)",
@@ -8071,7 +8071,7 @@
     },
     "page": "1754-1760",
     "source": "Crossref",
-    "is-referenced-by-count": 8340,
+    "is-referenced-by-count": 8666,
     "title": "Fast and accurate short read alignment with Burrows-Wheeler transform",
     "prefix": "10.1093",
     "volume": "25",
@@ -8150,12 +8150,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          24
         ]
       ],
-      "date-time": "2017-10-26T10:33:54Z",
-      "timestamp": 1509014034527
+      "date-time": "2017-12-24T12:42:18Z",
+      "timestamp": 1514119338613
     },
     "reference-count": 4,
     "publisher": "Oxford University Press (OUP)",
@@ -8188,7 +8188,7 @@
     },
     "page": "2078-2079",
     "source": "Crossref",
-    "is-referenced-by-count": 8843,
+    "is-referenced-by-count": 9275,
     "title": "The Sequence Alignment/Map format and SAMtools",
     "prefix": "10.1093",
     "volume": "25",
@@ -8306,12 +8306,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          25
+          12,
+          24
         ]
       ],
-      "date-time": "2017-10-25T20:55:44Z",
-      "timestamp": 1508964944408
+      "date-time": "2017-12-24T11:02:26Z",
+      "timestamp": 1514113346318
     },
     "reference-count": 5,
     "publisher": "Oxford University Press (OUP)",
@@ -8344,7 +8344,7 @@
     },
     "page": "841-842",
     "source": "Crossref",
-    "is-referenced-by-count": 2845,
+    "is-referenced-by-count": 3000,
     "title": "BEDTools: a flexible suite of utilities for comparing genomic features",
     "prefix": "10.1093",
     "volume": "26",
@@ -8422,12 +8422,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          6
+          12,
+          21
         ]
       ],
-      "date-time": "2017-11-06T07:02:18Z",
-      "timestamp": 1509951738099
+      "date-time": "2017-12-21T17:42:35Z",
+      "timestamp": 1513878155136
     },
     "reference-count": 10,
     "publisher": "Oxford University Press (OUP)",
@@ -8460,7 +8460,7 @@
     },
     "page": "1696-1697",
     "source": "Crossref",
-    "is-referenced-by-count": 354,
+    "is-referenced-by-count": 369,
     "title": "MEME-ChIP: motif analysis of large DNA datasets",
     "prefix": "10.1093",
     "volume": "27",
@@ -8538,12 +8538,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          6
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-06T16:22:13Z",
-      "timestamp": 1509985333704
+      "date-time": "2017-12-24T01:22:53Z",
+      "timestamp": 1514078573347
     },
     "reference-count": 22,
     "publisher": "Oxford University Press (OUP)",
@@ -8575,7 +8575,7 @@
     },
     "page": "15-21",
     "source": "Crossref",
-    "is-referenced-by-count": 1824,
+    "is-referenced-by-count": 1973,
     "title": "STAR: ultrafast universal RNA-seq aligner",
     "prefix": "10.1093",
     "volume": "29",
@@ -8688,12 +8688,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          25
+          12,
+          20
         ]
       ],
-      "date-time": "2017-10-25T06:15:46Z",
-      "timestamp": 1508912146271
+      "date-time": "2017-12-20T05:02:54Z",
+      "timestamp": 1513746174503
     },
     "reference-count": 0,
     "publisher": "Oxford University Press (OUP)",
@@ -8726,7 +8726,7 @@
     },
     "page": "D88-D92",
     "source": "Crossref",
-    "is-referenced-by-count": 291,
+    "is-referenced-by-count": 302,
     "title": "VISTA Enhancer Browser--a database of tissue-specific human enhancers",
     "prefix": "10.1093",
     "volume": "35",
@@ -8801,12 +8801,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          24
         ]
       ],
-      "date-time": "2017-10-26T11:56:52Z",
-      "timestamp": 1509019012252
+      "date-time": "2017-12-24T11:22:24Z",
+      "timestamp": 1514114544302
     },
     "reference-count": 13,
     "publisher": "Oxford University Press (OUP)",
@@ -8839,7 +8839,7 @@
     },
     "page": "W202-W208",
     "source": "Crossref",
-    "is-referenced-by-count": 1602,
+    "is-referenced-by-count": 1685,
     "title": "MEME SUITE: tools for motif discovery and searching",
     "prefix": "10.1093",
     "volume": "37",
@@ -8948,12 +8948,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          1
+          12,
+          21
         ]
       ],
-      "date-time": "2017-11-01T22:02:22Z",
-      "timestamp": 1509573742589
+      "date-time": "2017-12-21T17:02:47Z",
+      "timestamp": 1513875767124
     },
     "reference-count": 28,
     "publisher": "Oxford University Press (OUP)",
@@ -8986,7 +8986,7 @@
     },
     "page": "D110-D115",
     "source": "Crossref",
-    "is-referenced-by-count": 164,
+    "is-referenced-by-count": 191,
     "title": "JASPAR 2016: a major expansion and update of the open-access database of transcription factor binding profiles",
     "prefix": "10.1093",
     "volume": "44",
@@ -9128,12 +9128,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          12,
+          22
         ]
       ],
-      "date-time": "2017-10-27T03:10:00Z",
-      "timestamp": 1509073800232
+      "date-time": "2017-12-22T13:42:48Z",
+      "timestamp": 1513950168113
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -9166,7 +9166,7 @@
     },
     "page": "1760-1774",
     "source": "Crossref",
-    "is-referenced-by-count": 1022,
+    "is-referenced-by-count": 1080,
     "title": "GENCODE: The reference human genome annotation for The ENCODE Project",
     "prefix": "10.1101",
     "volume": "22",
@@ -9436,12 +9436,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          3
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-03T15:22:23Z",
-      "timestamp": 1509722543978
+      "date-time": "2017-12-24T05:42:23Z",
+      "timestamp": 1514094143458
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -9474,7 +9474,7 @@
     },
     "page": "1813-1831",
     "source": "Crossref",
-    "is-referenced-by-count": 461,
+    "is-referenced-by-count": 481,
     "title": "ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia",
     "prefix": "10.1101",
     "volume": "22",
@@ -9774,12 +9774,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          15
+          12,
+          7
         ]
       ],
-      "date-time": "2017-11-15T11:02:16Z",
-      "timestamp": 1510743736031
+      "date-time": "2017-12-07T18:02:43Z",
+      "timestamp": 1512669763493
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -9812,7 +9812,7 @@
     },
     "page": "800-811",
     "source": "Crossref",
-    "is-referenced-by-count": 81,
+    "is-referenced-by-count": 82,
     "title": "Systematic dissection of regulatory motifs in 2000 predicted human enhancers using a massively parallel reporter assay",
     "prefix": "10.1101",
     "volume": "23",
@@ -9922,12 +9922,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          22
         ]
       ],
-      "date-time": "2017-10-26T04:50:07Z",
-      "timestamp": 1508993407105
+      "date-time": "2017-12-22T08:02:36Z",
+      "timestamp": 1513929756776
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -9960,7 +9960,7 @@
     },
     "page": "777-788",
     "source": "Crossref",
-    "is-referenced-by-count": 63,
+    "is-referenced-by-count": 65,
     "title": "Patterns of regulatory activity across diverse human cell types predict tissue identity, transcription factor binding, and long-range interactions",
     "prefix": "10.1101",
     "volume": "23",
@@ -10066,11 +10066,11 @@
         [
           2017,
           11,
-          3
+          28
         ]
       ],
-      "date-time": "2017-11-03T15:22:24Z",
-      "timestamp": 1509722544043
+      "date-time": "2017-11-28T12:22:15Z",
+      "timestamp": 1511871735725
     },
     "reference-count": 0,
     "publisher": "Cold Spring Harbor Laboratory",
@@ -10103,7 +10103,7 @@
     },
     "page": "1210-1223",
     "source": "Crossref",
-    "is-referenced-by-count": 150,
+    "is-referenced-by-count": 153,
     "title": "Enhancer transcripts mark active estrogen receptor binding sites",
     "prefix": "10.1101",
     "volume": "23",
@@ -10427,12 +10427,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          6
+          12,
+          23
         ]
       ],
-      "date-time": "2017-11-06T15:42:18Z",
-      "timestamp": 1509982938516
+      "date-time": "2017-12-23T22:42:46Z",
+      "timestamp": 1514068966585
     },
     "reference-count": 0,
     "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
@@ -10463,7 +10463,7 @@
     },
     "page": "90-95",
     "source": "Crossref",
-    "is-referenced-by-count": 1835,
+    "is-referenced-by-count": 1972,
     "title": "Matplotlib: A 2D Graphics Environment",
     "prefix": "10.1109",
     "volume": "9",
@@ -10489,12 +10489,12 @@
       "date-parts": [
         [
           2017,
-          3,
-          15
+          11,
+          14
         ]
       ],
-      "date-time": "2017-03-15T19:55:33Z",
-      "timestamp": 1489607733000
+      "date-time": "2017-11-14T14:25:38Z",
+      "timestamp": 1510669538000
     },
     "score": 1.0,
     "subtitle": [],
@@ -10522,12 +10522,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          15
+          12,
+          23
         ]
       ],
-      "date-time": "2017-11-15T13:42:15Z",
-      "timestamp": 1510753335273
+      "date-time": "2017-12-23T22:42:41Z",
+      "timestamp": 1514068961629
     },
     "reference-count": 47,
     "publisher": "American Association for the Advancement of Science (AAAS)",
@@ -10560,7 +10560,7 @@
     },
     "page": "1074-1077",
     "source": "Crossref",
-    "is-referenced-by-count": 201,
+    "is-referenced-by-count": 208,
     "title": "Genome-Wide Quantitative Enhancer Activity Maps Identified by STARR-seq",
     "prefix": "10.1126",
     "volume": "339",
@@ -10656,12 +10656,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          20
+          11,
+          14
         ]
       ],
-      "date-time": "2017-10-20T13:42:10Z",
-      "timestamp": 1508506930439
+      "date-time": "2017-11-14T10:42:25Z",
+      "timestamp": 1510656145109
     },
     "publisher-location": "New York, New York, USA",
     "reference-count": 28,
@@ -10709,7 +10709,7 @@
       "timestamp": 1485203752000
     },
     "source": "Crossref",
-    "is-referenced-by-count": 7,
+    "is-referenced-by-count": 8,
     "title": "Visualizing Large-scale and High-dimensional Data",
     "prefix": "10.1145",
     "author": [
@@ -10795,12 +10795,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          6
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-06T11:42:14Z",
-      "timestamp": 1509968534295
+      "date-time": "2017-12-24T13:02:28Z",
+      "timestamp": 1514120548697
     },
     "reference-count": 26,
     "publisher": "Springer Nature",
@@ -10831,7 +10831,7 @@
     },
     "page": "323",
     "source": "Crossref",
-    "is-referenced-by-count": 1903,
+    "is-referenced-by-count": 2034,
     "title": "RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome",
     "prefix": "10.1186",
     "volume": "12",
@@ -10895,12 +10895,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          25
+          12,
+          24
         ]
       ],
-      "date-time": "2017-10-25T08:08:46Z",
-      "timestamp": 1508918926770
+      "date-time": "2017-12-24T09:02:24Z",
+      "timestamp": 1514106144769
     },
     "reference-count": 0,
     "publisher": "Springer Nature",
@@ -10931,7 +10931,7 @@
     },
     "page": "R24",
     "source": "Crossref",
-    "is-referenced-by-count": 383,
+    "is-referenced-by-count": 401,
     "title": "Quantifying similarity between motifs",
     "prefix": "10.1186",
     "volume": "8",
@@ -10996,12 +10996,12 @@
       "date-parts": [
         [
           2017,
-          11,
-          6
+          12,
+          24
         ]
       ],
-      "date-time": "2017-11-06T11:02:17Z",
-      "timestamp": 1509966137877
+      "date-time": "2017-12-24T13:42:25Z",
+      "timestamp": 1514122945045
     },
     "reference-count": 0,
     "publisher": "Springer Nature",
@@ -11032,7 +11032,7 @@
     },
     "page": "R25",
     "source": "Crossref",
-    "is-referenced-by-count": 6692,
+    "is-referenced-by-count": 6870,
     "title": "Ultrafast and memory-efficient alignment of short DNA sequences to the human genome",
     "prefix": "10.1186",
     "volume": "10",
@@ -11097,12 +11097,12 @@
       "date-parts": [
         [
           2017,
-          10,
+          11,
           27
         ]
       ],
-      "date-time": "2017-10-27T03:19:41Z",
-      "timestamp": 1509074381255
+      "date-time": "2017-11-27T13:22:12Z",
+      "timestamp": 1511788932138
     },
     "reference-count": 95,
     "publisher": "Springer Nature",
@@ -11133,7 +11133,7 @@
     },
     "page": "R50",
     "source": "Crossref",
-    "is-referenced-by-count": 54,
+    "is-referenced-by-count": 55,
     "title": "Functional analysis of transcription factor binding sites in human promoters",
     "prefix": "10.1186",
     "volume": "13",
@@ -11220,12 +11220,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          27
+          11,
+          20
         ]
       ],
-      "date-time": "2017-10-27T21:42:21Z",
-      "timestamp": 1509140541045
+      "date-time": "2017-11-20T07:02:12Z",
+      "timestamp": 1511161332383
     },
     "reference-count": 57,
     "publisher": "Springer Nature",
@@ -11277,7 +11277,7 @@
     },
     "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 5,
+    "is-referenced-by-count": 7,
     "title": "groHMM: a computational tool for identifying unannotated and cell type-specific transcription units from global run-on sequencing data",
     "prefix": "10.1186",
     "volume": "16",
@@ -11378,12 +11378,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          15
         ]
       ],
-      "date-time": "2017-10-26T01:38:01Z",
-      "timestamp": 1508981881996
+      "date-time": "2017-12-15T15:03:03Z",
+      "timestamp": 1513350183724
     },
     "reference-count": 79,
     "publisher": "Public Library of Science (PLoS)",
@@ -11428,7 +11428,7 @@
     "page": "e1000384",
     "update-policy": "http://dx.doi.org/10.1371/journal.pbio.corrections_policy",
     "source": "Crossref",
-    "is-referenced-by-count": 320,
+    "is-referenced-by-count": 331,
     "title": "A Large Fraction of Extragenic RNA Pol II Transcription Sites Overlap Enhancers",
     "prefix": "10.1371",
     "volume": "8",
@@ -11716,12 +11716,12 @@
       "date-parts": [
         [
           2017,
-          10,
-          26
+          12,
+          18
         ]
       ],
-      "date-time": "2017-10-26T23:51:01Z",
-      "timestamp": 1509061861135
+      "date-time": "2017-12-18T20:42:46Z",
+      "timestamp": 1513629766301
     },
     "reference-count": 0,
     "publisher": "Genetics Society of America",
@@ -11753,7 +11753,7 @@
     },
     "page": "2051-2063",
     "source": "Crossref",
-    "is-referenced-by-count": 8,
+    "is-referenced-by-count": 9,
     "title": "Distinct and Predictive Histone Lysine Acetylation Patterns at Promoters, Enhancers, and Gene Bodies",
     "prefix": "10.1534",
     "volume": "4",
