@@ -19,6 +19,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1038/nrg2538	doi:10.1038/nrg2538	doi:10.1038/nrg2538	EkABaVh5
 @doi:10.1038/nrg3682	doi:10.1038/nrg3682	doi:10.1038/nrg3682	sJDRq7sP
 @doi:10.1038/nrm3949	doi:10.1038/nrm3949	doi:10.1038/nrm3949	d09ELIR1
+@doi:10.1093/bib/bbv101	doi:10.1093/bib/bbv101	doi:10.1093/bib/bbv101	r7FNQqrP
 @doi:10.1093/bioinformatics/btp324	doi:10.1093/bioinformatics/btp324	doi:10.1093/bioinformatics/btp324	roi5bwXL
 @doi:10.1093/bioinformatics/btp352	doi:10.1093/bioinformatics/btp352	doi:10.1093/bioinformatics/btp352	IPc8cy7s
 @doi:10.1093/bioinformatics/btq033	doi:10.1093/bioinformatics/btq033	doi:10.1093/bioinformatics/btq033	1HWiAHnIw
@@ -27,12 +28,14 @@ string	citation	standard_citation	citation_id
 @doi:10.1093/nar/gkl822	doi:10.1093/nar/gkl822	doi:10.1093/nar/gkl822	14L6kLUE3
 @doi:10.1093/nar/gkp335	doi:10.1093/nar/gkp335	doi:10.1093/nar/gkp335	dwj6qSn3
 @doi:10.1093/nar/gkv1176	doi:10.1093/nar/gkv1176	doi:10.1093/nar/gkv1176	1DrZNoXOU
+@doi:10.1093/nar/gkv1530	doi:10.1093/nar/gkv1530	doi:10.1093/nar/gkv1530	1CNxOwAG6
 @doi:10.1101/gr.135350.111	doi:10.1101/gr.135350.111	doi:10.1101/gr.135350.111	15rkMH6SD
 @doi:10.1101/gr.136184.111	doi:10.1101/gr.136184.111	doi:10.1101/gr.136184.111	hvhWxir9
 @doi:10.1101/gr.144899.112	doi:10.1101/gr.144899.112	doi:10.1101/gr.144899.112	sKU362wY
 @doi:10.1101/gr.152140.112	doi:10.1101/gr.152140.112	doi:10.1101/gr.152140.112	x2PdIgDj
 @doi:10.1101/gr.152306.112	doi:10.1101/gr.152306.112	doi:10.1101/gr.152306.112	1DE6cLccI
 @doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	doi:10.1101/gr.173518.114	5zmE7Qkb
+@doi:10.1101/gr.226019.117	doi:10.1101/gr.226019.117	doi:10.1101/gr.226019.117	Iu6Tq2rd
 @doi:10.1101/gr.4074106	doi:10.1101/gr.4074106	doi:10.1101/gr.4074106	NqDGzVRS
 @doi:10.1109/MCSE.2007.55	doi:10.1109/MCSE.2007.55	doi:10.1109/mcse.2007.55	1026Gxdsi
 @doi:10.1126/science.1232542	doi:10.1126/science.1232542	doi:10.1126/science.1232542	jjAPfyKA
@@ -42,7 +45,9 @@ string	citation	standard_citation	citation_id
 @doi:10.1186/gb-2009-10-3-r25	doi:10.1186/gb-2009-10-3-r25	doi:10.1186/gb-2009-10-3-r25	RU8ikjzP
 @doi:10.1186/gb-2012-13-9-r50	doi:10.1186/gb-2012-13-9-r50	doi:10.1186/gb-2012-13-9-r50	uuBDz4a3
 @doi:10.1186/s12859-015-0656-3	doi:10.1186/s12859-015-0656-3	doi:10.1186/s12859-015-0656-3	lPKPHCBB
+@doi:10.1186/s13072-015-0009-5	doi:10.1186/s13072-015-0009-5	doi:10.1186/s13072-015-0009-5	UIPf9Y7q
 @doi:10.1371/journal.pbio.1000384	doi:10.1371/journal.pbio.1000384	doi:10.1371/journal.pbio.1000384	3ZN37fOe
+@doi:10.1371/journal.pgen.1004610	doi:10.1371/journal.pgen.1004610	doi:10.1371/journal.pgen.1004610	9nnd7Ryc
 @doi:10.1371/journal.pgen.1004994	doi:10.1371/journal.pgen.1004994	doi:10.1371/journal.pgen.1004994	6xCXy2Jy
 @doi:10.1534/g3.114.013565	doi:10.1534/g3.114.013565	doi:10.1534/g3.114.013565	LkrR69b9
 @doi:10.18129/B9.bioc.groHMM	doi:10.18129/B9.bioc.groHMM	doi:10.18129/b9.bioc.grohmm	1HVy2rbI
