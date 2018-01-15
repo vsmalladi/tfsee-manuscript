@@ -1,5 +1,5 @@
 {
-  "date": "December 25, 2017",
+  "date": "January 15, 2018",
   "authors": [
     {
       "github": "vsmalladi",
@@ -7,24 +7,62 @@
       "orcid": "0000-0002-0144-0564",
       "twitter": "katatonikkat",
       "email": "Venkat.Malladi@UTSouthwestern.edu",
-      "affiliations": "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Bioinformatics, University of Texas Southwestern Medical Center"
+      "affiliations": [
+        "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center",
+        "Department of Bioinformatics, University of Texas Southwestern Medical Center\""
+      ],
+      "affiliation_numbers": [
+        1,
+        2
+      ]
     },
     {
       "name": "Anusha Nagari",
-      "affiliations": "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center"
+      "affiliations": [
+        "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
     },
     {
       "name": "Hector L. Franco",
-      "affiliations": "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Genetics and Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill"
+      "affiliations": [
+        "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center",
+        "Department of Genetics and Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill\""
+      ],
+      "affiliation_numbers": [
+        1,
+        3
+      ]
     },
     {
       "name": "W. Lee Kraus",
-      "affiliations": "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center"
+      "affiliations": [
+        "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center"
+      ],
+      "affiliation_numbers": [
+        1
+      ]
+    }
+  ],
+  "affiliations": [
+    {
+      "affiliation": "The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center",
+      "affiliation_number": 1
+    },
+    {
+      "affiliation": "Department of Bioinformatics, University of Texas Southwestern Medical Center\"",
+      "affiliation_number": 2
+    },
+    {
+      "affiliation": "Department of Genetics and Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill\"",
+      "affiliation_number": 3
     }
   ],
   "ci_source": {
     "repo_slug": "vsmalladi/tfsee-manuscript",
-    "commit": "4bbb4ff5c9f12c9e0b8c70f4ee5f23bb16d36e10"
+    "commit": "4da38e1837177761923ee5bc7b5d21f300fa54ca"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -33,6 +71,6 @@
       "url": 6,
       "total": 61
     },
-    "word_count": 3983
+    "word_count": 3986
   }
 }

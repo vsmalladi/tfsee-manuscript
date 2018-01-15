@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2017-12-25'
+date-meta: '2018-01-15'
 keywords:
 - enhancers
 - transcription
@@ -22,8 +22,8 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@4bbb4ff](https://github.com/vsmalladi/tfsee-manuscript/tree/4bbb4ff5c9f12c9e0b8c70f4ee5f23bb16d36e10)
-on December 25, 2017.
+from [vsmalladi/tfsee-manuscript@4da38e1](https://github.com/vsmalladi/tfsee-manuscript/tree/4da38e1837177761923ee5bc7b5d21f300fa54ca)
+on January 15, 2018.
 </em></small>
 
 ## Authors
@@ -38,7 +38,7 @@ on December 25, 2017.
     · ![Twitter icon](images/twitter.svg){height="13px" width="13px"}
     [katatonikkat](https://twitter.com/katatonikkat)<br>
   <small>
-     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Bioinformatics, University of Texas Southwestern Medical Center
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Bioinformatics, University of Texas Southwestern Medical Center"
   </small>
 
 + **Anusha Nagari**<br><br>
@@ -48,7 +48,7 @@ on December 25, 2017.
 
 + **Hector L. Franco**<br><br>
   <small>
-     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Genetics and Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill
+     The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Genetics and Lineberger Comprehensive Cancer Center, University of North Carolina at Chapel Hill"
   </small>
 
 + **W. Lee Kraus**<br><br>
