@@ -8,7 +8,7 @@
   <meta name="author" content="Anusha Nagari" />
   <meta name="author" content="Hector L. Franco" />
   <meta name="author" content="W. Lee Kraus" />
-  <meta name="dcterms.date" content="2018-01-15" />
+  <meta name="dcterms.date" content="2018-02-11" />
   <meta name="keywords" content="enhancers, transcription, transcription factor, epigenome" />
   <title>Total Functional Score of Enhancer Elements Identifies Lineage-Specific Enhancers that Drive Differentiation of Pancreatic Cells</title>
   <style type="text/css">
@@ -31,7 +31,7 @@
 <header>
 <h1 class="title">Total Functional Score of Enhancer Elements Identifies Lineage-Specific Enhancers that Drive Differentiation of Pancreatic Cells</h1>
 </header>
-<p><small><em> This manuscript was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/4da38e1837177761923ee5bc7b5d21f300fa54ca">vsmalladi/tfsee-manuscript@4da38e1</a> on January 15, 2018. </em></small></p>
+<p><small><em> This manuscript was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/8568e8f74659e1c0b09b75b8d3f9741ec6fcc1a2">vsmalladi/tfsee-manuscript@8568e8f</a> on February 11, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Venkat S. Malladi</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0144-0564">0000-0002-0144-0564</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/vsmalladi">vsmalladi</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/katatonikkat">katatonikkat</a><br> <small> The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Bioinformatics, University of Texas Southwestern Medical Center&quot; </small></p></li>
@@ -47,7 +47,16 @@
 <p>In recent years, advances in technology have facilitated the large scale functional characterization of enhancer activity <span class="citation" data-cites="14L6kLUE3 sKU362wY jjAPfyKA 5zmE7Qkb">[<a href="#ref-14L6kLUE3">24</a>–<a href="#ref-5zmE7Qkb">27</a>]</span> and annotation of genome-wide binding sites of TFs in various cell types and tissues <span class="citation" data-cites="15J98V2qM ZnmOeYfS">[<a href="#ref-15J98V2qM">4</a>,<a href="#ref-ZnmOeYfS">28</a>]</span>. However, due to countless cell types, experimental conditions and the large number of TFs <span class="citation" data-cites="EkABaVh5">[<a href="#ref-EkABaVh5">29</a>]</span>, integration of these independent data sets to achieve a comprehensive analysis of gene expression and actionable predictions of TFs driving cell type-specific gene expression can be very challenging. Furthermore, analyses that predict TF binding sites (TFBSs), which are usually 4-12 nucleotides in length <span class="citation" data-cites="uOXPLhWz">[<a href="#ref-uOXPLhWz">30</a>]</span>, using TF binding profile databases <span class="citation" data-cites="1AqKyPkB5 1DrZNoXOU 1C9AIanMe">[<a href="#ref-1AqKyPkB5">31</a>–<a href="#ref-1C9AIanMe">33</a>]</span>, fail to consider that such sequences occur frequently by chance throughout the genome and that TF binding is cell type specific <span class="citation" data-cites="uuBDz4a3">[<a href="#ref-uuBDz4a3">34</a>]</span>. To overcome these limitations, we established a novel method called Total Functional Score of Enhancer Elements (TFSEE), which can be used to identify location and activity of enhancers in any cell or tissue type together with their cognate TFs.</p>
 <p>In TFSEE, we integrate enhancer location and activity, TF motif prediction for each enhancer and the level of TF expression (Figure <a href="#fig:overview_tfsee">1</a>). We have previously demonstrated TFSEE in the identification of key breast cancer subtype-specific transcription factors determining growth outcomes <span class="citation" data-cites="Iu6Tq2rd">[<a href="#ref-Iu6Tq2rd">35</a>]</span>. In the studies presented herein, we demonstrate the broader use of TFSEE to identify enhancers and TFs during the differentiation of embryonic stem cells into pancreatic progenitor cells. Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers (Figure <a href="#fig:enhancer_predictions">2</a>A).</p>
 <h2 id="results">Results</h2>
-<h3 id="overview-of-tfsee-model">Overview of TFSEE model</h3>
+<h3 id="the-tfsee-model">The TFSEE model</h3>
+<p>The TFSEE model integrates multiple genomics assays, GRO-seq, RNA-seq, and ChIP-seq, data with TF motif information to predict TFs driving the formation of active enhancers and the locations of their cognate enhancers. The TFSEE model consists of five key data processing steps (Figure <a href="#fig:overview_tfsee">1</a>A) followed by a data integration stage (Figure <a href="#fig:overview_tfsee">1</a>B). In step 1 of TFSEE, a universe of active enhancers across the different constituent cell types are identified. The enhancers can be identified either by enhancer transcription (GRO-seq or total RNA-seq) (Figure <a href="#fig:enhancer_pipeline">S1</a>A) or enrichment of epigenomic marks (H3K4me1 and H3K27ac) (Figure <a href="#fig:enhancer_pipeline">S1</a>B). In step 2 of TFSEE, genome-wide enhancer activity levels are assessed by calculating the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq or total RNA-seq) profiles under the universe of enhancers per cell type. TFSEE was designed to detect enhancer activity changes and TF:enhancer links for each cell type. All TF to enhancer links are determined by a de novo motif search and summarizing the probability of that TF using the tools in steps 3-4 of TFSEE, which creates a table annotating enhancer to TF for each cell type. For all TFs identified TFSEE calculates the expression profile using (GRO-seq or RNA-seq) across every cell type in step 5.</p>
+<p>The final stage integrates all the data in steps 1-5 (Figure <a href="#fig:overview_tfsee">1</a>A) to determine TFSEE score matrix and heatmap. First, we generate an enhancer activity matrix A<sub>CxE</sub> for all cell types C for the universe active of E enhancers, as determined from step 2. We assume that the enhancer activity of each cell type is linearly correlated to the amount enhancer transcription (GRO-seq or total RNA-seq, G), and to the epigenomic marks (H3K4me1, M and H3K27ac, H). To reduce bias each individual enhancer enrichment is scaled between 0 and 1. Enhancer activity can be expressed as the following formula:</p>
+<center>
+<span class="math inline">\(A = G + M + H\)</span>
+</center>
+<p>Next, the enhancer activity matrix A<sub>CxE</sub>, is combined with motif prediction matrix T<sub>ExF</sub>, represent scaled motif prediction p-values, T, for each enhancer E, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R, from step 5, the expression of each TF F for each cell type C, into a resulting matrix Z composed of C cell types and F TFs. TFSEE can be expressed as the following formula:</p>
+<center>
+<span class="math inline">\(Z =( A \times T) \circ R\)</span>
+</center>
 <h2 id="discussion">Discussion</h2>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <h2 id="material-and-methods" class="page_break_before">Material and Methods</h2>
@@ -57,39 +66,39 @@
 <table>
 <caption><span>Table S1:</span> <strong>Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.</strong> </caption>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 74%" />
+<col style="width: 26%" />
+<col style="width: 73%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Assay</th>
-<th style="text-align: left;">Accessions</th>
+<th style="text-align: center;">Assay</th>
+<th style="text-align: center;">Accessions</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">GRO-seq</td>
-<td style="text-align: left;">GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334</td>
+<td style="text-align: center;">GRO-seq</td>
+<td style="text-align: center;">GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">H3K4me3 ChIP-seq</td>
-<td style="text-align: left;">ERR208008, ERR208014, ERR207998, ERR20798, ERR207999</td>
+<td style="text-align: center;">H3K4me3 ChIP-seq</td>
+<td style="text-align: center;">ERR208008, ERR208014, ERR207998, ERR20798, ERR207999</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">H3K4me1 ChIP-seq</td>
-<td style="text-align: left;">GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331</td>
+<td style="text-align: center;">H3K4me1 ChIP-seq</td>
+<td style="text-align: center;">GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">H3K27ac ChIP-seq</td>
-<td style="text-align: left;">GSM1316300, GSM1316301, GSM1316307, GSM1316308, GSM1316314, GSM1316315, GSM1316321, GSM1316322, GSM1316328, GSM1316329</td>
+<td style="text-align: center;">H3K27ac ChIP-seq</td>
+<td style="text-align: center;">GSM1316300, GSM1316301, GSM1316307, GSM1316308, GSM1316314, GSM1316315, GSM1316321, GSM1316322, GSM1316328, GSM1316329</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Input ChIP-seq</td>
-<td style="text-align: left;">ERR208001, ERR208012, ERR207984, ERR208011, ERR207986, GSM1316304, GSM1316305, GSM1316311, GSM1316312, GSM1316318, GSM1316319, GSM1316325, GSM1316326, GSM1316332, GSM1316333</td>
+<td style="text-align: center;">Input ChIP-seq</td>
+<td style="text-align: center;">ERR208001, ERR208012, ERR207984, ERR208011, ERR207986, GSM1316304, GSM1316305, GSM1316311, GSM1316312, GSM1316318, GSM1316319, GSM1316325, GSM1316326, GSM1316332, GSM1316333</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">RNA-seq</td>
-<td style="text-align: left;">ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351</td>
+<td style="text-align: center;">RNA-seq</td>
+<td style="text-align: center;">ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351</td>
 </tr>
 </tbody>
 </table>
@@ -111,34 +120,34 @@
 <caption><span>Table S2:</span> <strong>groHMM tunning parameters.</strong> </caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Cell Line</th>
+<th style="text-align: center;">Cell Line</th>
 <th style="text-align: center;">-Log Transition Probability</th>
 <th style="text-align: center;">Variance in read counts</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">hES</td>
+<td style="text-align: center;">hES</td>
 <td style="text-align: center;">50</td>
 <td style="text-align: center;">45</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">DE</td>
+<td style="text-align: center;">DE</td>
 <td style="text-align: center;">50</td>
 <td style="text-align: center;">35</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">GT</td>
+<td style="text-align: center;">GT</td>
 <td style="text-align: center;">50</td>
 <td style="text-align: center;">50</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">FG</td>
+<td style="text-align: center;">FG</td>
 <td style="text-align: center;">50</td>
 <td style="text-align: center;">35</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">PE</td>
+<td style="text-align: center;">PE</td>
 <td style="text-align: center;">50</td>
 <td style="text-align: center;">35</td>
 </tr>
