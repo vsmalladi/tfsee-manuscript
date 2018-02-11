@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-01-15'
+date-meta: '2018-02-11'
 keywords:
 - enhancers
 - transcription
@@ -22,8 +22,8 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@4da38e1](https://github.com/vsmalladi/tfsee-manuscript/tree/4da38e1837177761923ee5bc7b5d21f300fa54ca)
-on January 15, 2018.
+from [vsmalladi/tfsee-manuscript@8568e8f](https://github.com/vsmalladi/tfsee-manuscript/tree/8568e8f74659e1c0b09b75b8d3f9741ec6fcc1a2)
+on February 11, 2018.
 </em></small>
 
 ## Authors
@@ -88,7 +88,28 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 
 ## Results
 
-### Overview of TFSEE model
+### The TFSEE model
+
+The TFSEE model integrates multiple genomics assays, GRO-seq, RNA-seq, and ChIP-seq, data with TF motif information to predict TFs driving the formation of active enhancers and the locations of their cognate enhancers.
+The TFSEE model consists of five key data processing steps (Figure {@fig:overview_tfsee}A) followed by a data integration stage (Figure {@fig:overview_tfsee}B).
+In step 1 of TFSEE, a universe of active enhancers across the different constituent cell types are identified. The enhancers can be identified either by enhancer transcription (GRO-seq or total RNA-seq) (Figure {@fig:enhancer_pipeline}A) or enrichment of epigenomic marks (H3K4me1 and H3K27ac) (Figure {@fig:enhancer_pipeline}B).
+In step 2 of TFSEE, genome-wide enhancer activity levels are assessed by calculating the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq or total RNA-seq) profiles under the universe of enhancers per cell type.
+TFSEE was designed to detect enhancer activity changes and TF:enhancer links for each cell type.
+All TF to enhancer links are determined by a de novo motif search and summarizing the probability of that TF using the tools in steps 3-4 of TFSEE, which creates a table annotating enhancer to TF for each cell type.
+For all TFs identified TFSEE calculates the expression profile using (GRO-seq or RNA-seq) across every cell type in step 5.
+
+The final stage integrates all the data in steps 1-5 (Figure {@fig:overview_tfsee}A) to determine TFSEE score matrix and heatmap.
+First, we generate an enhancer activity matrix A<sub>CxE</sub> for all cell types C for the universe active of E enhancers, as determined from step 2.
+We assume that the enhancer activity of each cell type is linearly correlated to the amount enhancer transcription (GRO-seq or total RNA-seq, G), and to the epigenomic marks (H3K4me1, M and H3K27ac, H).
+To reduce bias each individual enhancer enrichment is scaled between 0 and 1.
+Enhancer activity can be expressed as the following formula:
+
+<center>$A = G + M + H$</center>
+
+Next, the enhancer activity matrix A<sub>CxE</sub>, is combined with motif prediction matrix T<sub>ExF</sub>, represent scaled motif prediction p-values, T, for each enhancer E, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R, from step 5, the expression of each TF F for each cell type C, into a resulting matrix Z composed of C cell types and F TFs.
+TFSEE can be expressed as the following formula:
+
+<center>$Z =( A \times T) \circ  R$</center>
 
 
 ## Discussion
@@ -104,7 +125,7 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@BTqz3DNL; @18a6G1TE5] time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus [@Bc3QGVe7] or EMBL-EBI’s ArrayExpress [@937jwJMM] repositories using the accession numbers listed in Table @tbl:data-sets.
 
 | Assay | Accessions |
-| :-------------------- | :------------------------------------------------------------ |
+| :--------------------: | :------------------------------------------------------------: |
 | GRO-seq | GSM1316306, GSM1316313, GSM1316320, GSM1316327, GSM1316334 |
 | H3K4me3 ChIP-seq | ERR208008, ERR208014, ERR207998, ERR20798, ERR207999 |
 | H3K4me1 ChIP-seq | GSM1316302, GSM1316303, GSM1316309, GSM1316316, GSM1316317, GSM1316310, GSM1316323, GSM1316324, GSM1316330, GSM1316331 |
@@ -142,7 +163,7 @@ We made distinct transcription start sites (TSS) for protein-coding genes from G
 Transcript calling was performed using a two-state hidden Markov model using the groHMM data analysis package version 3.4 [@1BkIYUDLC; @1HVy2rbI; @lPKPHCBB] on each individual cell lines. The negative log transition probability of the switch between transcribed state to non-transcribed state and the variance in read counts in the non-transcribed state that are used to predict the transcription units for the cell lines in this study are listed Table @tbl:groseq-tune.
 
 | Cell Line | -Log Transition Probability | Variance in read counts
-| :--- | :--------: | :--------: |
+| :---: | :--------: | :--------: |
 | hES | 50 | 45 |
 | DE | 50 | 35 |
 | GT | 50 | 50 |
