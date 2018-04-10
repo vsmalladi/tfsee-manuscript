@@ -32,8 +32,12 @@ cd $REPO
 
 # Configure remotes and branches
 git remote add rootstock https://github.com/greenelab/manubot-rootstock.git
-git checkout gh-pages
-git checkout output
+git checkout --orphan gh-pages
+git rm -r --force .
+git commit --allow-empty \
+  --message "Initialize empty branch" \
+  --message "[ci skip]"
+git checkout -b output
 git checkout master
 
 # Option A: Set origin URL using its web address
@@ -83,6 +87,7 @@ Give the key a descriptive title, such as "Travis CI Manubot".
 For the next step, you need the [Travis command line client](https://github.com/travis-ci/travis.rb) installed.
 This program is a Ruby gem:
 install it with `gem install travis` (not `apt install travis`, which is a different program).
+After the install, you will need to provide your credentials to login to travis with `travis login --org`.
 
 ```sh
 travis encrypt-file \
