@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-02-11'
+date-meta: '2018-04-10'
 keywords:
 - enhancers
 - transcription
@@ -21,9 +21,11 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 
 <small><em>
-This manuscript was automatically generated
-from [vsmalladi/tfsee-manuscript@8568e8f](https://github.com/vsmalladi/tfsee-manuscript/tree/8568e8f74659e1c0b09b75b8d3f9741ec6fcc1a2)
-on February 11, 2018.
+This manuscript
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/1e1d4076804a30d810c58c009b8ab6188db1623b/))
+was automatically generated
+from [vsmalladi/tfsee-manuscript@1e1d407](https://github.com/vsmalladi/tfsee-manuscript/tree/1e1d4076804a30d810c58c009b8ab6188db1623b)
+on April 10, 2018.
 </em></small>
 
 ## Authors
