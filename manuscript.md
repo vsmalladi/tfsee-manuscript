@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-10'
+date-meta: '2018-04-16'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/1e1d4076804a30d810c58c009b8ab6188db1623b/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/50b8a7d95931687a8d4d44484de21332ad8437ec/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@1e1d407](https://github.com/vsmalladi/tfsee-manuscript/tree/1e1d4076804a30d810c58c009b8ab6188db1623b)
-on April 10, 2018.
+from [vsmalladi/tfsee-manuscript@50b8a7d](https://github.com/vsmalladi/tfsee-manuscript/tree/50b8a7d95931687a8d4d44484de21332ad8437ec)
+on April 16, 2018.
 </em></small>
 
 ## Authors
@@ -205,10 +205,15 @@ The universe of expressed genes in each cell line was determined from the RNA-se
 
 ## Figures and Figure Legends {.page_break_before}
 
+![**Data Processing for Total Functional Score of Enhancer Elements (TFSEE) Method.**
+The TFSEE method has five data processing steps that are used to identify enhancer location and activity and their cognate transcription factors (TFs).
+In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify potential TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type.
+](images/tfsee_processing.png){#fig:tfsee_processing}
+
+
 ![**Overview of Total Functional Score of Enhancer Elements (TFSEE) Method.**
-The TFSEE method has five steps, followed by an integration stage. TFSEE combines diverse data sets to identify enhancer location and activity and their cognate transcription factors (TFs).
-**(A)**	 In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify potential TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type.
-**(B)**	 An illustration of TFSEE data integration stage, taking the outputs generated in panel A, to identify the location, activity level, and predicted TFs at each enhancer across all cell types. (Top) All matrices represent scaled enhancer activity for each cell type in each enhancer prediction method (G, H, and M). All matrices are linearly combined into a resulting matrix A, to provide a total enhancer activity score. (Bottom) Enhancer activity matrix A, is combined with motif prediction matrix T, represent scaled motif prediction p-values for each enhancer, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R (scaled TF expression for each cell type), into a resulting matrix Z, on which TFSEE clustering is performed.
+TFSEE combines diverse data sets to identify enhancer location and activity and their cognate transcription factors (TFs).
+An illustration of TFSEE data integration stage, taking the outputs generated in panel A, to identify the location, activity level, and predicted TFs at each enhancer across all cell types. (Top) All matrices represent scaled enhancer activity for each cell type in each enhancer prediction method (G, H, and M). All matrices are linearly combined into a resulting matrix A, to provide a total enhancer activity score. (Bottom) Enhancer activity matrix A, is combined with motif prediction matrix T, represent scaled motif prediction p-values for each enhancer, to form an intermediate matrix product. This matrix product is entrywise combined with TF expression matrix R (scaled TF expression for each cell type), into a resulting matrix Z, on which TFSEE clustering is performed.
 ](images/overview_tfsee.png){#fig:overview_tfsee}
 
 
