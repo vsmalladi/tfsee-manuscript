@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-16'
+date-meta: '2018-04-18'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/50b8a7d95931687a8d4d44484de21332ad8437ec/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/0c8b456f1a71436f46a04819d7933c0c96f3046b/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@50b8a7d](https://github.com/vsmalladi/tfsee-manuscript/tree/50b8a7d95931687a8d4d44484de21332ad8437ec)
-on April 16, 2018.
+from [vsmalladi/tfsee-manuscript@0c8b456](https://github.com/vsmalladi/tfsee-manuscript/tree/0c8b456f1a71436f46a04819d7933c0c96f3046b)
+on April 18, 2018.
 </em></small>
 
 ## Authors
@@ -93,14 +93,14 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 ### The TFSEE model
 
 The TFSEE model integrates multiple genomics assays, GRO-seq, RNA-seq, and ChIP-seq, data with TF motif information to predict TFs driving the formation of active enhancers and the locations of their cognate enhancers.
-The TFSEE model consists of five key data processing steps (Figure {@fig:overview_tfsee}A) followed by a data integration stage (Figure {@fig:overview_tfsee}B).
+The TFSEE model consists of five key data processing steps (Figure {@fig:tfsee_processing}) followed by a data integration stage (Figure {@fig:overview_tfsee}).
 In step 1 of TFSEE, a universe of active enhancers across the different constituent cell types are identified. The enhancers can be identified either by enhancer transcription (GRO-seq or total RNA-seq) (Figure {@fig:enhancer_pipeline}A) or enrichment of epigenomic marks (H3K4me1 and H3K27ac) (Figure {@fig:enhancer_pipeline}B).
 In step 2 of TFSEE, genome-wide enhancer activity levels are assessed by calculating the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq or total RNA-seq) profiles under the universe of enhancers per cell type.
 TFSEE was designed to detect enhancer activity changes and TF:enhancer links for each cell type.
 All TF to enhancer links are determined by a de novo motif search and summarizing the probability of that TF using the tools in steps 3-4 of TFSEE, which creates a table annotating enhancer to TF for each cell type.
 For all TFs identified TFSEE calculates the expression profile using (GRO-seq or RNA-seq) across every cell type in step 5.
 
-The final stage integrates all the data in steps 1-5 (Figure {@fig:overview_tfsee}A) to determine TFSEE score matrix and heatmap.
+The final stage integrates all the data in steps 1-5 (Figure {@fig:overview_tfsee}) to determine TFSEE score matrix and heatmap.
 First, we generate an enhancer activity matrix A<sub>CxE</sub> for all cell types C for the universe active of E enhancers, as determined from step 2.
 We assume that the enhancer activity of each cell type is linearly correlated to the amount enhancer transcription (GRO-seq or total RNA-seq, G), and to the epigenomic marks (H3K4me1, M and H3K27ac, H).
 To reduce bias each individual enhancer enrichment is scaled between 0 and 1.
@@ -112,6 +112,12 @@ Next, the enhancer activity matrix A<sub>CxE</sub>, is combined with motif predi
 TFSEE can be expressed as the following formula:
 
 <center>$Z =( A \times T) \circ  R$</center>
+
+### Choice of biological model system and data
+To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) [@BTqz3DNL; @18a6G1TE5] (Figure {@fig:enhancer_predictions}A).
+For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications (Figure {@fig:enhancer_predictions}A).
+
+### Predicting Enhancers by Active Transcription and Histone Modification
 
 
 ## Discussion
