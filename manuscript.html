@@ -8,7 +8,7 @@
   <meta name="author" content="Anusha Nagari" />
   <meta name="author" content="Hector L. Franco" />
   <meta name="author" content="W. Lee Kraus" />
-  <meta name="dcterms.date" content="2018-04-18" />
+  <meta name="dcterms.date" content="2018-04-19" />
   <meta name="keywords" content="enhancers, transcription, transcription factor, epigenome" />
   <title>Total Functional Score of Enhancer Elements Identifies Lineage-Specific Enhancers that Drive Differentiation of Pancreatic Cells</title>
   <style type="text/css">
@@ -31,7 +31,7 @@
 <header>
 <h1 class="title">Total Functional Score of Enhancer Elements Identifies Lineage-Specific Enhancers that Drive Differentiation of Pancreatic Cells</h1>
 </header>
-<p><small><em> This manuscript (<a href="https://vsmalladi.github.io/tfsee-manuscript/v/0c8b456f1a71436f46a04819d7933c0c96f3046b/">permalink</a>) was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/0c8b456f1a71436f46a04819d7933c0c96f3046b">vsmalladi/tfsee-manuscript@0c8b456</a> on April 18, 2018. </em></small></p>
+<p><small><em> This manuscript (<a href="https://vsmalladi.github.io/tfsee-manuscript/v/2a169f3e9d9c68dd27be458e9fe9863337bd6902/">permalink</a>) was automatically generated from <a href="https://github.com/vsmalladi/tfsee-manuscript/tree/2a169f3e9d9c68dd27be458e9fe9863337bd6902">vsmalladi/tfsee-manuscript@2a169f3</a> on April 19, 2018. </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
 <li><p><strong>Venkat S. Malladi</strong><br> <img src="images/orcid.svg" alt="ORCID icon" width="13" height="13" /> <a href="https://orcid.org/0000-0002-0144-0564">0000-0002-0144-0564</a> · <img src="images/github.svg" alt="GitHub icon" width="13" height="13" /> <a href="https://github.com/vsmalladi">vsmalladi</a> · <img src="images/twitter.svg" alt="Twitter icon" width="13" height="13" /> <a href="https://twitter.com/katatonikkat">katatonikkat</a><br> <small> The Laboratory of Signaling and Gene Regulation, Cecil H. and Ida Green Center for Reproductive Biology Sciences and Division of Basic Reproductive Biology Research, Department of Obstetrics and Gynecology, University of Texas Southwestern Medical Center; Department of Bioinformatics, University of Texas Southwestern Medical Center&quot; </small></p></li>
@@ -58,13 +58,16 @@
 <span class="math inline">\(Z =( A \times T) \circ R\)</span>
 </center>
 <h3 id="choice-of-biological-model-system-and-data">Choice of biological model system and data</h3>
-<p>To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) <span class="citation" data-cites="BTqz3DNL 18a6G1TE5">[<a href="#ref-BTqz3DNL">36</a>,<a href="#ref-18a6G1TE5">37</a>]</span> (Figure <a href="#fig:enhancer_predictions">3</a>A). For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications (Figure <a href="#fig:enhancer_predictions">3</a>A).</p>
-<h3 id="predicting-enhancers-by-active-transcription-and-histone-modification">Predicting Enhancers by Active Transcription and Histone Modification</h3>
+<p>To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) <span class="citation" data-cites="BTqz3DNL 18a6G1TE5">[<a href="#ref-BTqz3DNL">36</a>,<a href="#ref-18a6G1TE5">37</a>]</span> (Figure <a href="#fig:enhancer_predictions">3</a>A). For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications (Figure <a href="#fig:enhancer_predictions">3</a>A). This embryonic development model allows us to explore the spatiotemporal gene regulation during development, by enhancers and TFs.</p>
+<h3 id="unbiased-prediction-of-enhancers">Unbiased Prediction of Enhancers</h3>
+<p>We and other have shown that enhancers can be identified using enrichment of histone modifications (e.g. H3K4me1 and H3K27ac) <span class="citation" data-cites="vCijBy88 O5G8lPNO LkrR69b9">[<a href="#ref-O5G8lPNO">10</a>,<a href="#ref-LkrR69b9">11</a>,<a href="#ref-vCijBy88">9</a>]</span> or by enhancer transcription <span class="citation" data-cites="1BkIYUDLC">[<a href="#ref-1BkIYUDLC">16</a>]</span>. We used a computational pipeline to identify a universe of eRNA transcripts from GRO-seq (Figure <a href="#fig:enhancer_pipeline">S1</a>A) or enrichment of epigenomic marks (H3K4me1 or H3K27ac) (Figure <a href="#fig:enhancer_pipeline">S1</a>B) for the cell lines in the pancreatic differentiation time course model. All potential enhancers were filtered to be <span class="math inline">\(&gt;\)</span> 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">38</a>]</span>, and active promoters, as identified by H3K4me3 <span class="citation" data-cites="9O9ugXze">[<a href="#ref-9O9ugXze">39</a>]</span> (Figure <a href="#fig:density_plot">S2</a>A) to avoid complications in the analysis associated with overlapping promoter transcription.</p>
+<p>Using enrichment of H3K4me1 and H3K27ac, RPKM cutoff of <span class="math inline">\(\geq\)</span> 1 (Figure <a href="#fig:density_plot">S2</a>B and C) in at least one cell line, we determined there to be set of 182,335 candidate enhancers across cell lines (Figure <a href="#fig:enhancer_predictions">3</a>B). We categorized these candidate enhancers for each cell line and found that <span class="math inline">\(\le\)</span> 20% of the enhancers, as determined by presences of H3K4me1 and H3K27ac, are active in each cell line. We then identified a set of 4,974 candidate enhancers (Figure <a href="#fig:enhancer_predictions">3</a>B) as described previously <span class="citation" data-cites="1DE6cLccI">[<a href="#ref-1DE6cLccI">19</a>]</span>, using RPKM <span class="math inline">\(\geq\)</span> 0.5 or <span class="math inline">\(\geq\)</span> 1 (Figure <a href="#fig:density_plot">S2</a>D and E) in at least one cell line. Compared to active enhancer by histone modifications, we found that the number of active enhancers in each cell line ranged from 77-25% of all candidate enhancers.</p>
+<p>We compared the overlap from histone enhancer prediction methods (H3K4me1 or H3K27ac) to output from an enhancer transcription based approach (GRO-seq). We found that 12% of enhancers called based on enhancer transcription using GRO-seq data are identified by all the of the other methods (enrichment of H3K4me1 and H3K27ac) (Figure <a href="#fig:enhancer_predictions">3</a>C, <a href="#fig:genome_browser">S3</a>A). In contrast, greater than 75% of the enhancers were solely identified by enhancer transcription (Figure <a href="#fig:enhancer_predictions">3</a>C and D, <a href="#fig:genome_browser">S3</a>B). However, less than 1% of enhancers called based on enrichment of H3K4me1 or H3K27ac are identified by the other methods (Figure <a href="#fig:enhancer_predictions">3</a>C). This may be due, in part, to the fact that enhancer calling based on H3K4me1 or H3K27ac enrichment, yields much larger numbers of putative enhancers (Figure <a href="#fig:enhancer_predictions">3</a>D), many of which may be false positives or inactive as the true regulatory elements (Figure <a href="#fig:genome_browser">S3</a>C and D).</p>
 <h2 id="discussion">Discussion</h2>
 <h2 id="acknowledgments">Acknowledgments</h2>
 <h2 id="material-and-methods" class="page_break_before">Material and Methods</h2>
 <h3 id="genomic-data-curation">Genomic Data Curation</h3>
-<p>We used previously published GRO-seq, ChIP-seq and RNA-seq data from <span class="citation" data-cites="BTqz3DNL 18a6G1TE5">[<a href="#ref-BTqz3DNL">36</a>,<a href="#ref-18a6G1TE5">37</a>]</span> time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus <span class="citation" data-cites="Bc3QGVe7">[<a href="#ref-Bc3QGVe7">38</a>]</span> or EMBL-EBI’s ArrayExpress <span class="citation" data-cites="937jwJMM">[<a href="#ref-937jwJMM">39</a>]</span> repositories using the accession numbers listed in Table <a href="#tbl:data-sets">S1</a>.</p>
+<p>We used previously published GRO-seq, ChIP-seq and RNA-seq data from <span class="citation" data-cites="BTqz3DNL 18a6G1TE5">[<a href="#ref-BTqz3DNL">36</a>,<a href="#ref-18a6G1TE5">37</a>]</span> time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE). All data sets are available from NCBI’s Gene Expression Omnibus <span class="citation" data-cites="Bc3QGVe7">[<a href="#ref-Bc3QGVe7">40</a>]</span> or EMBL-EBI’s ArrayExpress <span class="citation" data-cites="937jwJMM">[<a href="#ref-937jwJMM">41</a>]</span> repositories using the accession numbers listed in Table <a href="#tbl:data-sets">S1</a>.</p>
 <a name="tbl:data-sets"></a>
 <table>
 <caption><span>Table S1:</span> <strong>Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.</strong> </caption>
@@ -106,18 +109,23 @@
 </tbody>
 </table>
 <h3 id="analysis-of-chip-seq-data-sets">Analysis of ChIP-seq Data Sets</h3>
-<p>The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in Bowtie version 1.0.0 <span class="citation" data-cites="RU8ikjzP">[<a href="#ref-RU8ikjzP">40</a>]</span>. The aligned reads were subsequently filtered for quality and uniquely mappable reads were retained for further analysis using Samtools version 0.1.19 <span class="citation" data-cites="IPc8cy7s">[<a href="#ref-IPc8cy7s">41</a>]</span> and Picard version 1.127 <span class="citation" data-cites="tfF98ztu">[<a href="#ref-tfF98ztu">42</a>]</span>. Library complexity was measured using BEDTools version 2.17.0 <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw">43</a>]</span> and meets ENCODE data quality standards <span class="citation" data-cites="hvhWxir9">[<a href="#ref-hvhWxir9">44</a>]</span>. Relaxed peaks were called using MACS version 2.1.0 <span class="citation" data-cites="Bhecn2fS">[<a href="#ref-Bhecn2fS">45</a>]</span> with a p-value of <span class="math inline">\(1 \times 10^{-2}\)</span> for each replicate, pooled replicates’ reads and pseudoreplicates. Peak calls from the pooled replicates that are either observed in both replicates, or in both pseudoreplicates were used for subsequent analysis.</p>
+<p>The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in Bowtie version 1.0.0 <span class="citation" data-cites="RU8ikjzP">[<a href="#ref-RU8ikjzP">42</a>]</span>. The aligned reads were subsequently filtered for quality and uniquely mappable reads were retained for further analysis using Samtools version 0.1.19 <span class="citation" data-cites="IPc8cy7s">[<a href="#ref-IPc8cy7s">43</a>]</span> and Picard version 1.127 <span class="citation" data-cites="tfF98ztu">[<a href="#ref-tfF98ztu">44</a>]</span>. Library complexity was measured using BEDTools version 2.17.0 <span class="citation" data-cites="1HWiAHnIw">[<a href="#ref-1HWiAHnIw">45</a>]</span> and meets ENCODE data quality standards <span class="citation" data-cites="hvhWxir9">[<a href="#ref-hvhWxir9">46</a>]</span>. Relaxed peaks were called using MACS version 2.1.0 <span class="citation" data-cites="Bhecn2fS">[<a href="#ref-Bhecn2fS">47</a>]</span> with a p-value of <span class="math inline">\(1 \times 10^{-2}\)</span> for each replicate, pooled replicates’ reads and pseudoreplicates. Peak calls from the pooled replicates that are either observed in both replicates, or in both pseudoreplicates were used for subsequent analysis.</p>
 <h3 id="analysis-of-rna-seq-data-sets">Analysis of RNA-seq Data Sets</h3>
-<p>The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in STAR version 2.4.2a <span class="citation" data-cites="tTu8Ds9Z">[<a href="#ref-tTu8Ds9Z">46</a>]</span>. Quantification of genes against Gencode version 19 <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">47</a>]</span> annotations was done using default parameters in RSEM version 1.2.31 <span class="citation" data-cites="Dh2n1EV3">[<a href="#ref-Dh2n1EV3">48</a>]</span>.</p>
+<p>The raw reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in STAR version 2.4.2a <span class="citation" data-cites="tTu8Ds9Z">[<a href="#ref-tTu8Ds9Z">48</a>]</span>. Quantification of genes against Gencode version 19 <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">38</a>]</span> annotations was done using default parameters in RSEM version 1.2.31 <span class="citation" data-cites="Dh2n1EV3">[<a href="#ref-Dh2n1EV3">49</a>]</span>.</p>
 <h3 id="analysis-of-gro-seq-data">Analysis of GRO-seq Data</h3>
-<p>The GRO-seq reads were trimmed to the first 36 bases to trim adapter and low quality sequence, using default parameters of fastx_trimer in fastx-toolkit version 0.0.13.2 <span class="citation" data-cites="jwUQ55cX">[<a href="#ref-jwUQ55cX">49</a>]</span>. The trimmed reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in BWA version 0.7.12 <span class="citation" data-cites="roi5bwXL">[<a href="#ref-roi5bwXL">50</a>]</span>.</p>
+<p>The GRO-seq reads were trimmed to the first 36 bases to trim adapter and low quality sequence, using default parameters of fastx_trimer in fastx-toolkit version 0.0.13.2 <span class="citation" data-cites="jwUQ55cX">[<a href="#ref-jwUQ55cX">50</a>]</span>. The trimmed reads were aligned to the human reference genome (GRCh37/hg19) using default parameters in BWA version 0.7.12 <span class="citation" data-cites="roi5bwXL">[<a href="#ref-roi5bwXL">51</a>]</span>.</p>
 <h3 id="kernel-density">Kernel Density</h3>
-<p>Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs. The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from <a href="http://seaborn.pydata.org/">seaborn</a> version 0.7.1 <span class="citation" data-cites="qxfTM222">[<a href="#ref-qxfTM222">51</a>]</span> with default parameters.</p>
-<h3 id="defining-transcription-start-sites">Defining Transcription Start Sites</h3>
-<p>We made distinct transcription start sites (TSS) for protein-coding genes from Gencode version 19 <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">47</a>]</span> annotations using MakeGencodeTSS <span class="citation" data-cites="tDy18Yol">[<a href="#ref-tDy18Yol">52</a>]</span>.</p>
+<p>Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs. The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from <a href="http://seaborn.pydata.org/">seaborn</a> version 0.7.1 <span class="citation" data-cites="qxfTM222">[<a href="#ref-qxfTM222">52</a>]</span> with default parameters.</p>
+<h3 id="defining-transcription-start-sites-and-promoters">Defining Transcription Start Sites and Promoters</h3>
+<p>We made distinct transcription start sites (TSS) for protein-coding genes from Gencode version 19 <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">38</a>]</span> annotations using MakeGencodeTSS <span class="citation" data-cites="tDy18Yol">[<a href="#ref-tDy18Yol">53</a>]</span>. We identified active promoters, as identified by H3K4me3 <span class="citation" data-cites="9O9ugXze">[<a href="#ref-9O9ugXze">39</a>]</span>. A RPKM cutoff of <span class="math inline">\(\geq\)</span> 1 for H3K4me3 in at least one cell line was used to identify a peak as an active enhancer (Figure <a href="#fig:density_plot">S2</a>A).</p>
+<h3 id="enhancer-calling-by-chip-seq">Enhancer calling by ChIP-seq</h3>
+<h4 id="calling-active-enhancers."><em>Calling Active Enhancers</em>.</h4>
+<p>We built a universe of peak calls by merging the peaks from individual cell lines for histone modifications (H3K4me1 and H3K27ac) and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all peaks. Potential enhancers were defined as peaks that were <span class="math inline">\(&gt;\)</span> 3kb from known TSS, protein coding genes from Gencode version 19 annotations <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">38</a>]</span>, and H3K4me3 peaks. A RPKM cutoff of <span class="math inline">\(\geq\)</span> 1 for H3K4me1 and H3K27ac (Figure <a href="#fig:density_plot">S2</a>B and C) in at least one cell line was used to identify a peak as an active enhancer. The universe of active enhancers was assembled using the cutoffs noted above for each cell line and was used for further analyses.</p>
+<h4 id="motif-analyses."><em>Motif Analyses</em>.</h4>
+<p>De novo motif analyses were performed on a 1 kb region (<span class="math inline">\(\pm\)</span> 500 bp) surrounding the peak summit for the top 10000 enhancers, using the command-line version of MEME-ChIP from MEME Suite version 4.11.1 <span class="citation" data-cites="dwj6qSn3 TfukIx2u">[<a href="#ref-dwj6qSn3">54</a>,<a href="#ref-TfukIx2u">55</a>]</span>. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15). All the other parameters were set at the default. The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) <span class="citation" data-cites="1DrZNoXOU">[<a href="#ref-1DrZNoXOU">32</a>]</span> using TOMTOM <span class="citation" data-cites="1C9AIanMe">[<a href="#ref-1C9AIanMe">33</a>]</span>.</p>
 <h3 id="enhancer-calling-by-gro-seq">Enhancer calling by GRO-seq</h3>
 <h4 id="transcript-calling."><em>Transcript calling</em>.</h4>
-<p>Transcript calling was performed using a two-state hidden Markov model using the groHMM data analysis package version 3.4 <span class="citation" data-cites="1BkIYUDLC 1HVy2rbI lPKPHCBB">[<a href="#ref-1BkIYUDLC">16</a>,<a href="#ref-lPKPHCBB">21</a>,<a href="#ref-1HVy2rbI">53</a>]</span> on each individual cell lines. The negative log transition probability of the switch between transcribed state to non-transcribed state and the variance in read counts in the non-transcribed state that are used to predict the transcription units for the cell lines in this study are listed Table <a href="#tbl:groseq-tune">S2</a>.</p>
+<p>Transcript calling was performed using a two-state hidden Markov model using the groHMM data analysis package version 3.4 <span class="citation" data-cites="1BkIYUDLC 1HVy2rbI lPKPHCBB">[<a href="#ref-1BkIYUDLC">16</a>,<a href="#ref-lPKPHCBB">21</a>,<a href="#ref-1HVy2rbI">56</a>]</span> on each individual cell lines. The negative log transition probability of the switch between transcribed state to non-transcribed state and the variance in read counts in the non-transcribed state that are used to predict the transcription units for the cell lines in this study are listed Table <a href="#tbl:groseq-tune">S2</a>.</p>
 <a name="tbl:groseq-tune"></a>
 <table>
 <caption><span>Table S2:</span> <strong>groHMM tunning parameters.</strong> </caption>
@@ -158,18 +166,13 @@
 </table>
 <p>We then built a universe of transcripts by merging the groHMM-called transcripts from individual cell lines and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all transcripts.</p>
 <h4 id="calling-enhancer-transcripts."><em>Calling Enhancer Transcripts</em>.</h4>
-<p>We filtered and collected a subset of short intergenic transcripts <span class="math inline">\(&lt;\)</span> 9 kb in length and <span class="math inline">\(&gt;\)</span> 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">47</a>]</span>, and H3K4me3 peaks. These were further classified into (1) short paired eRNAs and (2) short unpaired eRNAs as described previously <span class="citation" data-cites="1DE6cLccI">[<a href="#ref-1DE6cLccI">19</a>]</span>. For the short paired eRNAs, the sum of the GRO-seq RPKM values for both strands of DNA was used to determine if an enhancer transcript pair is expressed using a cutoff of RPKM <span class="math inline">\(\geq\)</span> 0.5. An RPKM cutoff of <span class="math inline">\(\geq\)</span> 1 was used to determine the universe expressed short unpaired eRNAs. The comprehensive of expressed eRNAs (short paired and short unpaired) was assembled using the cutoffs noted above for each cell line was used for further analyses.</p>
-<h4 id="motif-analyses."><em>Motif Analyses</em>.</h4>
-<p>De novo motif analyses was performed on a 1 kb region (<span class="math inline">\(\pm\)</span> 500 bp) surrounding the overlap center or the transcription start site for short paired and short unpaired eRNAs, respectively, using the command-line version of MEME from MEME Suite version 4.11.1 <span class="citation" data-cites="dwj6qSn3">[<a href="#ref-dwj6qSn3">54</a>]</span>. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15); and (4) search for motif in given strand and reverse complement strand (-revcomp). The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) <span class="citation" data-cites="1DrZNoXOU">[<a href="#ref-1DrZNoXOU">32</a>]</span> using TOMTOM <span class="citation" data-cites="1C9AIanMe">[<a href="#ref-1C9AIanMe">33</a>]</span>.</p>
-<h3 id="enhancer-calling-by-chip-seq">Enhancer calling by ChIP-seq</h3>
-<h4 id="calling-active-enhancers."><em>Calling Active Enhancers</em>.</h4>
-<p>We built a universe of peak calls by merging the peaks from individual cell lines for histone modifications (H3K4me1 and H3K27ac) and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all peaks. Potential enhancers were defined as peaks that were <span class="math inline">\(&gt;\)</span> 3kb from known TSS, protein coding genes from Gencode version 19 annotations <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">47</a>]</span>, and H3K4me3 peaks. A RPKM cutoff of <span class="math inline">\(\geq\)</span> 1 for H3K4me1 and H3K27ac in at least one cell line was used to identify a peak as an active enhancer. The universe of active enhancers was assembled using the cutoffs noted above for each cell line and was used for further analyses.</p>
+<p>We filtered and collected a subset of short intergenic transcripts <span class="math inline">\(&lt;\)</span> 9 kb in length and <span class="math inline">\(&gt;\)</span> 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations <span class="citation" data-cites="15rkMH6SD">[<a href="#ref-15rkMH6SD">38</a>]</span>, and H3K4me3 peaks. These were further classified into (1) short paired eRNAs and (2) short unpaired eRNAs as described previously <span class="citation" data-cites="1DE6cLccI">[<a href="#ref-1DE6cLccI">19</a>]</span>. For the short paired eRNAs, the sum of the GRO-seq RPKM values for both strands of DNA was used to determine if an enhancer transcript pair is expressed using a cutoff of RPKM <span class="math inline">\(\geq\)</span> 0.5 (Figure <a href="#fig:density_plot">S2</a>D). An RPKM cutoff of <span class="math inline">\(\geq\)</span> 1 was used to determine the universe expressed short unpaired eRNAs (Figure <a href="#fig:density_plot">S2</a>E). The comprehensive of expressed eRNAs (short paired and short unpaired) was assembled using the cutoffs noted above for each cell line was used for further analyses.</p>
 <h4 id="motif-analyses.-1"><em>Motif Analyses</em>.</h4>
-<p>De novo motif analyses were performed on a 1 kb region (<span class="math inline">\(\pm\)</span> 500 bp) surrounding the peak summit for the top 10000 enhancers, using the command-line version of MEME-ChIP from MEME Suite version 4.11.1 <span class="citation" data-cites="dwj6qSn3 TfukIx2u">[<a href="#ref-dwj6qSn3">54</a>,<a href="#ref-TfukIx2u">55</a>]</span>. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15). All the other parameters were set at the default. The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) <span class="citation" data-cites="1DrZNoXOU">[<a href="#ref-1DrZNoXOU">32</a>]</span> using TOMTOM <span class="citation" data-cites="1C9AIanMe">[<a href="#ref-1C9AIanMe">33</a>]</span>.</p>
+<p>De novo motif analyses was performed on a 1 kb region (<span class="math inline">\(\pm\)</span> 500 bp) surrounding the overlap center or the transcription start site for short paired and short unpaired eRNAs, respectively, using the command-line version of MEME from MEME Suite version 4.11.1 <span class="citation" data-cites="dwj6qSn3">[<a href="#ref-dwj6qSn3">54</a>]</span>. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15); and (4) search for motif in given strand and reverse complement strand (-revcomp). The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) <span class="citation" data-cites="1DrZNoXOU">[<a href="#ref-1DrZNoXOU">32</a>]</span> using TOMTOM <span class="citation" data-cites="1C9AIanMe">[<a href="#ref-1C9AIanMe">33</a>]</span>.</p>
 <h3 id="generating-heatmaps-and-clusters">Generating Heatmaps and Clusters</h3>
-<p>For each cell line, the functional scores were Z-score normalized. To identify cognate transcription factors by cell type, we performed hierarchical clustering by calculating the Euclidean distance using clustermap from <a href="http://seaborn.pydata.org/">seaborn</a> version 0.7.1 <span class="citation" data-cites="qxfTM222">[<a href="#ref-qxfTM222">51</a>]</span>. For visualization of the multidimensional TFSEE scores, we performed t-distributed stochastic neighbor embedding analysis (t-SNE) <span class="citation" data-cites="N7ngUHQX">[<a href="#ref-N7ngUHQX">56</a>]</span> using the TSNE function and labeled the clusters by calculating K-means clustering using the KMeans function with the expectation-maximization algorithm in <a href="http://scikit-learn.org/">scikit-learn</a> version 0.17.1 <span class="citation" data-cites="vHIKEjNs GGWEfSeb r8BJ7tJV">[<a href="#ref-vHIKEjNs">57</a>,<a href="#ref-GGWEfSeb">58</a>,<a href="#ref-r8BJ7tJV">59</a>]</span>.</p>
+<p>For each cell line, the functional scores were Z-score normalized. To identify cognate transcription factors by cell type, we performed hierarchical clustering by calculating the Euclidean distance using clustermap from <a href="http://seaborn.pydata.org/">seaborn</a> version 0.7.1 <span class="citation" data-cites="qxfTM222">[<a href="#ref-qxfTM222">52</a>]</span>. For visualization of the multidimensional TFSEE scores, we performed t-distributed stochastic neighbor embedding analysis (t-SNE) <span class="citation" data-cites="N7ngUHQX">[<a href="#ref-N7ngUHQX">57</a>]</span> using the TSNE function and labeled the clusters by calculating K-means clustering using the KMeans function with the expectation-maximization algorithm in <a href="http://scikit-learn.org/">scikit-learn</a> version 0.17.1 <span class="citation" data-cites="vHIKEjNs GGWEfSeb r8BJ7tJV">[<a href="#ref-vHIKEjNs">58</a>,<a href="#ref-GGWEfSeb">59</a>,<a href="#ref-r8BJ7tJV">60</a>]</span>.</p>
 <h3 id="nearest-neighboring-gene-analyses-and-box-plots">Nearest Neighboring Gene Analyses and Box Plots</h3>
-<p>The universe of expressed genes in each cell line was determined from the RNA-seq data using a FPKM cutoff of <span class="math inline">\(&gt;\)</span> 0.4. The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line. Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from <a href="https://matplotlib.org/">matplotlib</a> version 2.0.2 <span class="citation" data-cites="1026Gxdsi oaruRtzO">[<a href="#ref-1026Gxdsi">60</a>,<a href="#ref-oaruRtzO">61</a>]</span>. Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.</p>
+<p>The universe of expressed genes in each cell line was determined from the RNA-seq data using a FPKM cutoff of <span class="math inline">\(&gt;\)</span> 0.4 (Figure <a href="#fig:density_plot">S2</a>F). The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line. Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from <a href="https://matplotlib.org/">matplotlib</a> version 2.0.2 <span class="citation" data-cites="1026Gxdsi oaruRtzO">[<a href="#ref-1026Gxdsi">61</a>,<a href="#ref-oaruRtzO">62</a>]</span>. Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.</p>
 <h2 id="figures-and-figure-legends" class="page_break_before">Figures and Figure Legends</h2>
 <figure>
 <img src="images/tfsee_processing.png" alt="Figure 1: Data Processing for Total Functional Score of Enhancer Elements (TFSEE) Method. The TFSEE method has five data processing steps that are used to identify enhancer location and activity and their cognate transcription factors (TFs). In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify potential TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type." id="fig:tfsee_processing" /><figcaption><span>Figure 1:</span> <strong>Data Processing for Total Functional Score of Enhancer Elements (TFSEE) Method.</strong> The TFSEE method has five data processing steps that are used to identify enhancer location and activity and their cognate transcription factors (TFs). In step 1, epigenomic (ChIP-seq) or the transcriptional (GRO-seq or total RNA-seq) profiles are used to generate a universe of active enhancers across the different constituent cell types. In step 2, TFSEE calculates the enrichment (H3K4me1 and H3K27ac) and eRNA transcription (GRO-seq and total RNA-seq) profiles under all identified active enhancers per cell type. Cell type-specific enhancers are used as input for step 3, where a de novo motif search is performed to identify potential TFs at each enhancer. If a motif is represented multiple times for a given enhancer location, TFSEE combines the probability of that motif into a single p-value in step 4. Step 5 integrates the amount of eRNA transcription (GRO-seq or total RNA-seq) and the expression of the TFs whose motifs were predicted in step 3 and 4 for all cell types, to provide an output of TF expression profiles across every cell type.</figcaption>
@@ -391,85 +394,85 @@ Ruiyu Xie, Logan J. Everett, Hee-Woong Lim, Nisha A. Patel, Jonathan Schug, Ev
 Allen Wang, Feng Yue, Yan Li, Ruiyu Xie, Thomas Harper, Nisha A. Patel, Kayla Muth, Jeffrey Palmer, Yunjiang Qiu, Jinzhao Wang, … Maike Sander<br />
 <em>Cell Stem Cell</em> (2015-04) <a href="https://doi.org/10.1016/j.stem.2015.02.013" class="uri">https://doi.org/10.1016/j.stem.2015.02.013</a></p>
 </div>
+<div id="ref-15rkMH6SD">
+<p>38. <strong>GENCODE: The reference human genome annotation for The ENCODE Project</strong><br />
+J. Harrow, A. Frankish, J. M. Gonzalez, E. Tapanari, M. Diekhans, F. Kokocinski, B. L. Aken, D. Barrell, A. Zadissa, S. Searle, … T. J. Hubbard<br />
+<em>Genome Research</em> (2012-09-01) <a href="https://doi.org/10.1101/gr.135350.111" class="uri">https://doi.org/10.1101/gr.135350.111</a></p>
+</div>
+<div id="ref-9O9ugXze">
+<p>39. <strong>A Chromatin Landmark and Transcription Initiation at Most Promoters in Human Cells</strong><br />
+Matthew G. Guenther, Stuart S. Levine, Laurie A. Boyer, Rudolf Jaenisch, Richard A. Young<br />
+<em>Cell</em> (2007-07) <a href="https://doi.org/10.1016/j.cell.2007.05.042" class="uri">https://doi.org/10.1016/j.cell.2007.05.042</a></p>
+</div>
 <div id="ref-Bc3QGVe7">
-<p>38. <strong>GEO</strong><br />
+<p>40. <strong>GEO</strong><br />
 Gene Expression Omnibus<br />
 <a href="https://www.ncbi.nlm.nih.gov/geo/" class="uri">https://www.ncbi.nlm.nih.gov/geo/</a></p>
 </div>
 <div id="ref-937jwJMM">
-<p>39. <strong>ArrayExpress</strong><br />
+<p>41. <strong>ArrayExpress</strong><br />
 ArrayExpress – functional genomics data<br />
 <a href="http://www.ebi.ac.uk/arrayexpress/" class="uri">http://www.ebi.ac.uk/arrayexpress/</a></p>
 </div>
 <div id="ref-RU8ikjzP">
-<p>40. <strong>Ultrafast and memory-efficient alignment of short DNA sequences to the human genome</strong><br />
+<p>42. <strong>Ultrafast and memory-efficient alignment of short DNA sequences to the human genome</strong><br />
 Ben Langmead, Cole Trapnell, Mihai Pop, Steven L Salzberg<br />
 <em>Genome Biology</em> (2009) <a href="https://doi.org/10.1186/gb-2009-10-3-r25" class="uri">https://doi.org/10.1186/gb-2009-10-3-r25</a></p>
 </div>
 <div id="ref-IPc8cy7s">
-<p>41. <strong>The Sequence Alignment/Map format and SAMtools</strong><br />
+<p>43. <strong>The Sequence Alignment/Map format and SAMtools</strong><br />
 H. Li, B. Handsaker, A. Wysoker, T. Fennell, J. Ruan, N. Homer, G. Marth, G. Abecasis, R. Durbin, <br />
 <em>Bioinformatics</em> (2009-06-08) <a href="https://doi.org/10.1093/bioinformatics/btp352" class="uri">https://doi.org/10.1093/bioinformatics/btp352</a></p>
 </div>
 <div id="ref-tfF98ztu">
-<p>42. <strong>Picard</strong><br />
+<p>44. <strong>Picard</strong><br />
 Broad Institute<br />
 <em>GitHub</em> <a href="http://broadinstitute.github.io/picard/" class="uri">http://broadinstitute.github.io/picard/</a></p>
 </div>
 <div id="ref-1HWiAHnIw">
-<p>43. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
+<p>45. <strong>BEDTools: a flexible suite of utilities for comparing genomic features</strong><br />
 Aaron R. Quinlan, Ira M. Hall<br />
 <em>Bioinformatics</em> (2010-01-28) <a href="https://doi.org/10.1093/bioinformatics/btq033" class="uri">https://doi.org/10.1093/bioinformatics/btq033</a></p>
 </div>
 <div id="ref-hvhWxir9">
-<p>44. <strong>ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia</strong><br />
+<p>46. <strong>ChIP-seq guidelines and practices of the ENCODE and modENCODE consortia</strong><br />
 S. G. Landt, G. K. Marinov, A. Kundaje, P. Kheradpour, F. Pauli, S. Batzoglou, B. E. Bernstein, P. Bickel, J. B. Brown, P. Cayting, … M. Snyder<br />
 <em>Genome Research</em> (2012-09-01) <a href="https://doi.org/10.1101/gr.136184.111" class="uri">https://doi.org/10.1101/gr.136184.111</a></p>
 </div>
 <div id="ref-Bhecn2fS">
-<p>45. <strong>Identifying ChIP-seq enrichment using MACS</strong><br />
+<p>47. <strong>Identifying ChIP-seq enrichment using MACS</strong><br />
 Jianxing Feng, Tao Liu, Bo Qin, Yong Zhang, Xiaole Shirley Liu<br />
 <em>Nature Protocols</em> (2012-08-30) <a href="https://doi.org/10.1038/nprot.2012.101" class="uri">https://doi.org/10.1038/nprot.2012.101</a></p>
 </div>
 <div id="ref-tTu8Ds9Z">
-<p>46. <strong>STAR: ultrafast universal RNA-seq aligner</strong><br />
+<p>48. <strong>STAR: ultrafast universal RNA-seq aligner</strong><br />
 Alexander Dobin, Carrie A. Davis, Felix Schlesinger, Jorg Drenkow, Chris Zaleski, Sonali Jha, Philippe Batut, Mark Chaisson, Thomas R. Gingeras<br />
 <em>Bioinformatics</em> (2012-10-25) <a href="https://doi.org/10.1093/bioinformatics/bts635" class="uri">https://doi.org/10.1093/bioinformatics/bts635</a></p>
 </div>
-<div id="ref-15rkMH6SD">
-<p>47. <strong>GENCODE: The reference human genome annotation for The ENCODE Project</strong><br />
-J. Harrow, A. Frankish, J. M. Gonzalez, E. Tapanari, M. Diekhans, F. Kokocinski, B. L. Aken, D. Barrell, A. Zadissa, S. Searle, … T. J. Hubbard<br />
-<em>Genome Research</em> (2012-09-01) <a href="https://doi.org/10.1101/gr.135350.111" class="uri">https://doi.org/10.1101/gr.135350.111</a></p>
-</div>
 <div id="ref-Dh2n1EV3">
-<p>48. <strong>RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome</strong><br />
+<p>49. <strong>RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome</strong><br />
 Bo Li, Colin N Dewey<br />
 <em>BMC Bioinformatics</em> (2011) <a href="https://doi.org/10.1186/1471-2105-12-323" class="uri">https://doi.org/10.1186/1471-2105-12-323</a></p>
 </div>
 <div id="ref-jwUQ55cX">
-<p>49. <strong>FASTX-Toolkit</strong><br />
+<p>50. <strong>FASTX-Toolkit</strong><br />
 Hannon Lab<br />
 <a href="http://hannonlab.cshl.edu/fastx_toolkit/" class="uri">http://hannonlab.cshl.edu/fastx_toolkit/</a></p>
 </div>
 <div id="ref-roi5bwXL">
-<p>50. <strong>Fast and accurate short read alignment with Burrows-Wheeler transform</strong><br />
+<p>51. <strong>Fast and accurate short read alignment with Burrows-Wheeler transform</strong><br />
 H. Li, R. Durbin<br />
 <em>Bioinformatics</em> (2009-05-18) <a href="https://doi.org/10.1093/bioinformatics/btp324" class="uri">https://doi.org/10.1093/bioinformatics/btp324</a></p>
 </div>
 <div id="ref-qxfTM222">
-<p>51. <strong>Seaborn: V0.7.1 (June 2016)</strong><br />
+<p>52. <strong>Seaborn: V0.7.1 (June 2016)</strong><br />
 Michael Waskom, Olga Botvinnik, Drewokane, Paul Hobson, David, Yaroslav Halchenko, Saulius Lukauskas, John B. Cole, Jordi Warmenhoven, Julian De Ruiter, … Antony Lee<br />
 <em>Zenodo</em> (2016-06-05) <a href="https://doi.org/10.5281/zenodo.54844" class="uri">https://doi.org/10.5281/zenodo.54844</a></p>
 </div>
 <div id="ref-tDy18Yol">
-<p>52. <strong>MakeGenecodeTSS</strong><br />
+<p>53. <strong>MakeGenecodeTSS</strong><br />
 Sarah Djebali<br />
 <em>GitHub</em> <a href="https://github.com/sdjebali/MakeGencodeTSS" class="uri">https://github.com/sdjebali/MakeGencodeTSS</a></p>
-</div>
-<div id="ref-1HVy2rbI">
-<p>53. <strong>groHMM</strong><br />
-Minho Chae Charles G. Danko<br />
-<em>Bioconductor</em> (2017) <a href="https://doi.org/10.18129/b9.bioc.grohmm" class="uri">https://doi.org/10.18129/b9.bioc.grohmm</a></p>
 </div>
 <div id="ref-dwj6qSn3">
 <p>54. <strong>MEME SUITE: tools for motif discovery and searching</strong><br />
@@ -481,33 +484,38 @@ T. L. Bailey, M. Boden, F. A. Buske, M. Frith, C. E. Grant, L. Clementi, J. Ren,
 Philip Machanick, Timothy L. Bailey<br />
 <em>Bioinformatics</em> (2011-04-12) <a href="https://doi.org/10.1093/bioinformatics/btr189" class="uri">https://doi.org/10.1093/bioinformatics/btr189</a></p>
 </div>
+<div id="ref-1HVy2rbI">
+<p>56. <strong>groHMM</strong><br />
+Minho Chae Charles G. Danko<br />
+<em>Bioconductor</em> (2017) <a href="https://doi.org/10.18129/b9.bioc.grohmm" class="uri">https://doi.org/10.18129/b9.bioc.grohmm</a></p>
+</div>
 <div id="ref-N7ngUHQX">
-<p>56. <strong>Visualizing data using t-SNE</strong><br />
+<p>57. <strong>Visualizing data using t-SNE</strong><br />
 Laurens van der Maaten, Geoffrey Hinton<br />
 <em>Journal of Machine Learning Research 9</em> (2008-11)</p>
 </div>
 <div id="ref-vHIKEjNs">
-<p>57. <strong>Scikit-learn: Machine Learning in Python</strong><br />
+<p>58. <strong>Scikit-learn: Machine Learning in Python</strong><br />
 Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Gilles Louppe, Peter Prettenhofer, Ron Weiss, … Édouard Duchesnay<br />
 <em>arXiv</em> (2012-01-02) <a href="https://arxiv.org/abs/1201.0490v3" class="uri">https://arxiv.org/abs/1201.0490v3</a></p>
 </div>
 <div id="ref-GGWEfSeb">
-<p>58. <strong>Visualizing Large-scale and High-dimensional Data</strong><br />
+<p>59. <strong>Visualizing Large-scale and High-dimensional Data</strong><br />
 Jian Tang, Jingzhou Liu, Ming Zhang, Qiaozhu Mei<br />
 <em>Proceedings of the 25th International Conference on World Wide Web - WWW ’16</em> (2016) <a href="https://doi.org/10.1145/2872427.2883041" class="uri">https://doi.org/10.1145/2872427.2883041</a></p>
 </div>
 <div id="ref-r8BJ7tJV">
-<p>59. <strong>Scikit-Learn: 0.17.1 Release Tag For Doi</strong><br />
+<p>60. <strong>Scikit-Learn: 0.17.1 Release Tag For Doi</strong><br />
 Olivier Grisel, Andreas Mueller, Fabian Pedregosa, Lars, Alexandre Gramfort, Gilles Louppe, Peter Prettenhofer, Mathieu Blondel, Vlad Niculae, Arnaud Joly, … Maheshakya Wijewardena<br />
 <em>Zenodo</em> (2016-04-17) <a href="https://doi.org/10.5281/zenodo.49911" class="uri">https://doi.org/10.5281/zenodo.49911</a></p>
 </div>
 <div id="ref-1026Gxdsi">
-<p>60. <strong>Matplotlib: A 2D Graphics Environment</strong><br />
+<p>61. <strong>Matplotlib: A 2D Graphics Environment</strong><br />
 John D. Hunter<br />
 <em>Computing in Science &amp; Engineering</em> (2007) <a href="https://doi.org/10.1109/mcse.2007.55" class="uri">https://doi.org/10.1109/mcse.2007.55</a></p>
 </div>
 <div id="ref-oaruRtzO">
-<p>61. <strong>Matplotlib/Matplotlib V2.0.2</strong><br />
+<p>62. <strong>Matplotlib/Matplotlib V2.0.2</strong><br />
 Michael Droettboom, Thomas A Caswell, John Hunter, Eric Firing, Jens Hedegaard Nielsen, Nelle Varoquaux, Benjamin Root, Phil Elson, Darren Dale, Jae-Joon Lee, … Nikita Kniazev<br />
 <em>Zenodo</em> (2017-05-10) <a href="https://doi.org/10.5281/zenodo.573577" class="uri">https://doi.org/10.5281/zenodo.573577</a></p>
 </div>

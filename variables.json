@@ -1,5 +1,5 @@
 {
-  "date": "April 18, 2018",
+  "date": "April 19, 2018",
   "authors": [
     {
       "github": "vsmalladi",
@@ -64,15 +64,15 @@
     "repo_slug": "vsmalladi/tfsee-manuscript",
     "repo_owner": "vsmalladi",
     "repo_name": "tfsee-manuscript",
-    "commit": "0c8b456f1a71436f46a04819d7933c0c96f3046b"
+    "commit": "2a169f3e9d9c68dd27be458e9fe9863337bd6902"
   },
   "manuscript_stats": {
     "reference_counts": {
       "arxiv": 1,
-      "doi": 54,
+      "doi": 55,
       "url": 6,
-      "total": 61
+      "total": 62
     },
-    "word_count": 4480
+    "word_count": 4915
   }
 }

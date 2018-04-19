@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-18'
+date-meta: '2018-04-19'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/0c8b456f1a71436f46a04819d7933c0c96f3046b/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/2a169f3e9d9c68dd27be458e9fe9863337bd6902/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@0c8b456](https://github.com/vsmalladi/tfsee-manuscript/tree/0c8b456f1a71436f46a04819d7933c0c96f3046b)
-on April 18, 2018.
+from [vsmalladi/tfsee-manuscript@2a169f3](https://github.com/vsmalladi/tfsee-manuscript/tree/2a169f3e9d9c68dd27be458e9fe9863337bd6902)
+on April 19, 2018.
 </em></small>
 
 ## Authors
@@ -114,10 +114,27 @@ TFSEE can be expressed as the following formula:
 <center>$Z =( A \times T) \circ  R$</center>
 
 ### Choice of biological model system and data
-To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) [@BTqz3DNL; @18a6G1TE5] (Figure {@fig:enhancer_predictions}A).
-For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications (Figure {@fig:enhancer_predictions}A).
 
-### Predicting Enhancers by Active Transcription and Histone Modification
+To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) [@BTqz3DNL; @18a6G1TE5] (Figure {@fig:enhancer_predictions}A).
+For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications (Figure {@fig:enhancer_predictions}A). This embryonic development model allows us to explore the spatiotemporal gene regulation during development, by enhancers and TFs.
+
+### Unbiased Prediction of Enhancers
+
+We and other have shown that enhancers can be identified using enrichment of histone modifications (e.g. H3K4me1 and H3K27ac) [@vCijBy88; @O5G8lPNO; @LkrR69b9] or by enhancer transcription [@1BkIYUDLC].
+We used a computational pipeline to identify a universe of eRNA transcripts from GRO-seq (Figure {@fig:enhancer_pipeline}A) or enrichment of epigenomic marks (H3K4me1 or H3K27ac) (Figure {@fig:enhancer_pipeline}B) for the cell lines
+in the pancreatic differentiation time course model.
+All potential enhancers were filtered to be $>$ 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations [@15rkMH6SD], and active promoters, as identified by H3K4me3 [@9O9ugXze] (Figure {@fig:density_plot}A) to avoid complications in the analysis associated with overlapping promoter transcription.
+
+Using enrichment of H3K4me1 and H3K27ac, RPKM cutoff of $\geq$ 1 (Figure {@fig:density_plot}B and C) in at least one cell line, we determined there to be set of 182,335 candidate enhancers across cell lines (Figure {@fig:enhancer_predictions}B).
+We categorized these candidate enhancers for each cell line and found that $\le$ 20% of the enhancers, as determined by presences of H3K4me1 and H3K27ac, are active in each cell line.
+We then identified a set of 4,974 candidate enhancers (Figure {@fig:enhancer_predictions}B) as described previously [@1DE6cLccI], using RPKM $\geq$ 0.5 or $\geq$ 1 (Figure {@fig:density_plot}D and E) in at least one cell line.
+Compared to active enhancer by histone modifications, we found that the number of active enhancers in each cell line ranged from 77-25% of all candidate enhancers.
+
+We compared the overlap from histone enhancer prediction methods (H3K4me1 or H3K27ac) to output from an enhancer transcription based approach (GRO-seq).
+We found that 12% of enhancers called based on enhancer transcription using GRO-seq data are identified by all the of the other methods (enrichment of H3K4me1 and H3K27ac) (Figure {@fig:enhancer_predictions}C, {@fig:genome_browser}A).
+In contrast, greater than 75% of the enhancers were solely identified by enhancer transcription (Figure {@fig:enhancer_predictions}C and D, {@fig:genome_browser}B).
+However, less than 1% of enhancers called based on enrichment of H3K4me1 or H3K27ac are identified by the other methods (Figure {@fig:enhancer_predictions}C).
+This may be due, in part, to the fact that enhancer calling based on H3K4me1 or H3K27ac enrichment, yields much larger numbers of putative enhancers (Figure {@fig:enhancer_predictions}D), many of which may be false positives or inactive as the true regulatory elements (Figure {@fig:genome_browser}C and D).
 
 
 ## Discussion
@@ -160,9 +177,20 @@ The GRO-seq reads were trimmed to the first 36 bases to trim adapter and low qua
 
 Kernel density plot representations were used to express the univariate distribution of ChIP-seq reads under peaks, RNA-seq reads for protein-coding genes and GRO-seq reads for short paired and short unpaired eRNAs.  The kernel density plots were calculated in Python (ver. 2.7.11) using the kdeplot function from [seaborn](http://seaborn.pydata.org/) version 0.7.1 [@qxfTM222] with default parameters.
 
-### Defining Transcription Start Sites
+### Defining Transcription Start Sites and Promoters
 
-We made distinct transcription start sites (TSS) for protein-coding genes from Gencode version 19 [@15rkMH6SD] annotations using MakeGencodeTSS [@tDy18Yol].  
+We made distinct transcription start sites (TSS) for protein-coding genes from Gencode version 19 [@15rkMH6SD] annotations using MakeGencodeTSS [@tDy18Yol]. We identified active promoters, as identified by H3K4me3 [@9O9ugXze]. A RPKM cutoff of $\geq$ 1 for H3K4me3 in at least one cell line was used to identify a peak as an active enhancer (Figure {@fig:density_plot}A).
+
+### Enhancer calling by ChIP-seq
+
+#### *Calling Active Enhancers*.
+
+We built a universe of peak calls by merging the peaks from individual cell lines for histone modifications (H3K4me1 and H3K27ac) and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all peaks. Potential enhancers were defined as peaks that were $>$ 3kb from known TSS, protein coding genes from Gencode version 19 annotations [@15rkMH6SD], and H3K4me3 peaks. A RPKM cutoff of $\geq$ 1 for H3K4me1 and H3K27ac (Figure {@fig:density_plot}B and C) in at least one cell line was used to identify a peak as an active enhancer. The universe of active enhancers was assembled using the cutoffs noted above for each cell line and was used for further analyses.
+
+#### *Motif Analyses*.
+
+De novo motif analyses were performed on a 1 kb region ($\pm$ 500 bp) surrounding the peak summit for the top 10000 enhancers, using the command-line version of MEME-ChIP from MEME Suite version 4.11.1 [@dwj6qSn3; @TfukIx2u]. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15). All the other parameters were set at the default. The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) [@1DrZNoXOU] using TOMTOM [@1C9AIanMe].
+
 
 ### Enhancer calling by GRO-seq
 
@@ -185,28 +213,20 @@ We then built a universe of transcripts by merging the groHMM-called transcripts
 
 #### *Calling Enhancer Transcripts*.  
 
-We filtered and collected a subset of short intergenic transcripts $<$ 9 kb in length and $>$ 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations [@15rkMH6SD], and H3K4me3 peaks.  These were further classified into (1) short paired eRNAs and (2) short unpaired eRNAs as described previously [@1DE6cLccI]. For the short paired eRNAs, the sum of the GRO-seq RPKM values for both strands of DNA was used to determine if an enhancer transcript pair is expressed using a cutoff of RPKM $\geq$ 0.5. An RPKM cutoff of $\geq$ 1 was used to determine the universe  expressed short unpaired eRNAs. The comprehensive of expressed eRNAs (short paired and short unpaired) was assembled using the cutoffs noted above for each cell line was used for further analyses.
+We filtered and collected a subset of short intergenic transcripts $<$ 9 kb in length and $>$ 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations [@15rkMH6SD], and H3K4me3 peaks. These were further classified into (1) short paired eRNAs and (2) short unpaired eRNAs as described previously [@1DE6cLccI]. For the short paired eRNAs, the sum of the GRO-seq RPKM values for both strands of DNA was used to determine if an enhancer transcript pair is expressed using a cutoff of RPKM $\geq$ 0.5 (Figure {@fig:density_plot}D). An RPKM cutoff of $\geq$ 1 was used to determine the universe expressed short unpaired eRNAs (Figure {@fig:density_plot}E). The comprehensive of expressed eRNAs (short paired and short unpaired) was assembled using the cutoffs noted above for each cell line was used for further analyses.
 
 #### *Motif Analyses*.
 
 De novo motif analyses was performed on a 1 kb region ($\pm$ 500 bp) surrounding the overlap center or the transcription start site for short paired and short unpaired eRNAs, respectively, using the command-line version of MEME from MEME Suite version 4.11.1 [@dwj6qSn3]. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15); and (4) search for motif in given strand and reverse complement strand (-revcomp). The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) [@1DrZNoXOU] using TOMTOM [@1C9AIanMe].
 
-### Enhancer calling by ChIP-seq
-
-#### *Calling Active Enhancers*.
-
-We built a universe of peak calls by merging the peaks from individual cell lines for histone modifications (H3K4me1 and H3K27ac) and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all peaks. Potential enhancers were defined as peaks that were $>$ 3kb from known TSS, protein coding genes from Gencode version 19 annotations [@15rkMH6SD], and H3K4me3 peaks. A RPKM cutoff of $\geq$ 1 for H3K4me1 and H3K27ac in at least one cell line was used to identify a peak as an active enhancer. The universe of active enhancers was assembled using the cutoffs noted above for each cell line and was used for further analyses.
-
-#### *Motif Analyses*.
-
-De novo motif analyses were performed on a 1 kb region ($\pm$ 500 bp) surrounding the peak summit for the top 10000 enhancers, using the command-line version of MEME-ChIP from MEME Suite version 4.11.1 [@dwj6qSn3; @TfukIx2u]. The following parameters were used for motif prediction: (1) zero or one occurrence per sequence (-mod zoops); (2) number of motifs (-nmotifs 15); (3) minimum, maximum width of the motif (-minw 8, -maxw 15). All the other parameters were set at the default. The predicted motifs from MEME were matched to known motifs in the JASPAR database (JASPAR_CORE_2016_vertebrates.meme) [@1DrZNoXOU] using TOMTOM [@1C9AIanMe].
 
 ### Generating Heatmaps and Clusters
 
 For each cell line, the functional scores were Z-score normalized.  To identify cognate transcription factors by cell type, we performed hierarchical clustering by calculating the Euclidean distance using clustermap from [seaborn](http://seaborn.pydata.org/) version 0.7.1 [@qxfTM222]. For visualization of the multidimensional TFSEE scores, we performed t-distributed stochastic neighbor embedding analysis (t-SNE) [@N7ngUHQX] using the TSNE function and labeled the clusters by calculating K-means clustering using the KMeans function with the expectation-maximization algorithm in [scikit-learn](http://scikit-learn.org/) version 0.17.1 [@vHIKEjNs; @GGWEfSeb; @r8BJ7tJV].
 
 ### Nearest Neighboring Gene Analyses and Box Plots
-The universe of expressed genes in each cell line was determined from the RNA-seq data using a FPKM cutoff of $>$ 0.4. The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line. Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from [matplotlib](https://matplotlib.org/) version 2.0.2 [@1026Gxdsi; @oaruRtzO]. Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.
+
+The universe of expressed genes in each cell line was determined from the RNA-seq data using a FPKM cutoff of $>$ 0.4 (Figure {@fig:density_plot}F). The set of nearest neighboring expressed genes for each enhancer defined by an expressed eRNA or the enrichment of active histone marks was determined for each cell line. Box plot representations were used to express the levels of transcription or enrichment for each called enhancer and transcription of their nearest neighboring expressed genes. The read distribution (RPKM) for each enhancer or (FPKM) gene was calculated and plotted using the boxplot function from [matplotlib](https://matplotlib.org/) version 2.0.2 [@1026Gxdsi; @oaruRtzO]. Wilcoxon rank sum tests were performed to determine the statistical significance of all comparisons.
 
 
 ## Figures and Figure Legends {.page_break_before}
