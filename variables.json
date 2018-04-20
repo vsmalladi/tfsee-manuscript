@@ -64,7 +64,7 @@
     "repo_slug": "vsmalladi/tfsee-manuscript",
     "repo_owner": "vsmalladi",
     "repo_name": "tfsee-manuscript",
-    "commit": "babb9da7b2597a74a76aff4faeaf1cec408a00a8"
+    "commit": "a8a56a9aaeacc11956911289f7d076690e760188"
   },
   "manuscript_stats": {
     "reference_counts": {
@@ -73,6 +73,6 @@
       "url": 6,
       "total": 63
     },
-    "word_count": 5245
+    "word_count": 5261
   }
 }
