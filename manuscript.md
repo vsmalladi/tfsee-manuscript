@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-19'
+date-meta: '2018-04-20'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/2a169f3e9d9c68dd27be458e9fe9863337bd6902/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/babb9da7b2597a74a76aff4faeaf1cec408a00a8/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@2a169f3](https://github.com/vsmalladi/tfsee-manuscript/tree/2a169f3e9d9c68dd27be458e9fe9863337bd6902)
-on April 19, 2018.
+from [vsmalladi/tfsee-manuscript@babb9da](https://github.com/vsmalladi/tfsee-manuscript/tree/babb9da7b2597a74a76aff4faeaf1cec408a00a8)
+on April 20, 2018.
 </em></small>
 
 ## Authors
@@ -115,26 +115,38 @@ TFSEE can be expressed as the following formula:
 
 ### Choice of biological model system and data
 
-To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) [@BTqz3DNL; @18a6G1TE5] (Figure {@fig:enhancer_predictions}A).
-For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications (Figure {@fig:enhancer_predictions}A). This embryonic development model allows us to explore the spatiotemporal gene regulation during development, by enhancers and TFs.
+To better understand the TF-driven transcriptional programs using TFSEE, we used previously published transcriptional and epigenomic data from time course differentiation of human embryonic stem cells (hESC) towards pancreatic cell type [@BTqz3DNL; @18a6G1TE5] (Figure {@fig:enhancer_predictions}A).
+For these analyses, we used GRO-seq and RNA-seq, as well as ChIP-seq for 3 different histone modifications at five defined stages of differentiation: hESCs, definitive endoderm (DE), primitive gut tube (GT), posterior foregut (FG), and pancreatic endoderm (PE) (Figure {@fig:enhancer_predictions}A, Table {@tbl:data-sets}).
+This embryonic development model allows us to explore the spatiotemporal gene regulation during development, by enhancers and TFs.
 
-### Unbiased Prediction of Enhancers
+### Unbiased Identification of Enhancers during Pancreatic Differentiation
 
 We and other have shown that enhancers can be identified using enrichment of histone modifications (e.g. H3K4me1 and H3K27ac) [@vCijBy88; @O5G8lPNO; @LkrR69b9] or by enhancer transcription [@1BkIYUDLC].
 We used a computational pipeline to identify a universe of eRNA transcripts from GRO-seq (Figure {@fig:enhancer_pipeline}A) or enrichment of epigenomic marks (H3K4me1 or H3K27ac) (Figure {@fig:enhancer_pipeline}B) for the cell lines
 in the pancreatic differentiation time course model.
 All potential enhancers were filtered to be $>$ 3 kb away from known transcription start sites (TSSs) of protein-coding genes from Gencode version 19 annotations [@15rkMH6SD], and active promoters, as identified by H3K4me3 [@9O9ugXze] (Figure {@fig:density_plot}A) to avoid complications in the analysis associated with overlapping promoter transcription.
 
-Using enrichment of H3K4me1 and H3K27ac, RPKM cutoff of $\geq$ 1 (Figure {@fig:density_plot}B and C) in at least one cell line, we determined there to be set of 182,335 candidate enhancers across cell lines (Figure {@fig:enhancer_predictions}B).
-We categorized these candidate enhancers for each cell line and found that $\le$ 20% of the enhancers, as determined by presences of H3K4me1 and H3K27ac, are active in each cell line.
-We then identified a set of 4,974 candidate enhancers (Figure {@fig:enhancer_predictions}B) as described previously [@1DE6cLccI], using RPKM $\geq$ 0.5 or $\geq$ 1 (Figure {@fig:density_plot}D and E) in at least one cell line.
+Using enrichment of H3K4me1 and H3K27ac, RPKM cutoff of $\geq$ 1 (Figure {@fig:density_plot}B and C) in at least one cell line, we determined there to be set of 182,335 candidate enhancers across all stages of pancreatic differentiation (Figure {@fig:enhancer_predictions}B).
+We categorized these candidate enhancers for each cell line and found that $\le$ 20% of the enhancers, as determined by presences of H3K4me1 and H3K27ac, are active in each cell line and the majority are marked by only H3K4me1 (Figure {@fig:enhancer_predictions}B).
+These results confirm the enhancer landscape across pancreatic differentiation reported by Wang *et al*.
+We then identified a set of 4,974 candidate enhancers (Figure {@fig:enhancer_predictions}B) by GRO-seq as described previously [@1DE6cLccI], using RPKM $\geq$ 0.5 or $\geq$ 1 (Figure {@fig:density_plot}D and E) in at least one cell line.
 Compared to active enhancer by histone modifications, we found that the number of active enhancers in each cell line ranged from 77-25% of all candidate enhancers.
 
 We compared the overlap from histone enhancer prediction methods (H3K4me1 or H3K27ac) to output from an enhancer transcription based approach (GRO-seq).
 We found that 12% of enhancers called based on enhancer transcription using GRO-seq data are identified by all the of the other methods (enrichment of H3K4me1 and H3K27ac) (Figure {@fig:enhancer_predictions}C, {@fig:genome_browser}A).
 In contrast, greater than 75% of the enhancers were solely identified by enhancer transcription (Figure {@fig:enhancer_predictions}C and D, {@fig:genome_browser}B).
-However, less than 1% of enhancers called based on enrichment of H3K4me1 or H3K27ac are identified by the other methods (Figure {@fig:enhancer_predictions}C).
-This may be due, in part, to the fact that enhancer calling based on H3K4me1 or H3K27ac enrichment, yields much larger numbers of putative enhancers (Figure {@fig:enhancer_predictions}D), many of which may be false positives or inactive as the true regulatory elements (Figure {@fig:genome_browser}C and D).
+Although H3K27ac and H3K4me1 might be two histone modifications commonly associated with enhancers, these are not the only chromatin mark involved and other modifications may be present that were not assayed for [@crCcep4D].
+Additionally, less than 1% of enhancers called based on enrichment of H3K4me1 or H3K27ac are identified by the other methods (Figure {@fig:enhancer_predictions}C).
+This may be due, in part, to the fact that enhancer calling based on H3K4me1 or H3K27ac enrichment, yields much larger numbers of putative enhancers (Figure {@fig:enhancer_predictions}D), many of which may be false positives or inactive as the true regulatory elements (Figure {@fig:genome_browser}C and D). Nonetheless, as we show below, incorporating enhancer transcription into an TFSEE pipeline that includes information about H3K4me1 and H3K27ac enrichment, improves the identification cell type-specific enhancers.
+
+### TFSEE identifies cell type-specific enhancers and their cognate TFs
+
+We used the enhancer calls by Figure {@fig:enhancer_predictions}B, to identify cell type-specific enhancers and their cognate TFs, using TFSEE, either by enhancer transcription or enrichment of epigenomic marks.
+We visualized the results from TFSEE using unsupervised hierarchical clustering, which grouped the cell types into two major clades: (1) FG, and PE (2) hESC, DE, and GT (Figure {@fig:tfsee_groseq}A, {@fig:tfsee_histone}A).
+To better understand the TF:enhancer dynamics across all differentiation stages we clustered the TSEE score across all differentiation stages, revealing four major categories using enhancer transcription (Figure {@fig:tfsee_groseq}B).
+We examined the enrichment of putative enhancers and their associated TFs across stages by quantifying their normalized TFSEE score. This analysis revealed four major clusters: 1. driving early (hESC, DE) and late pancreatic differentiation (FG and PE), 2. enriched in GT, 3. driving pre-pancreatic linage (hESC, DE and GT), and 4. driving late-pancreatic differentiation (FG and PE) (Figure {@fig:tfsee_groseq}D). In contrast, using only histone enrichment to identify enhancers, we retrieve only three clusters (Figure {@fig:tfsee_histone}B). These results highlight TF:enhancers driving pre-pancreatic lineage (hESC, DE and GT), and late-pancreatic differentiation (FG and PE), but fails to highlight any other stage specific drivers (Figure {@fig:tfsee_histone}C). As a result we focused 
+
+# TFSEE-Predicted TFs are enriched in pre- and late- pancreatic differentiation
 
 
 ## Discussion
