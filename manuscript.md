@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-20'
+date-meta: '2018-04-23'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/a8a56a9aaeacc11956911289f7d076690e760188/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/890a6ab654c49316b37d6e54b1b2dc999ea0ad53/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@a8a56a9](https://github.com/vsmalladi/tfsee-manuscript/tree/a8a56a9aaeacc11956911289f7d076690e760188)
-on April 20, 2018.
+from [vsmalladi/tfsee-manuscript@890a6ab](https://github.com/vsmalladi/tfsee-manuscript/tree/890a6ab654c49316b37d6e54b1b2dc999ea0ad53)
+on April 23, 2018.
 </em></small>
 
 ## Authors
@@ -321,7 +321,7 @@ Kernel density plots of log-transformed RPKM and FPKM values for determining act
 ![**TFSEE-Predicted TFs, by histone modifications, are enriched in pre- and late- pancreatic differentiation.**
 **(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in pre- (cluster 2) and late-pancreatic (cluster 3) differentiation across the different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
 **(A)**	TFs identified in cluster 2 by TFSEE show equal expression across differentiation. While, cluster 3 highlights TFs highly expressed in FG and PE. TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$)
-**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$).
+**(B)**	Enhancer transcription as measured by ChIP-seq (H3K27ac enrichment). Number of enhancers in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$).
 **(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. ($p \lt 0.05$).
 **(D and E)** Rank order of TFs enriched in the Cluster 2 and the Cluster 3 identified using TFSEE.  The top ten TFs in each Cluster are noted.](images/late_pre_histone.png){#fig:late_pre_histone tag='S5'}
 
@@ -331,7 +331,7 @@ Kernel density plots of log-transformed RPKM and FPKM values for determining act
 ![**TFSEE-Predicted TFs are enriched and depleted in Primitive Gut Tube during pancreatic differentiation.**
 **(A-C)** Box plots of normalized TF expression (panel A), enhancer transcription (panel B), and gene expression for the nearest neighboring genes to active enhancers (panel C) in depleted (cluster 1) and enriched (cluster 2) in primitive gut tube during pancreatic differentiation across different cell types. Bars marked with different letters are significantly different from each other (Wilcoxon rank sum test). hESC (human embryonic stem cell); DE (definitive endoderm); GT (primitive gut tube); FG (posterior foregut); PE (pancreatic endoderm).
 **(A)**	TF expression as measured by RNA-seq. Number of TFs in each cluster are in parenthesis. ($p \lt 1 \times 10^{-2}$)
-**(B)**	Enhancer transcriptions as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$).
+**(B)**	Enhancer transcription as measured by GRO-seq. Number of enhancers in each cluster are in parenthesis. ($p \lt 1 \times 10^{-4}$).
 **(C)**	Gene expression as measured by RNA-seq. Number of genes in each cluster are in parenthesis. ($p \lt  0.05$).
 **(D and E)** Rank order of TFs enriched in the Cluster 1 and the Cluster 2 identified using TFSEE.  The top five TFs in each Cluster are noted.](images/primitive_gut.png){#fig:primitive_gut tag='S6'}
 
