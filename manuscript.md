@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-23'
+date-meta: '2018-04-28'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/890a6ab654c49316b37d6e54b1b2dc999ea0ad53/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/334f52ba74627139a04787e4b209edc3a3c4e5c8/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@890a6ab](https://github.com/vsmalladi/tfsee-manuscript/tree/890a6ab654c49316b37d6e54b1b2dc999ea0ad53)
-on April 23, 2018.
+from [vsmalladi/tfsee-manuscript@334f52b](https://github.com/vsmalladi/tfsee-manuscript/tree/334f52ba74627139a04787e4b209edc3a3c4e5c8)
+on April 28, 2018.
 </em></small>
 
 ## Authors
@@ -144,9 +144,17 @@ This may be due, in part, to the fact that enhancer calling based on H3K4me1 or 
 We used the enhancer calls by Figure {@fig:enhancer_predictions}B, to identify cell type-specific enhancers and their cognate TFs, using TFSEE, either by enhancer transcription or enrichment of epigenomic marks.
 We visualized the results from TFSEE using unsupervised hierarchical clustering, which grouped the cell types into two major clades: (1) FG, and PE (2) hESC, DE, and GT (Figure {@fig:tfsee_groseq}A, {@fig:tfsee_histone}A).
 To better understand the TF:enhancer dynamics across all differentiation stages we clustered the TSEE score across all differentiation stages, revealing four major categories using enhancer transcription (Figure {@fig:tfsee_groseq}B).
-We examined the enrichment of putative enhancers and their associated TFs across stages by quantifying their normalized TFSEE score. This analysis revealed four major clusters: 1. driving early (hESC, DE) and late pancreatic differentiation (FG and PE), 2. enriched in GT, 3. driving pre-pancreatic linage (hESC, DE and GT), and 4. driving late-pancreatic differentiation (FG and PE) (Figure {@fig:tfsee_groseq}D). In contrast, using only histone enrichment to identify enhancers, we retrieve only three clusters (Figure {@fig:tfsee_histone}B). These results highlight TF:enhancers driving pre-pancreatic lineage (hESC, DE and GT), and late-pancreatic differentiation (FG and PE), but fails to highlight any other stage specific drivers (Figure {@fig:tfsee_histone}C). We were particularly intersted in TFs and enhancers that provided a clear demarcation of enrichment between pre- and late- pancreatic differentiation. 
+We examined the enrichment of putative enhancers and their associated TFs across stages by quantifying their normalized TFSEE score. This analysis revealed four major clusters: 1. driving early (hESC, DE) and late pancreatic differentiation (FG and PE), 2. enriched in GT, 3. driving pre-pancreatic linage (hESC, DE and GT), and 4. driving late-pancreatic differentiation (FG and PE) (Figure {@fig:tfsee_groseq}D). In contrast, using only histone enrichment to identify enhancers, we retrieve only three clusters (Figure {@fig:tfsee_histone}B). These results highlight TF:enhancers driving pre-pancreatic lineage (hESC, DE and GT), and late-pancreatic differentiation (FG and PE), but fails to highlight any other stage specific drivers (Figure {@fig:tfsee_histone}C). We were particularly interested in TFs and enhancers that provided a clear demarcation of enrichment between pre- and late- pancreatic differentiation.
 
-# TFSEE-Predicted TFs are enriched in pre- and late- pancreatic differentiation
+To investigate the the distinct roles of lineage specific enhancers and their cognate TFs, we first examined the mRNA levels of the corresponding predicted TFs of each cluster in each of the stages.
+Our analysis revealed that TFs identified in pre-pancreatic lineage show equal expression across stages, while late-pancreatic TFs are highly expressed in FG and PE (Figure {@fig:late_pre_diff}A, {@fig:late_pre_histone}A) coinciding with pancreatic induction at the FG stage (Figure {@fig:enhancer_predictions}A).
+Conversely, we didn't see an enrichment of TFs in a stage specific manner for either TFs enriched early (hESC, DE) and late pancreatic differentiation (FG and PE) or those maintaining GT pluripotency (Figure {@fig:primitive_gut}A).
+
+Next, we determined if enhancer transcription corresponding to the enriched TFs, using TFSEE score, and the regulation of their nearby genes might regulate differentiation biology.
+To do so, we identified the enhancers corresponding to the predicted TFs using enriched binding motif prediction, and then determined the level of transcription for each enhancer, using GRO-seq or H3K27ac ChIP-seq, (Figure {@fig:late_pre_diff}B, {@fig:late_pre_histone}B, {@fig:primitive_gut}B) and the nearest neighboring gene (upstream or downstream), using RNA-seq (Figure {@fig:late_pre_diff}C, {@fig:late_pre_histone}C, {@fig:primitive_gut}C).
+Interestingly, transcribed enhancers exhibited stage specific enrichment, which doesn't correspond to the patterns found from TFSEE enrichment (Figure {@fig:late_pre_diff}B, {@fig:late_pre_histone}B, {@fig:primitive_gut}B).
+This result reflects that 48% - 99% of the enhancers are shared between clusters and the variation between
+clusters is due to differences in TF expression.
 
 
 ## Discussion
