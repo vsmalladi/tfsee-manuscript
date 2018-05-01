@@ -22,9 +22,9 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/2a174e2afb77240f6d10301634570259a4ec3694/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/d1ae40f4b1f15eb1604abd1f3d186ff103163fb7/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@2a174e2](https://github.com/vsmalladi/tfsee-manuscript/tree/2a174e2afb77240f6d10301634570259a4ec3694)
+from [vsmalladi/tfsee-manuscript@d1ae40f](https://github.com/vsmalladi/tfsee-manuscript/tree/d1ae40f4b1f15eb1604abd1f3d186ff103163fb7)
 on May 1, 2018.
 </em></small>
 
@@ -75,7 +75,7 @@ Taken together our results show that TFSEE can be used to perform multilayer gen
 ## Background {.page_break_before}
 
 Enhancers and the transcription factors (TFs) regulating their formation have been shown to play an important role in cell type-specific activation of gene expression [@sJDRq7sP; @d09ELIR1].
-Although thousands of potential enhancers have been identified in cell lines and tissues, identification of the enhancers that are active versus not active or poised remains remains a major challenge [@r7FNQqrP].
+Although thousands of potential enhancers have been identified in cell lines and tissues, identification of the enhancers that are active versus not active or poised remains a major challenge [@r7FNQqrP].
 In addition, the ability to identify the TFs acting at the numerous enhancers in each cell type is technically challenging [@15J98V2qM; @sLkFMFZj].
 
 Active enhancers have been shown to share several common features; such as increased chromatin accessibility (as measured by DNase-seq or ATAC-seq) [@NqDGzVRS; @x2PdIgDj; @6xCXy2Jy] and enrichment of post-translational modification of histone tails (as assessed by ChIP-seq), including H3K4me1 and H3K27ac [@vCijBy88; @O5G8lPNO; @LkrR69b9]. While these epigenetic features can successfully identify the location of many enhancers across the genome, they cannot readily differentiate between active and non-active enhancers [@1CNxOwAG6; @UIPf9Y7q]. However, recent genomic assays have shown that enhancers tend to be bound by RNA polymerase II (Pol II) and transcribed, producing non-coding RNAs known as enhancer RNAs (‘eRNAs’) [@3ZN37fOe; @5i6RU9Zx; @1BkIYUDLC].
@@ -83,7 +83,7 @@ While the functions of the enhancer RNA transcripts are unknown, we and others h
 
 In recent years, advances in technology have facilitated the large scale functional characterization of enhancer activity [@14L6kLUE3; @sKU362wY; @jjAPfyKA; @5zmE7Qkb] and annotation of genome-wide binding sites of TFs in various cell types and tissues [@15J98V2qM; @ZnmOeYfS]. However, due to countless cell types, experimental conditions and the large number of TFs [@EkABaVh5], integration of these independent data sets to achieve a comprehensive analysis of gene expression and actionable predictions of TFs driving cell type-specific gene expression can be very challenging. Furthermore, analyses that predict TF binding sites (TFBSs), which are usually 4-12 nucleotides in length [@uOXPLhWz], using TF binding profile databases [@1AqKyPkB5; @1DrZNoXOU; @1C9AIanMe], fail to consider that such sequences occur frequently by chance throughout the genome and that TF binding is cell type specific [@uuBDz4a3]. To overcome these limitations, we established a novel method called Total Functional Score of Enhancer Elements (TFSEE), which can be used to identify location and activity of enhancers in any cell or tissue type together with their cognate TFs.
 
-In TFSEE, we integrate enhancer location and activity, TF motif prediction for each enhancer and the level of TF expression (Figure @fig:overview_tfsee). We have previously demonstrated TFSEE in the identification of
+In TFSEE, we integrate enhancer location and activity, TF motif prediction for each enhancer and the level of TF expression (Figure @fig:tfsee_processing, @fig:overview_tfsee). We have previously demonstrated TFSEE in the identification of
 key breast cancer subtype-specific transcription factors determining growth outcomes [@Iu6Tq2rd]. In the studies presented herein, we demonstrate the broader use of TFSEE to identify enhancers and TFs during the differentiation of embryonic stem cells into pancreatic progenitor cells.
 Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers (Figure {@fig:enhancer_predictions}A).
 
@@ -160,8 +160,16 @@ neighboring genes shared between the clusters.
 However, without further high-throughput data to study promoter-enhancer linking (as measured by 4C, ChIA-PET, or Hi-C) [@zQrKrStO, @Z4cumk9R, @SNLehHrw]
 it is difficult to understand the stage specific regulatory network.
 
-To further understand the potential regulators of each cluster we determined a rank order frequency distribution for all TFs within each cluster (Figure {@fig:late_pre_diff}D and E, {@fig:late_pre_histone}D and E, {@fig:primitive_gut}D and E).
-This analysis reveled enrichment of HINFP, RARG, ZIC3, and SP1-like family TFs (SP1 and SP8) [@gM7zvZej, @rj3cD1pL, @197694eEU, @1EnCQmxEg] which are important regulators of embryonic development.
+To further understand the potential regulators of each cluster we determined a rank order frequency distribution for all TFs within each cluster (Figure {@fig:late_pre_diff}D and E).
+This analysis revealed  enrichment of HINFP, RARG, ZIC3, and SP1-like family TFs (SP1 and SP8) which are important regulators of embryonic development [@gM7zvZej, @rj3cD1pL, @197694eEU, @1EnCQmxEg] (Figure {@fig:late_pre_diff}D).
+Additionally, the Onecut family (ONECUT2 and ONECUT3), EGR1, MITF and FOXP1 TFs are enriched in cluster 4 and have been shown to function in pancreatic and islet cell development [@1A0K4olzK, @8w17x8DY, @1D7e4QOVB, @2TOwbbq7] (Figure {@fig:late_pre_diff}E).
+Similar results were obtained for comparison of TFSEE scores from different clusters using GRO-seq and Histone called enhancers (Figure {@fig:primitive_gut}D and E, {@fig:late_pre_histone}D and E).
+
+To compare TFs enriched between GRO-seq and Histone driven TFSEE scores we compared the TFs enriched in pre- and late-pancreatic differentiation.
+We found 9 and 12 TFs enriched in common for pre- and late-pancreatic respectively.
+The differences in TFs that are enriched may be due, in part, to enhancer calling using H3K4me1 and H3K27ac enrichment, yields much larger numbers of putative enhancers, many of which may be false positives or inactive as true regulatory elements
+producing more varied enriched TF motifs.
+Altogether, our results show that TFSEE can be used to identify cell type specific TFs that control the biology of those cell types.
 
 
 ## Discussion
