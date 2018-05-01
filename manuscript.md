@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-04-28'
+date-meta: '2018-05-01'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/334f52ba74627139a04787e4b209edc3a3c4e5c8/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/2a174e2afb77240f6d10301634570259a4ec3694/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@334f52b](https://github.com/vsmalladi/tfsee-manuscript/tree/334f52ba74627139a04787e4b209edc3a3c4e5c8)
-on April 28, 2018.
+from [vsmalladi/tfsee-manuscript@2a174e2](https://github.com/vsmalladi/tfsee-manuscript/tree/2a174e2afb77240f6d10301634570259a4ec3694)
+on May 1, 2018.
 </em></small>
 
 ## Authors
@@ -154,7 +154,14 @@ Next, we determined if enhancer transcription corresponding to the enriched TFs,
 To do so, we identified the enhancers corresponding to the predicted TFs using enriched binding motif prediction, and then determined the level of transcription for each enhancer, using GRO-seq or H3K27ac ChIP-seq, (Figure {@fig:late_pre_diff}B, {@fig:late_pre_histone}B, {@fig:primitive_gut}B) and the nearest neighboring gene (upstream or downstream), using RNA-seq (Figure {@fig:late_pre_diff}C, {@fig:late_pre_histone}C, {@fig:primitive_gut}C).
 Interestingly, transcribed enhancers exhibited stage specific enrichment, which doesn't correspond to the patterns found from TFSEE enrichment (Figure {@fig:late_pre_diff}B, {@fig:late_pre_histone}B, {@fig:primitive_gut}B).
 This result reflects that 48% - 99% of the enhancers are shared between clusters and the variation between
-clusters is due to differences in TF expression.
+clusters is due to differences in TF expression and affinity to motifs.
+Likewise, the nearest neighboring gene for each transcribed enhancer doesn't exhibit stage specific enrichment (Figure {@fig:late_pre_diff}C, {@fig:late_pre_histone}C, {@fig:primitive_gut}C) due to the vast abundance of enhancers and thus
+neighboring genes shared between the clusters.
+However, without further high-throughput data to study promoter-enhancer linking (as measured by 4C, ChIA-PET, or Hi-C) [@zQrKrStO, @Z4cumk9R, @SNLehHrw]
+it is difficult to understand the stage specific regulatory network.
+
+To further understand the potential regulators of each cluster we determined a rank order frequency distribution for all TFs within each cluster (Figure {@fig:late_pre_diff}D and E, {@fig:late_pre_histone}D and E, {@fig:primitive_gut}D and E).
+This analysis reveled enrichment of HINFP, RARG, ZIC3, and SP1-like family TFs (SP1 and SP8) [@gM7zvZej, @rj3cD1pL, @197694eEU, @1EnCQmxEg] which are important regulators of embryonic development.
 
 
 ## Discussion

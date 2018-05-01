@@ -7,6 +7,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1016/j.molcel.2015.02.001	doi:10.1016/j.molcel.2015.02.001	doi:10.1016/j.molcel.2015.02.001	2eAh2YIr
 @doi:10.1016/j.stem.2012.11.023	doi:10.1016/j.stem.2012.11.023	doi:10.1016/j.stem.2012.11.023	BTqz3DNL
 @doi:10.1016/j.stem.2015.02.013	doi:10.1016/j.stem.2015.02.013	doi:10.1016/j.stem.2015.02.013	18a6G1TE5
+@doi:10.1016/j.ymeth.2012.08.009	doi:10.1016/j.ymeth.2012.08.009	doi:10.1016/j.ymeth.2012.08.009	Z4cumk9R
 @doi:10.1038/nature07829	doi:10.1038/nature07829	doi:10.1038/nature07829	O5G8lPNO
 @doi:10.1038/nature10006	doi:10.1038/nature10006	doi:10.1038/nature10006	14GXIWfT0
 @doi:10.1038/nature11245	doi:10.1038/nature11245	doi:10.1038/nature11245	ZnmOeYfS
@@ -15,11 +16,15 @@ string	citation	standard_citation	citation_id
 @doi:10.1038/nature14248	doi:10.1038/nature14248	doi:10.1038/nature14248	sLkFMFZj
 @doi:10.1038/nature15518	doi:10.1038/nature15518	doi:10.1038/nature15518	uOXPLhWz
 @doi:10.1038/ng.3142	doi:10.1038/ng.3142	doi:10.1038/ng.3142	18olkFjWD
+@doi:10.1038/ng.3286	doi:10.1038/ng.3286	doi:10.1038/ng.3286	SNLehHrw
+@doi:10.1038/ng1896	doi:10.1038/ng1896	doi:10.1038/ng1896	zQrKrStO
 @doi:10.1038/ng1966	doi:10.1038/ng1966	doi:10.1038/ng1966	vCijBy88
 @doi:10.1038/nprot.2012.101	doi:10.1038/nprot.2012.101	doi:10.1038/nprot.2012.101	Bhecn2fS
 @doi:10.1038/nrg2538	doi:10.1038/nrg2538	doi:10.1038/nrg2538	EkABaVh5
 @doi:10.1038/nrg3682	doi:10.1038/nrg3682	doi:10.1038/nrg3682	sJDRq7sP
 @doi:10.1038/nrm3949	doi:10.1038/nrm3949	doi:10.1038/nrm3949	d09ELIR1
+@doi:10.1073/pnas.0905651106	doi:10.1073/pnas.0905651106	doi:10.1073/pnas.0905651106	gM7zvZej
+@doi:10.1091/mbc.E06-07-0624	doi:10.1091/mbc.E06-07-0624	doi:10.1091/mbc.e06-07-0624	197694eEU
 @doi:10.1093/bib/bbv101	doi:10.1093/bib/bbv101	doi:10.1093/bib/bbv101	r7FNQqrP
 @doi:10.1093/bioinformatics/btp324	doi:10.1093/bioinformatics/btp324	doi:10.1093/bioinformatics/btp324	roi5bwXL
 @doi:10.1093/bioinformatics/btp352	doi:10.1093/bioinformatics/btp352	doi:10.1093/bioinformatics/btp352	IPc8cy7s
@@ -40,6 +45,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1101/gr.226019.117	doi:10.1101/gr.226019.117	doi:10.1101/gr.226019.117	Iu6Tq2rd
 @doi:10.1101/gr.4074106	doi:10.1101/gr.4074106	doi:10.1101/gr.4074106	NqDGzVRS
 @doi:10.1109/MCSE.2007.55	doi:10.1109/MCSE.2007.55	doi:10.1109/mcse.2007.55	1026Gxdsi
+@doi:10.1111/j.1440-169X.2005.00797.x	doi:10.1111/j.1440-169X.2005.00797.x	doi:10.1111/j.1440-169x.2005.00797.x	1EnCQmxEg
 @doi:10.1126/science.1232542	doi:10.1126/science.1232542	doi:10.1126/science.1232542	jjAPfyKA
 @doi:10.1145/2872427.2883041	doi:10.1145/2872427.2883041	doi:10.1145/2872427.2883041	GGWEfSeb
 @doi:10.1186/1471-2105-12-323	doi:10.1186/1471-2105-12-323	doi:10.1186/1471-2105-12-323	Dh2n1EV3
@@ -53,6 +59,7 @@ string	citation	standard_citation	citation_id
 @doi:10.1371/journal.pgen.1004994	doi:10.1371/journal.pgen.1004994	doi:10.1371/journal.pgen.1004994	6xCXy2Jy
 @doi:10.1534/g3.114.013565	doi:10.1534/g3.114.013565	doi:10.1534/g3.114.013565	LkrR69b9
 @doi:10.18129/B9.bioc.groHMM	doi:10.18129/B9.bioc.groHMM	doi:10.18129/b9.bioc.grohmm	1HVy2rbI
+@doi:10.3858/emm.2009.41.8.091	doi:10.3858/emm.2009.41.8.091	doi:10.3858/emm.2009.41.8.091	rj3cD1pL
 @doi:10.5281/zenodo.49911	doi:10.5281/zenodo.49911	doi:10.5281/zenodo.49911	r8BJ7tJV
 @doi:10.5281/zenodo.54844	doi:10.5281/zenodo.54844	doi:10.5281/zenodo.54844	qxfTM222
 @doi:10.5281/zenodo.573577	doi:10.5281/zenodo.573577	doi:10.5281/zenodo.573577	oaruRtzO
