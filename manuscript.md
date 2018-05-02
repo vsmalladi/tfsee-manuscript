@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-05-01'
+date-meta: '2018-05-02'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/d1ae40f4b1f15eb1604abd1f3d186ff103163fb7/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/40a1c9eff999b99e7a3eb116500b1133d632e331/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@d1ae40f](https://github.com/vsmalladi/tfsee-manuscript/tree/d1ae40f4b1f15eb1604abd1f3d186ff103163fb7)
-on May 1, 2018.
+from [vsmalladi/tfsee-manuscript@40a1c9e](https://github.com/vsmalladi/tfsee-manuscript/tree/40a1c9eff999b99e7a3eb116500b1133d632e331)
+on May 2, 2018.
 </em></small>
 
 ## Authors
@@ -169,7 +169,7 @@ To compare TFs enriched between GRO-seq and Histone driven TFSEE scores we compa
 We found 9 and 12 TFs enriched in common for pre- and late-pancreatic respectively.
 The differences in TFs that are enriched may be due, in part, to enhancer calling using H3K4me1 and H3K27ac enrichment, yields much larger numbers of putative enhancers, many of which may be false positives or inactive as true regulatory elements
 producing more varied enriched TF motifs.
-Altogether, our results show that TFSEE can be used to identify cell type specific TFs that control the biology of those cell types.
+Altogether, our results show that TFSEE can be used to identify cell type-specific transcription factors that control lineage-specific enhancers
 
 
 ## Discussion
