@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-05-02'
+date-meta: '2018-10-14'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/40a1c9eff999b99e7a3eb116500b1133d632e331/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/f458abd5648aca705d368cda8557189c4a2e5d16/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@40a1c9e](https://github.com/vsmalladi/tfsee-manuscript/tree/40a1c9eff999b99e7a3eb116500b1133d632e331)
-on May 2, 2018.
+from [vsmalladi/tfsee-manuscript@f458abd](https://github.com/vsmalladi/tfsee-manuscript/tree/f458abd5648aca705d368cda8557189c4a2e5d16)
+on October 14, 2018.
 </em></small>
 
 ## Authors
@@ -62,14 +62,7 @@ on May 2, 2018.
 
 ## Abstract {.page_break_before}
 
-The ability to integrate different genome data sets to systematically identify active enhancers together with their cognate transcription factors (TF) remains a difficult and somewhat arbitratry process.
-We have developed a computational framework that systematically identifies active enhancers in any cell or tissue type together with the TFs bound at the enhancers by integrating multiple genomic assays that probe the transcriptional (GRO-seq and RNA-seq) and epigenetic (ChIP-seq) states of the cells.
-Our method, called Total Functional Score of Enhancer Elements (TFSEE), integrates the magnitude of enhancer transcription as a measure of enhancer activitity, enrichment of histone modifications typically associated with enhancers (H3K4me1 and H3K27ac), TF expression levels, and TF motif p-values to compute a probability score of TF binding events at active enhancers across the genome.
-This method has allowed us to define the enhancer landscape during differentiation of embryonic stem cells into pancreatic lineages and in breast cancer cells  to define the regulatory pathways of the distinct molecular subtypes of breast cancer.
-Using TFSEE, we have identified key breast cancer subtype-specific transcription factors that are bound at active enhancers and dictate gene expression patterns determining growth outcomes.
-To demonstrate the broader utility of our approach, we have used this algorithm to identify transcription factors during the differentiation of embryonic stem cells into pancreatic cells.
-The analysis has revealed transcription factors maintaining the multipotency of endoderm stem cells and promoting differentiation into pancreatic progenitor cells.
-Taken together our results show that TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific transcription factors that control lineage-specific enhancers.
+Integration of different genome data sets to systematically identify active enhancers and associated cognate transcription factors (TFs) remains a difficult process. We propose a computational framework called Total Functional Score of Enhancer Elements (TFSEE), which integrates multiple genomic assays that probe both transcriptional and epigenetic states. Using TFSEE, we defined the enhancer landscape and identified TFs maintaining multipotency of endodermal stem cells during differentiation into pancreatic lineages. We also identified key breast cancer subtype-specific TFs bound at active enhancers which regulate gene expression patterns determining growth outcomes. Thus, TFSEE can be used to perform multilayer genomic data integration to uncover novel cell type-specific TFs that control lineage-specific enhancers.
 
 
 ## Background {.page_break_before}
@@ -175,6 +168,14 @@ Altogether, our results show that TFSEE can be used to identify cell type-specif
 ## Discussion
 
 
+## Conclusions
+
+The increasing availability of different genomic data sets provides an opportunity to perform data integration to uncover novel cell type-specific transcription factor (TF) drivers.
+To facilitate identification of these drivers we developed TFSEE, which systemically identify active enhancers and associated cognate TFs.
+We showed that TFSEE can identify stage specific TFs during differentiation of endodermal stem cells into pancreatic lineages.
+Collectively, our results show how TFSEE can be used to predict molecular drivers maintaining cell type-specific function and biology.
+
+
 ## Acknowledgments
 
 
@@ -194,6 +195,7 @@ We used previously published GRO-seq, ChIP-seq and RNA-seq data from [@BTqz3DNL;
 | RNA-seq | ERR266333, ERR266335, ERR266337, ERR266338, ERR266341, ERR266342, ERR266344, ERR266346, ERR266349, ERR266351 |
 
 Table: **Description and accession numbers of GRO-seq, ChIP-seq and RNA-seq datasets.**
+Summary of assay and accession of raw data for time course differentiation of human embryonic stem cells (hESC) to pancreatic endoderm (PE) used in this study. All data sets are available from NCBI’s Gene Expression Omnibus or EMBL-EBI’s ArrayExpress.
 {#tbl:data-sets tag="S1"}
 
 ### Analysis of ChIP-seq Data Sets
@@ -242,6 +244,7 @@ Transcript calling was performed using a two-state hidden Markov model using the
 | PE | 50 | 35 |
 
 Table: **groHMM tunning parameters.**
+Table summarizing the shape setting parameters and -log transition probabilities used to predict the transcription units for each cell lines using GRO-seq data with groHMM method.
 {#tbl:groseq-tune tag="S2"}
 
 We then built a universe of transcripts by merging the groHMM-called transcripts from individual cell lines and stratifying the boundaries to remove overlaps/redundancies occurring from the union of all transcripts.
