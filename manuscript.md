@@ -4,7 +4,7 @@ author-meta:
 - Anusha Nagari
 - Hector L. Franco
 - W. Lee Kraus
-date-meta: '2018-10-14'
+date-meta: '2018-10-21'
 keywords:
 - enhancers
 - transcription
@@ -22,10 +22,10 @@ title: Total Functional Score of Enhancer Elements Identifies  Lineage-Specific 
 
 <small><em>
 This manuscript
-([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/f458abd5648aca705d368cda8557189c4a2e5d16/))
+([permalink](https://vsmalladi.github.io/tfsee-manuscript/v/bd40572ca6798e1a6a160d33c8718c1d18c5927c/))
 was automatically generated
-from [vsmalladi/tfsee-manuscript@f458abd](https://github.com/vsmalladi/tfsee-manuscript/tree/f458abd5648aca705d368cda8557189c4a2e5d16)
-on October 14, 2018.
+from [vsmalladi/tfsee-manuscript@bd40572](https://github.com/vsmalladi/tfsee-manuscript/tree/bd40572ca6798e1a6a160d33c8718c1d18c5927c)
+on October 21, 2018.
 </em></small>
 
 ## Authors
@@ -148,8 +148,7 @@ To do so, we identified the enhancers corresponding to the predicted TFs using e
 Interestingly, transcribed enhancers exhibited stage specific enrichment, which doesn't correspond to the patterns found from TFSEE enrichment (Figure {@fig:late_pre_diff}B, {@fig:late_pre_histone}B, {@fig:primitive_gut}B).
 This result reflects that 48% - 99% of the enhancers are shared between clusters and the variation between
 clusters is due to differences in TF expression and affinity to motifs.
-Likewise, the nearest neighboring gene for each transcribed enhancer doesn't exhibit stage specific enrichment (Figure {@fig:late_pre_diff}C, {@fig:late_pre_histone}C, {@fig:primitive_gut}C) due to the vast abundance of enhancers and thus
-neighboring genes shared between the clusters.
+Likewise, the nearest neighboring gene for each transcribed enhancer doesn't exhibit stage specific enrichment (Figure {@fig:late_pre_diff}C, {@fig:late_pre_histone}C, {@fig:primitive_gut}C) due to the vast abundance of enhancers and thus neighboring genes shared between the clusters.
 However, without further high-throughput data to study promoter-enhancer linking (as measured by 4C, ChIA-PET, or Hi-C) [@zQrKrStO, @Z4cumk9R, @SNLehHrw]
 it is difficult to understand the stage specific regulatory network.
 
@@ -166,6 +165,20 @@ Altogether, our results show that TFSEE can be used to identify cell type-specif
 
 
 ## Discussion
+
+Here we present TFSEE, a novel computational method for identification of active enhancers and associated cognate TFs from high-throughput sequencing data.
+TFSEE employs multi-view clustering of multiple genomic assays that directly models changes in the transcriptional and epigenetic states across cell-types.
+This approach allowed us to directly integrate disparate data while encoding assumptions and dependencies between data types in an interpretable and extendable model.
+
+TFSEE model gains power by both explicitly modeling the enhancer landscape for each cell type and detecting the enhancer activity changes and TF:enhancer links across all cell types.
+We applied TFSEE on transcriptional and epigenomic data from time course differentiation of human embryonic stem cells [@BTqz3DNL; @18a6G1TE5] and a variety of breast cancer cell lines [@Iu6Tq2rd].
+Our results show that the method can identify cell type-specific TFs and their linked enhancers that are biologically relevant.
+In particular, we identified TFs bound at active enhancers which regulate gene expression patterns, supporting
+the biological relevance of TFSEE predictions.
+Additionally, the model enables novel analysis of driver TFs with limited amount of data.
+The model was able to identify lineage specific TFs with as little five cell types and with only three data types (Figure {@fig:tfsee_groseq}B, {@fig:tfsee_histone}B).
+A limitation of the TFSEE method is that while the model can be used with reduced data types for enhancer identification it fails to highlight additional subtype specific drivers (Figure {@fig:tfsee_groseq}C, {@fig:tfsee_histone}C) and of the overlapping clusters identified only a subset of TFs are jointly enriched  (Figure {@fig:late_pre_histone}F and G.
+However, additional ChIP-seq, ATAC-seq or DNase-seq data could easily be added to TFSEE and extend the model providing greater granularity on subtype specific TF clusters.
 
 
 ## Conclusions
