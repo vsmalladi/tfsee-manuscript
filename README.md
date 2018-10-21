@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/vsmalladi/tfsee-manuscript/tree/gh-pages) branch hosts the contents of this directory at https://vsmalladi.github.io/tfsee-manuscript/.
-The permalink for this webpage version is https://vsmalladi.github.io/tfsee-manuscript/v/f458abd5648aca705d368cda8557189c4a2e5d16/.
+The permalink for this webpage version is https://vsmalladi.github.io/tfsee-manuscript/v/bd40572ca6798e1a6a160d33c8718c1d18c5927c/.
 To redirect to the permalink for the latest manuscript version at anytime, use the link https://vsmalladi.github.io/tfsee-manuscript/v/freeze/.
 
 ## Files
@@ -32,4 +32,4 @@ git add v/*/*.ots
 ## Source
 
 The manuscripts in this directory were built from
-[`f458abd5648aca705d368cda8557189c4a2e5d16`](https://github.com/vsmalladi/tfsee-manuscript/commit/f458abd5648aca705d368cda8557189c4a2e5d16).
+[`bd40572ca6798e1a6a160d33c8718c1d18c5927c`](https://github.com/vsmalladi/tfsee-manuscript/commit/bd40572ca6798e1a6a160d33c8718c1d18c5927c).
